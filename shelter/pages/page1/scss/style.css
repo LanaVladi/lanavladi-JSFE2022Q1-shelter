@@ -115,6 +115,9 @@ li a {
   text-decoration: none;
   color: #CDCDCD;
 }
+li a:hover {
+  color: #FAFAFA;
+}
 
 h2 {
   font-family: "Georgia";
@@ -163,8 +166,16 @@ h2 {
   height: 52px;
   /* color-primary */
   background: #F1CDB3;
+  border-color: #F1CDB3;
+  outline: none;
   border-radius: 100px;
   margin-top: 42px;
+  cursor: pointer;
+  transition: 1s;
+}
+.button-primary:hover {
+  background: #FAFAFA;
+  border-color: #F1CDB3;
 }
 
 .about-wrapper {
@@ -201,6 +212,9 @@ h3 {
   letter-spacing: 0.06em;
   /* color-dark-l */
   color: #545454;
+}
+
+.heading-about-pets {
   padding-right: 60px;
 }
 
@@ -226,4 +240,22 @@ h3 {
   /* color-dark-xl */
   color: #4C4C4C;
   padding-top: 25px;
+}
+
+/* !SECTION OUR PETS */
+.ourpets-wrapper {
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.heading-our-pets {
+  display: flex;
+  text-align: center;
+  margin-right: 400px;
+  margin-left: 400px;
+}
+
+span {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
