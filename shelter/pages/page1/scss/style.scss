@@ -10,7 +10,8 @@
     font-weight: 400;
 }   
 
-$color-gradient: radial-gradient(#211F20, #513D2F);
+//$color-gradient: radial-gradient(#211F20, #513D2F);
+$color-gradient: radial-gradient((100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%));
 $color-light-s: #FAFAFA;
 $color-light-l: #F6F6F6;
 $color-light-xl: #FFFFFF;
@@ -46,11 +47,17 @@ body {
         // box-shadow: 0px 4px 4px 0px #00000040;
         // background-color: var(--color-black);
 }
-.start-screen-wrapper {
-    display: flex;
+
+.start-screen {
     background-image: $color-gradient;
     // background-position: center -120px;
     background-repeat: no-repeat;
+}
+.start-screen-wrapper {
+    display: flex;
+    // background-image: $color-gradient;
+    // // background-position: center -120px;
+    // background-repeat: no-repeat;
     padding-top: 60px;
 }
 
@@ -326,7 +333,7 @@ padding-top: 25px;
 
     .ourpets-wrapper {
         display: flex;
-       // flex-direction: row;
+        flex-direction: column;
         padding-top: 80px;
         padding-bottom: 100px;
     }
@@ -342,3 +349,175 @@ padding-top: 25px;
     span {
         display: block;
     }
+
+    .slider-container {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: flex;
+
+        .button-arrow-left {
+        width: 52px;
+        height: 52px;
+        border: 2px solid $color-primary;
+        box-sizing: border-box;
+        border-radius: 100px;
+        position: relative;
+        top: 192px;
+        right: 52px;
+        }
+        .button-arrow-right {
+            width: 52px;
+            height: 52px;
+            border: 2px solid $color-primary;
+            box-sizing: border-box;
+            border-radius: 100px;
+            position: relative;
+            top: 192px;
+            left: 53px;
+            }
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: $color-light-s;
+        border-radius: 9px;
+        &:hover {
+
+        }
+    }
+    .card-katrine {
+        margin-right: 90px;
+    //     background: $color-light-s;
+    //     border-radius: 9px;
+    //     // border-radius: 9px 9px 0px 0px;
+    //     &:hover {
+
+    //     }
+    }
+    .card-jennifer {
+        margin-right: 90px;
+        position: relative; //для позиционирования стрелок
+    }
+
+    .pets-name {
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+/* identical to box height */
+// display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+/* color-dark-l */
+color: $color-dark-l;
+padding-top: 30px;
+padding-bottom: 30px;
+    }
+
+    .button-learn-more {
+        border: 2px solid $color-primary;
+        box-sizing: border-box;
+        border-radius: 100px;
+        width: 187px;
+        height: 52px;        
+        background: $color-light-s;
+        font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+/* identical to box height, or 22px */
+letter-spacing: 0.06em;
+/* color-dark-3xl */
+color: $color-dark-3xl;
+outline: none; // убирает рамку по умолчанию у кнопок
+cursor: pointer;
+transition: 1s;
+//  padding-left: 41.5px;
+//  padding-right: 41.5px;
+&:hover {
+    background: $color-primary;
+    border-color: $color-primary;
+}
+    }
+
+    .button-get-to {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+        /* identical to box height, or 22px */
+        letter-spacing: 0.06em;
+        /* color-dark-3xl */
+        color: $color-dark-3xl;
+        width: 261px;
+        height: 52px;
+        // left: calc(50% - 207px/2 - 126.5px);
+        // bottom: 0px;
+        /* color-primary */
+        background: $color-primary;
+        border-color: $color-primary;
+        outline: none; // убирает рамку по умолчанию у кнопок
+        border-radius: 100px;
+        margin-top: 30px; //60px ?
+        cursor: pointer;
+        transition: 1s;
+        &:hover {
+            background: $color-light-s;
+            border-color: $color-primary;
+        }
+        }
+
+        .heading-help {
+    display: flex;
+    text-align: center;
+    margin-right: 445px;
+    margin-left: 445px;
+    margin-top: 80px;
+            }
+
+            .help-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                max-width: 1026px;
+               // padding-right: 120px;
+            }
+
+ .help-icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1026px;
+    margin-top: 60px;
+    flex: 1 1 ceil($number: 9);
+    padding-left: 46px;
+    padding-top: 10px;
+            }
+
+//  .help-icon >* {
+//                 flex: 1 1 120px;
+//             }
+
+// .help-container {
+//   display: grid;
+//   max-width: 1026px;
+//   align-items: center; /* выравнивает строки по центру */
+//   justify-items: center; /* выравнивает столбцы по центру */
+//   margin: auto;
+//   /* border: 2px solid salmon; */
+//   border-radius: 5px;
+//   background-color: transparent;
+//   /* grid-template-columns: 320px 320px 320px;  /* ряды и столбцы в нашей сетке */
+//   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+//   /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+//   grid-template-rows: 113px; /* ряды и столбцы в нашей сетке */
+//   grid-column-gap: 120px;  /* Зазоры (Gutters) или аллеи (alleys) между грид-ячейками вертикал */
+//   //grid-row-gap: 30px; /* Зазоры (Gutters) или аллеи (alleys) между грид-ячейками горизонт */                
+//             }
