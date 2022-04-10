@@ -1,0 +1,229 @@
+@font-face {
+  font-family: "Arial";
+  src: url("/shelter/assets/fonts/Arial/arial.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("/shelter/assets/fonts/Georgia/georgia.ttf");
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.start-screen-wrapper {
+  display: flex;
+  background-image: radial-gradient(#211F20, #513D2F);
+  background-repeat: no-repeat;
+  padding-top: 60px;
+}
+
+.start-screen-content {
+  padding-top: 163px;
+  padding-right: 42px;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.header {
+  background: radial-gradient(#211F20, #513D2F);
+  padding: 60px 0 0 0;
+}
+
+.header-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  /* padding-top: 5px; */
+  display: flex;
+  /* flex-wrap: nowrap; */
+  flex-direction: column;
+  padding-right: 505px;
+}
+
+h1 a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  /* or 35px */
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+  list-style: none;
+  text-decoration: none;
+}
+
+.logo-subtitle {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  /* color-light-xl */
+  color: #FFFFFF;
+  padding-top: 8px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-link-about {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  /* identical to box height, or 24px */
+  /* color-dark-s */
+  color: #FAFAFA;
+  text-decoration: underline;
+}
+
+.nav-item {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  list-style: none;
+  text-decoration: none;
+  padding-left: 35px;
+  /* identical to box height, or 24px */
+  /* color-dark-s */
+}
+
+li a {
+  list-style: none;
+  text-decoration: none;
+  color: #CDCDCD;
+}
+
+h2 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  /* or 57px */
+  /* color-light-xl */
+  color: #FFFFFF;
+}
+
+.heading-start-screen {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  /* or 24px */
+  color: #CDCDCD;
+  padding-right: 150px;
+}
+
+.subheading-start-screen {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  /* or 24px */
+  color: #CDCDCD;
+  padding-top: 42px;
+}
+
+.button-primary {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  /* identical to box height, or 22px */
+  letter-spacing: 0.06em;
+  /* color-dark-3xl */
+  color: #292929;
+  width: 207px;
+  height: 52px;
+  /* color-primary */
+  background: #F1CDB3;
+  border-radius: 100px;
+  margin-top: 42px;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.about-pets {
+  width: 300px;
+  height: 408px;
+  margin-left: 175px;
+  margin-right: 120px;
+}
+
+.content-pets {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  margin-right: 175px;
+}
+
+h3 {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  /* or 45px */
+  letter-spacing: 0.06em;
+  /* color-dark-l */
+  color: #545454;
+  padding-right: 60px;
+}
+
+.subheading-pets1 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  /* or 24px */
+  /* color-dark-xl */
+  color: #4C4C4C;
+  padding-top: 25px;
+}
+
+.subheading-pets2 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  /* or 24px */
+  /* color-dark-xl */
+  color: #4C4C4C;
+  padding-top: 25px;
+}/*# sourceMappingURL=style.css.map */
