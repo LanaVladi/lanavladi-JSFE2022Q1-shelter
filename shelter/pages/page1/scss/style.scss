@@ -160,6 +160,7 @@ color: $color-light-s;
 text-decoration: underline;
 }
 
+
 .nav-item  {
 font-family: 'Arial';
 font-style: normal;
@@ -171,7 +172,6 @@ text-decoration: none;
 padding-left: 35px;
 /* identical to box height, or 24px */
 /* color-dark-s */
-
 }
 
 
@@ -179,6 +179,9 @@ li a {
 list-style: none;
 text-decoration: none;
 color: $color-dark-s;
+&:hover {
+    color: $color-light-s;
+}
 }
 
 
@@ -241,8 +244,16 @@ height: 52px;
 // bottom: 0px;
 /* color-primary */
 background: $color-primary;
+border-color: $color-primary;
+outline: none; // убирает рамку по умолчанию у кнопок
 border-radius: 100px;
 margin-top: 42px;
+cursor: pointer;
+transition: 1s;
+&:hover {
+    background: $color-light-s;
+    border-color: $color-primary;
+}
 }
 
 .about-wrapper {
@@ -281,6 +292,9 @@ line-height: 130%;
 letter-spacing: 0.06em;
 /* color-dark-l */
 color: $color-dark-l;
+}
+
+.heading-about-pets {
 padding-right: 60px;
 }
 
@@ -308,3 +322,23 @@ padding-top: 25px;
     padding-top: 25px;
     }
 
+    /* !SECTION OUR PETS */
+
+    .ourpets-wrapper {
+        display: flex;
+       // flex-direction: row;
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    .heading-our-pets {
+     display: flex;
+    text-align: center;
+    margin-right: 400px;
+    margin-left: 400px;
+    //Здесь можно поставить max-width: 400: margin: 0 auto;
+    }
+
+    span {
+        display: block;
+    }
