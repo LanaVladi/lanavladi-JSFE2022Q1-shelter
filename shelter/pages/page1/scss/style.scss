@@ -303,11 +303,11 @@ line-height: 130%;
 /* or 45px */
 letter-spacing: 0.06em;
 /* color-dark-l */
-color: $color-dark-l;
 }
 
 .heading-about-pets {
 padding-right: 60px;
+color: $color-dark-l;
 }
 
 .subheading-pets1 {
@@ -348,6 +348,7 @@ padding-top: 25px;
     .heading-our-pets {
      display: flex;
     text-align: center;
+    color: $color-dark-l;
     margin-right: 400px;
     margin-left: 400px;
     //Здесь можно поставить max-width: 400: margin: 0 auto;
@@ -564,6 +565,7 @@ transition: 1s;
     margin-right: 445px;
     margin-left: 445px;
    margin-top: 80px;
+   color: $color-dark-l;
             }
 
             .help-container {
@@ -616,23 +618,18 @@ transition: 1s;
     margin-right: 84px;
 }
 h4 { 
-    font-family: 'Georgia';
+font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 115%;
 /* identical to box height, or 23px */
-// display: flex;
-// align-items: center;
-// text-align: center;
 letter-spacing: 0.06em;
-/* color-dark-l */
-color: $color-dark-l;   
-
 }
 .icon-name {
 margin-top: 30px;
-            }
+color: $color-dark-l;   
+}
 
 //  .help-icon >* {
 //                 flex: 1 1 120px;
@@ -666,6 +663,7 @@ margin-top: 30px;
 
 .heading-donation {
     margin-top: 80px;
+    color: $color-dark-l;
 }
 
 h5 {
@@ -716,4 +714,110 @@ transition: 1s;
         color: $color-dark-m;       
 margin-top: 20px;   
 margin-right: 182px; 
+}
+
+.footer-wrapper {
+    background-image: $color-gradient;
+    // margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+   // margin-top: 40px;
+}
+
+.contacts {
+    //display: flex;
+    //flex-direction: column;
+    margin-top: 56px;
+    margin-right: 160px;
+    //text-align: center;
+    color: $color-light-xl;
+}
+
+.title-contacts {
+    display: flex;
+}
+
+.shelter-mail {
+    display: flex;
+}
+.mail-icon {
+    padding-top: 40px;   
+    padding-right: 20px;
+    color: $color-primary;
+}
+
+.mail {
+display: block;
+color: $color-primary;
+text-decoration: none;
+margin-top: 44px;
+padding-right: 26px;  
+
+} 
+
+.shelter-phone {
+    display: flex;  
+}
+
+.phone-icon {
+    padding-top: 40px;   
+    padding-right: 20px;
+    color: $color-primary;
+}
+
+.phone {
+    display: block;
+    color: $color-primary;
+    text-decoration: none;
+    margin-top: 44px;
+    margin-right: 38px;
+}
+
+
+.locations {
+   // display: flex;
+    margin-top: 56px;
+    margin-right: 160px; //200px было!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   // text-align: center;
+    color: $color-light-xl;
+}
+
+.title-locations {
+    display: flex;
+}
+
+.shelter-location-1 {
+    display: flex;
+    margin-top: 34px;
+}
+
+.location-1 {
+    display: block;
+    color: $color-primary;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.location-1-icon {
+    //margin-right: 20px;
+    margin-top: 5px;
+}
+.shelter-location-2 {
+    display: flex;
+    margin-top: 35px;
+    margin-right: 31px;
+}
+.location-2 {
+    display: block;
+    color: $color-primary;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.location-2-icon {
+    //margin-right: 20px;
+    margin-top: -5px;
+}
+.footer-puppy { 
+     margin-top: 40px;
 }
