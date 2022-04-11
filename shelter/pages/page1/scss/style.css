@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Arial";
-  src: url("/shelter/assets/fonts/Arial/arial.ttf");
+  src: url("../../assets/fonts/Arial/arial.ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: "Georgia";
-  src: url("/shelter/assets/fonts/Georgia/georgia.ttf");
+  src: url("../../assets/fonts/Georgia/georgia.ttf");
   font-weight: 400;
 }
 * {
