@@ -10,8 +10,7 @@
     font-weight: 400;
 }   
 
-//$color-gradient: radial-gradient(#211F20, #513D2F);
-$color-gradient: radial-gradient((100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%));
+$color-gradient: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 $color-light-s: #FAFAFA;
 $color-light-l: #F6F6F6;
 $color-light-xl: #FFFFFF;
@@ -31,11 +30,6 @@ $content-width: 1280px;
 $tablet-width: 768px;
 $mobile-width: 320px;
 
-
-
-// background-image: radial-gradient(#5b4ffc, #df02cd);
-
-
 * {
     box-sizing: border-box;
     margin: 0 auto;
@@ -44,20 +38,17 @@ $mobile-width: 320px;
 body {
     display: flex;
     flex-direction: column;
-        // box-shadow: 0px 4px 4px 0px #00000040;
-        // background-color: var(--color-black);
 }
 
 .start-screen {
-    background-image: $color-gradient;
-    // background-position: center -120px;
-    background-repeat: no-repeat;
+    // background-image: $color-gradient;
+    background: url(../../assets/img/noise_transparent@2x.png), $color-gradient;
+    position: relative;
+    z-index: 10;
 }
+
 .start-screen-wrapper {
     display: flex;
-    // background-image: $color-gradient;
-    // // background-position: center -120px;
-    // background-repeat: no-repeat;
     padding-top: 60px;
 }
 
@@ -81,7 +72,9 @@ body {
 }
 
 .header {
-    background: $color-gradient;
+    background: url(../../assets/img/noise_transparent@2x.png), $color-gradient;
+    z-index: 1;
+    position: relative;
     padding: 60px 0 0 0;
 }
 
@@ -92,27 +85,26 @@ body {
     //text-align: start;
     //justify-content: flex-start;
     //padding-top: 60px;
+    // margin-top: 30px;
+    // margin-bottom: 30px;
 }
 
 .logo-container {
-  
-      /* padding-top: 5px; */
+    // padding-top: 5px; 
       display: flex;
-      /* flex-wrap: nowrap; */
+    //   flex-wrap: nowrap;
       flex-direction: column;
      // text-align: start;
       padding-right: 505px;
 }
 
 h1 a {
-    // font-family: 'Georgia';
+    //font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 110%;
     /* or 35px */
-    // display: flex;
-    // align-items: center;
     letter-spacing: 0.06em;
     color: $color-primary;
     list-style: none;
@@ -126,33 +118,14 @@ font-weight: 400;
 font-size: 13px;
 line-height: 15px;
 /* identical to box height */
-
-// display: flex;
-// align-items: center;
 letter-spacing: 0.1em;
-
-/* color-light-xl */
-
 color: $color-light-xl;
 padding-top: 8px;
 }
 
-.nav-container {
-    //   display: flex;
-    //   margin-left: 573px;
-}
-
 .nav-list {
-    // display: flex;
-    // justify-content: flex-start;
-    // align-items: center;
-    // height: 50px;
-    display: flex;
-   // align-items: center;
-    //justify-content: space-between;
-    // padding: 35px;
-    // margin-left: auto;
-}
+display: flex;
+ }
 
 .nav-link-about {
 font-family: 'Arial';
@@ -161,12 +134,11 @@ font-weight: 400;
 font-size: 15px;
 line-height: 160%;
 /* identical to box height, or 24px */
-/* color-dark-s */
-// @extend %nav-list;
 color: $color-light-s;
-text-decoration: underline;
+// text-decoration: underline;
+display: inline; //делает нижнее подчеркивание
+border-bottom: 3px solid $color-primary;
 }
-
 
 .nav-item  {
 font-family: 'Arial';
@@ -178,7 +150,6 @@ list-style: none;
 text-decoration: none;
 padding-left: 35px;
 /* identical to box height, or 24px */
-/* color-dark-s */
 }
 
 
@@ -199,12 +170,6 @@ h2 {
     font-size: 44px;
     line-height: 130%;
     /* or 57px */
-    
-    // display: flex;
-    // align-items: center;
-    
-    /* color-light-xl */
-    
     color: $color-light-xl;
 }
 
@@ -215,9 +180,6 @@ font-weight: 400;
 font-size: 15px;
 line-height: 160%;
 /* or 24px */
-
-// display: flex;
-// align-items: center;
 color: $color-dark-s;
 padding-right: 150px;
 }
@@ -229,8 +191,6 @@ font-weight: 400;
 font-size: 15px;
 line-height: 160%;
 /* or 24px */
-// display: flex;
-// align-items: center;
 color: $color-dark-s;
 padding-top: 42px;
 }
@@ -248,8 +208,6 @@ color: $color-dark-3xl;
 width: 207px;
 height: 52px;
 // left: calc(50% - 207px/2 - 126.5px);
-// bottom: 0px;
-/* color-primary */
 background: $color-primary;
 border-color: $color-primary;
 outline: none; // убирает рамку по умолчанию у кнопок
@@ -272,7 +230,6 @@ transition: 1s;
     padding-top: 80px;
     padding-bottom: 100px;
     // margin: 80px 0px 100px 0px;
-    /* color-light-xl */
     background: $color-light-xl;
 }
 
@@ -302,7 +259,6 @@ font-size: 35px;
 line-height: 130%;
 /* or 45px */
 letter-spacing: 0.06em;
-/* color-dark-l */
 }
 
 .heading-about-pets {
@@ -317,7 +273,6 @@ font-weight: 400;
 font-size: 15px;
 line-height: 160%;
 /* or 24px */
-/* color-dark-xl */
 color: $color-dark-xl;
 padding-top: 25px;
 }
@@ -329,7 +284,6 @@ padding-top: 25px;
     font-size: 15px;
     line-height: 160%;
     /* or 24px */
-    /* color-dark-xl */
     color: $color-dark-xl;
     padding-top: 25px;
     }
@@ -341,7 +295,6 @@ padding-top: 25px;
         flex-direction: column;
         padding-top: 80px;
         padding-bottom: 100px;
-        /* color-light-l */
         background: $color-light-l;
     }
 
@@ -408,6 +361,7 @@ padding-top: 25px;
         cursor: pointer;
         &:hover {
          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+         background-color: $color-light-xl;
          .button-learn-more {
                   /* card-hover */
           background-color: $color-primary;
@@ -423,13 +377,8 @@ padding-top: 25px;
             }
         }
     }
-
  
-// .класскарточки:ховер { цвет карточки } 
-// .класскарточки:ховер .класскнопки { цвет кнопки }
-
-
-    .card-container2 {
+   .card-container2 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -439,8 +388,9 @@ padding-top: 25px;
         margin-right: 90px;
         cursor: pointer;
         &:hover {
-           /* card-hover */
+        //    card-hover
           box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          background-color: $color-light-xl;
           .button-learn-more {
             background: $color-primary;
             border-color: $color-primary;
@@ -457,8 +407,9 @@ padding-top: 25px;
         border-radius: 9px;
         cursor: pointer;
         &:hover {
-           /* card-hover */
+            // card-hover
           box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          background-color: $color-light-xl;
           .button-learn-more {
             background: $color-primary;
             border-color: $color-primary;
@@ -466,16 +417,7 @@ padding-top: 25px;
         }
     }
 
-    .card-katrine {
-        //margin-right: 90px;
-    //     background: $color-light-s;
-    //     border-radius: 9px;
-    //     // border-radius: 9px 9px 0px 0px;
-    //     &:hover {
-
-    //     }
-    }
-    .card-jennifer {
+       .card-jennifer {
        // margin-right: 90px;
         position: relative; //для позиционирования стрелок
     }
@@ -487,11 +429,9 @@ font-weight: 400;
 font-size: 20px;
 line-height: 23px;
 /* identical to box height */
-// display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
-/* color-dark-l */
 color: $color-dark-l;
 padding-top: 30px;
 padding-bottom: 30px;
@@ -511,13 +451,10 @@ font-size: 17px;
 line-height: 130%;
 /* identical to box height, or 22px */
 letter-spacing: 0.06em;
-/* color-dark-3xl */
 color: $color-dark-3xl;
 outline: none; // убирает рамку по умолчанию у кнопок
 cursor: pointer;
 transition: 1s;
-//  padding-left: 41.5px;
-//  padding-right: 41.5px;
     &:hover {
     background-color: $color-primary;
     border-color: $color-primary;
@@ -532,18 +469,14 @@ transition: 1s;
         line-height: 130%;
         /* identical to box height, or 22px */
         letter-spacing: 0.06em;
-        /* color-dark-3xl */
         color: $color-dark-3xl;
         width: 261px;
         height: 52px;
         // left: calc(50% - 207px/2 - 126.5px);
-        // bottom: 0px;
-        /* color-primary */
-        background: $color-primary;
-       // border-color: $color-primary;
+         background: $color-primary;
         outline: none; // убирает рамку по умолчанию у кнопок
         border-radius: 100px;
-        margin-top: 30px; //60px ?
+        margin-top: 30px; 
         cursor: pointer;
         transition: 1s;
         border-style: none; // убирает рамку по умолчанию у кнопок
@@ -631,26 +564,9 @@ margin-top: 30px;
 color: $color-dark-l;   
 }
 
-//  .help-icon >* {
-//                 flex: 1 1 120px;
-//             }
 
-// .help-container {
-//   display: grid;
-//   max-width: 1026px;
-//   align-items: center; /* выравнивает строки по центру */
-//   justify-items: center; /* выравнивает столбцы по центру */
-//   margin: auto;
-//   /* border: 2px solid salmon; */
-//   border-radius: 5px;
-//   background-color: transparent;
-//   /* grid-template-columns: 320px 320px 320px;  /* ряды и столбцы в нашей сетке */
-//   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-//   /* grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
-//   grid-template-rows: 113px; /* ряды и столбцы в нашей сетке */
-//   grid-column-gap: 120px;  /* Зазоры (Gutters) или аллеи (alleys) между грид-ячейками вертикал */
-//   //grid-row-gap: 30px; /* Зазоры (Gutters) или аллеи (alleys) между грид-ячейками горизонт */                
-//             }
+
+/* SECTION DONATION */
 
 .donation-container {
     display: flex;
@@ -659,7 +575,6 @@ color: $color-dark-l;
 .donation-dog {
     margin: 89px 30px 110px 141px;  //неправильные размеры в макете
 }
-
 
 .heading-donation {
     margin-top: 80px;
@@ -673,11 +588,8 @@ font-weight: 400;
 font-size: 15px;
 line-height: 110%;
 /* identical to box height, or 17px */
-// display: flex;
-// align-items: center;
 letter-spacing: 0.06em;
-/* color-dark-l */
-color: $color-dark-l
+color: $color-dark-l;
 }
 
 .subheading-donation {
@@ -699,6 +611,10 @@ border-style: solid;
 border-color: $color-primary;
 cursor: pointer;
 transition: 1s;
+&:hover {
+    background: $color-light-s;
+    border-color: $color-primary;
+}
 }
 
 .donation-description  {
@@ -708,16 +624,17 @@ transition: 1s;
     font-size: 12px;
     line-height: 18px;
     /* or 150% */
-    // display: flex;
-    // align-items: center;
-        /* color-dark-m */
-        color: $color-dark-m;       
+    color: $color-dark-m;       
 margin-top: 20px;   
 margin-right: 182px; 
 }
 
+
+/*! FOOTER */
+
 .footer-wrapper {
-    background-image: $color-gradient;
+    background: url(../../assets/img/noise_transparent@2x.png), 
+    $color-gradient;
     // margin-top: 40px;
 }
 
@@ -754,7 +671,6 @@ color: $color-primary;
 text-decoration: none;
 margin-top: 44px;
 padding-right: 26px;  
-
 } 
 
 .shelter-phone {
@@ -779,7 +695,7 @@ padding-right: 26px;
 .locations {
    // display: flex;
     margin-top: 56px;
-    margin-right: 160px; //200px было!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    margin-right: 160px; 
    // text-align: center;
     color: $color-light-xl;
 }
