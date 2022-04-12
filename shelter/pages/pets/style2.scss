@@ -192,8 +192,8 @@ padding-top: 8px;
        background-color: $color-light-xl;
        .button-learn-more {
                 //  card-hover 
-        background-color: $color-primary;
-        border-color: $color-primary;
+                background-color: $color-primary-light;
+                border-color: $color-primary-light;
       }
       }
   }
@@ -273,8 +273,8 @@ cursor: pointer;
 transition: 1s;
 margin-bottom: 30px; // чтобы карточку удлинить снизу
   &:hover {
-  background-color: $color-primary;
-  border-color: $color-primary;
+    background-color: $color-primary-light;
+    border-color: $color-primary-light;
 }
   }
 

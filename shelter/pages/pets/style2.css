@@ -162,8 +162,8 @@ span {
   background-color: #FFFFFF;
 }
 .card-container:hover .button-learn-more {
-  background-color: #F1CDB3;
-  border-color: #F1CDB3;
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
 }
 
 .card-1 {
@@ -249,8 +249,8 @@ span {
   margin-bottom: 30px;
 }
 .button-learn-more:hover {
-  background-color: #F1CDB3;
-  border-color: #F1CDB3;
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
 }
 
 .navigation {
