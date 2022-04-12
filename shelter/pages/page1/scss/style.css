@@ -177,8 +177,8 @@ h2 {
   transition: 1s;
 }
 .button-primary:hover {
-  background: #FAFAFA;
-  border-color: #F1CDB3;
+  background: #FDDCC4;
+  border-color: #FDDCC4;
 }
 
 .about-wrapper {
@@ -266,7 +266,6 @@ span {
 
 .slider-container {
   margin-top: 60px;
-  margin-bottom: 60px;
   display: flex;
 }
 .slider-container .button-arrow-left {
@@ -278,12 +277,13 @@ span {
   position: relative;
   top: 192px;
   right: 52px;
+  color: #F6F6F6;
   cursor: pointer;
   transition: 0.5s;
 }
 .slider-container .button-arrow-left:hover {
-  background-color: #F1CDB3;
-  border-color: #F1CDB3;
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
 }
 .slider-container .button-arrow-right {
   width: 52px;
@@ -294,73 +294,45 @@ span {
   position: relative;
   top: 192px;
   left: 53px;
+  color: #F6F6F6;
   cursor: pointer;
   transition: 0.5s;
 }
 .slider-container .button-arrow-right:hover {
-  background-color: #F1CDB3;
-  border-color: #F1CDB3;
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
 }
 
-.card-container1 {
+.card-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #FAFAFA;
   border-radius: 9px;
-  margin-right: 90px;
   cursor: pointer;
 }
-.card-container1:hover {
+.card-container:hover {
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
   background-color: #FFFFFF;
 }
-.card-container1:hover .button-learn-more {
+.card-container:hover .button-learn-more {
   /* card-hover */
-  background-color: #F1CDB3;
-  border-color: #F1CDB3;
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
 }
 
-.card-container1:hover .card-katrine {
-  background-color: #B2B2B2;
-}
-
-.card-container2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #FAFAFA;
-  border-radius: 9px;
+.card-1 {
   margin-right: 90px;
-  cursor: pointer;
-}
-.card-container2:hover {
-  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-  background-color: #FFFFFF;
-}
-.card-container2:hover .button-learn-more {
-  background: #F1CDB3;
-  border-color: #F1CDB3;
 }
 
-.card-container3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #FAFAFA;
-  border-radius: 9px;
-  cursor: pointer;
+.card-2 {
+  margin-right: 90px;
 }
-.card-container3:hover {
-  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-  background-color: #FFFFFF;
-}
-.card-container3:hover .button-learn-more {
-  background: #F1CDB3;
-  border-color: #F1CDB3;
+
+.card {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
 }
 
 .card-jennifer {
@@ -400,10 +372,11 @@ span {
   outline: none;
   cursor: pointer;
   transition: 1s;
+  margin-bottom: 30px;
 }
 .button-learn-more:hover {
-  background-color: #F1CDB3;
-  border-color: #F1CDB3;
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
 }
 
 .button-get-to {
@@ -420,15 +393,15 @@ span {
   background: #F1CDB3;
   outline: none;
   border-radius: 100px;
-  margin-top: 30px;
+  margin-top: 60px;
   cursor: pointer;
   transition: 1s;
   border-style: none;
   border-color: #F1CDB3;
 }
 .button-get-to:hover {
-  background: #FAFAFA;
-  border-color: #F1CDB3;
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
   outline: none;
   border-style: solid;
 }
@@ -515,6 +488,10 @@ h4 {
 }
 
 /* SECTION DONATION */
+.donation-wrapper {
+  background-color: #F6F6F6;
+}
+
 .donation-container {
   display: flex;
 }
@@ -560,8 +537,8 @@ h5 {
   transition: 1s;
 }
 .button-donation:hover {
-  background: #FAFAFA;
-  border-color: #F1CDB3;
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
 }
 
 .donation-description {

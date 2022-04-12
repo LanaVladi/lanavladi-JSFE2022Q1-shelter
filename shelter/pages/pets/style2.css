@@ -140,7 +140,7 @@ span {
 }
 
 .cards-container {
-  margin-top: 29px;
+  margin-top: 45px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -188,24 +188,29 @@ span {
 .card-5 {
   margin-right: 40px;
   margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .card-6 {
   margin-right: 40px;
   margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .card-7 {
   margin-right: 40px;
   margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .card-8 {
   margin-top: 30px;
+  margin-bottom: 15px;
 }
 
-.card-container:hover .card-1 {
-  background-color: #B2B2B2;
+.card {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
 }
 
 .pets-name {
@@ -241,6 +246,7 @@ span {
   outline: none;
   cursor: pointer;
   transition: 1s;
+  margin-bottom: 30px;
 }
 .button-learn-more:hover {
   background-color: #F1CDB3;
@@ -249,7 +255,7 @@ span {
 
 .navigation {
   display: flex;
-  margin-top: 76px;
+  margin-top: 45px;
   margin-left: 430px;
   margin-right: 430px;
 }
@@ -260,13 +266,13 @@ span {
   box-sizing: border-box;
   border-radius: 100px;
   border: 2px solid;
-  cursor: pointer;
   transition: 0.5s;
   border-style: none;
 }
 
 .btn-arrow-left-2x {
   border: 2px solid #CDCDCD;
+  margin-left: 0px;
 }
 
 .btn-arrow-left-1x {
@@ -288,6 +294,7 @@ span {
 .btn-arrow-right-1x {
   border: 2px solid #F1CDB3;
   background: #FAFAFA;
+  cursor: pointer;
 }
 .btn-arrow-right-1x:hover {
   background-color: #F1CDB3;
@@ -299,6 +306,8 @@ span {
 .btn-arrow-right-2x {
   border: 2px solid #F1CDB3;
   background: #FAFAFA;
+  margin-right: 0px;
+  cursor: pointer;
 }
 .btn-arrow-right-2x:hover {
   background-color: #F1CDB3;

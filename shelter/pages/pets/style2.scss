@@ -15,6 +15,7 @@ $color-light-s: #FAFAFA;
 $color-light-l: #F6F6F6;
 $color-light-xl: #FFFFFF;
 $color-primary: #F1CDB3;
+$color-primary-light: #FDDCC4;
 $color-dark-s: #CDCDCD;
 $color-dark-m: #B2B2B2;
 $color-dark-l: #545454;
@@ -170,7 +171,7 @@ padding-top: 8px;
   }
 
   .cards-container {
-      margin-top: 29px;
+      margin-top: 45px;
       display: flex;
       flex-wrap: wrap;
   }
@@ -215,27 +216,27 @@ padding-top: 8px;
   .card-5 {
     margin-right: 40px;
     margin-top: 30px;
+    margin-bottom: 15px;
   }
   .card-6 {
     margin-right: 40px;
     margin-top: 30px;
+    margin-bottom: 15px;
   }
   .card-7 {
     margin-right: 40px;
     margin-top: 30px;
+    margin-bottom: 15px;
   }
   .card-8 {
     margin-top: 30px;
+    margin-bottom: 15px;
   }
 
-  
-  .card-container {
-      &:hover {
-          .card-1 {
-              background-color: $color-dark-m; 
-          }
-      }
-  }
+  .card {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
 
 .pets-name {
 font-family: 'Georgia';
@@ -270,6 +271,7 @@ color: $color-dark-3xl;
 outline: none; // убирает рамку по умолчанию у кнопок
 cursor: pointer;
 transition: 1s;
+margin-bottom: 30px; // чтобы карточку удлинить снизу
   &:hover {
   background-color: $color-primary;
   border-color: $color-primary;
@@ -278,7 +280,7 @@ transition: 1s;
 
 .navigation {
   display: flex;
-  margin-top: 76px;
+  margin-top: 45px;
   margin-left: 430px;
   margin-right: 430px;
 }
@@ -288,13 +290,14 @@ transition: 1s;
     box-sizing: border-box;
     border-radius: 100px;
     border: 2px solid;
-    cursor: pointer;
     transition: 0.5s;
     border-style: none;
+    // cursor: pointer; //удалила, чтобы левые были неинтерактивными
     }
 
 .btn-arrow-left-2x {
 border: 2px solid $color-dark-s;
+margin-left: 0px;
 //border-style: none;
 // border: 2px solid $color-primary;
 //   &:hover {
@@ -329,6 +332,7 @@ border: 2px solid $color-dark-s;
 .btn-arrow-right-1x {
   border: 2px solid $color-primary;
   background: $color-light-s;
+  cursor: pointer;
   &:hover {
     background-color: $color-primary;
     border-color: $color-primary;  
@@ -340,6 +344,8 @@ border: 2px solid $color-dark-s;
 .btn-arrow-right-2x {
   border: 2px solid $color-primary;
   background: $color-light-s;
+  margin-right: 0px;
+  cursor: pointer;
   &:hover {
     background-color: $color-primary;
     border-color: $color-primary;  
