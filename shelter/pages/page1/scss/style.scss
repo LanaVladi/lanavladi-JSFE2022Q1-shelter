@@ -10,7 +10,8 @@
     font-weight: 400;
 }   
 
-$color-gradient: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+$color-gradient: radial-gradient((100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20);
+// radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 $color-light-s: #FAFAFA;
 $color-light-l: #F6F6F6;
 $color-light-xl: #FFFFFF;
@@ -43,7 +44,9 @@ body {
 
 .start-screen {
     // background-image: $color-gradient;
-    background: url(../../assets/img/noise_transparent@2x.png), $color-gradient;
+    background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
+//    background: url(../../../assets/img/noise_transparent@2x.png), 
+//    radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
     position: relative;
     z-index: 10;
 }
@@ -73,7 +76,7 @@ body {
 }
 
 .header {
-    background: url(../../assets/img/noise_transparent@2x.png), $color-gradient;
+    background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
     z-index: 1;
     position: relative;
     padding: 60px 0 0 0;
@@ -604,8 +607,7 @@ margin-right: 182px;
 /*! FOOTER */
 
 .footer-wrapper {
-    background: url(../../assets/img/noise_transparent@2x.png), 
-    $color-gradient;
+    background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
     // margin-top: 40px;
 }
 
