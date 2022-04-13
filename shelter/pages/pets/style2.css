@@ -297,8 +297,8 @@ span {
   cursor: pointer;
 }
 .btn-arrow-right-1x:hover {
-  background-color: #F1CDB3;
-  border-color: #F1CDB3;
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
   outline: none;
   border-style: solid;
 }
@@ -310,15 +310,15 @@ span {
   cursor: pointer;
 }
 .btn-arrow-right-2x:hover {
-  background-color: #F1CDB3;
-  border-color: #F1CDB3;
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
   outline: none;
   border-style: solid;
 }
 
 /*! FOOTER */
 .footer-wrapper {
-  background: url(../../assets/img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+  background: url(./../../assets/img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%, #211F20);
 }
 
 .footer-container {

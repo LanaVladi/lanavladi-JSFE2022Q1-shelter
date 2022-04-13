@@ -10,7 +10,7 @@
   font-weight: 400;
 }   
 
-$color-gradient: radial-gradient((100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%));
+$color-gradient: radial-gradient((100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20);
 $color-light-s: #FAFAFA;
 $color-light-l: #F6F6F6;
 $color-light-xl: #FFFFFF;
@@ -334,8 +334,8 @@ border: 2px solid $color-dark-s;
   background: $color-light-s;
   cursor: pointer;
   &:hover {
-    background-color: $color-primary;
-    border-color: $color-primary;  
+    background-color: $color-primary-light;
+    border-color: $color-primary-light;
     outline: none; 
     border-style: solid; 
 }
@@ -347,8 +347,8 @@ border: 2px solid $color-dark-s;
   margin-right: 0px;
   cursor: pointer;
   &:hover {
-    background-color: $color-primary;
-    border-color: $color-primary;  
+    background-color: $color-primary-light;
+    border-color: $color-primary-light;
     outline: none; 
     border-style: solid; 
 }
@@ -357,8 +357,7 @@ border: 2px solid $color-dark-s;
 /*! FOOTER */
 
 .footer-wrapper {
-  background: url(../../assets/img/noise_transparent@2x.png), 
-  $color-gradient;
+  background: url(./../../assets/img/noise_transparent@2x.png), $color-gradient;
 }
 
 .footer-container {
