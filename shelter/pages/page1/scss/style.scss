@@ -43,10 +43,16 @@ body {
     flex-direction: column;
 }
 
-.start-screen {
+.wrapper-for-bg {
     background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
-    padding-top: 120px; // для выравнивания фона между header и start-screen
+    height: 908px;
 }
+
+
+// .start-screen {
+//     //background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
+//     //padding-top: 120px; // для выравнивания фона между header и start-screen
+// }
 
 .start-screen-wrapper {
     display: flex;
@@ -54,12 +60,6 @@ body {
 }
 
 .start-screen-content{
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // text-align: start;
-    // justify-content: flex-start;
-    // flex-wrap: wrap;
     padding-top: 163px;
     padding-right: 42px;
    
@@ -74,29 +74,22 @@ body {
 
 .header {
    // background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
-    position: absolute; // убрала bg и добавила position: absolute; для выравнивания фона. 
+    //position: absolute; // убрала bg и добавила position: absolute; для выравнивания фона. 
     //добавила padding-left: 175px; в header и padding-top: 120px; в start-screen
-    padding: 60px 0 0 175px;
+    //padding: 60px 0 0 175px;
+    padding: 60px 0 0 0;
 }
 
 .header-wrapper {
     position: relative;
     display: flex;
     align-items: center;
-    //text-align: start;
-    //justify-content: flex-start;
-    //padding-top: 60px;
-    // margin-top: 30px;
-    // margin-bottom: 30px;
 }
 
 .logo-container {
-    // padding-top: 5px; 
-      display: flex;
-    //   flex-wrap: nowrap;
-      flex-direction: column;
-     // text-align: start;
-      padding-right: 490px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 490px;
 }
 
 h1 a {
@@ -105,7 +98,7 @@ h1 a {
     font-weight: 400;
     font-size: 32px;
     line-height: 110%;
-    /* or 35px */
+    // or 35px 
     letter-spacing: 0.06em;
     color: $color-primary;
     list-style: none;
@@ -118,7 +111,6 @@ font-style: normal;
 font-weight: 400;
 font-size: 13px;
 line-height: 15px;
-/* identical to box height */
 letter-spacing: 0.1em;
 color: $color-light-xl;
 padding-top: 8px;
@@ -134,7 +126,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 15px;
 line-height: 160%;
-/* identical to box height, or 24px */
+// identical to box height, or 24px 
 color: $color-light-s;
 // text-decoration: underline;
 display: inline; //делает нижнее подчеркивание
@@ -150,7 +142,7 @@ line-height: 160%;
 list-style: none;
 text-decoration: none;
 padding-left: 35px;
-/* identical to box height, or 24px */
+// identical to box height, or 24px
 }
 
 
@@ -170,7 +162,7 @@ h2 {
     font-weight: 400;
     font-size: 44px;
     line-height: 130%;
-    /* or 57px */
+    // or 57px
     color: $color-light-xl;
 }
 
@@ -180,7 +172,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 15px;
 line-height: 160%;
-/* or 24px */
+// or 24px 
 color: $color-dark-s;
 padding-right: 150px;
 }
@@ -191,7 +183,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 15px;
 line-height: 160%;
-/* or 24px */
+// or 24px 
 color: $color-dark-s;
 padding-top: 42px;
 }
@@ -202,9 +194,8 @@ font-style: normal;
 font-weight: 400;
 font-size: 17px;
 line-height: 130%;
-/* identical to box height, or 22px */
+// identical to box height, or 22px 
 letter-spacing: 0.06em;
-/* color-dark-3xl */
 color: $color-dark-3xl;
 width: 207px;
 height: 52px;
@@ -258,7 +249,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 35px;
 line-height: 130%;
-/* or 45px */
+// or 45px 
 letter-spacing: 0.06em;
 }
 
@@ -273,7 +264,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 15px;
 line-height: 160%;
-/* or 24px */
+// or 24px 
 color: $color-dark-xl;
 padding-top: 25px;
 }
@@ -284,7 +275,7 @@ padding-top: 25px;
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    /* or 24px */
+    // or 24px 
     color: $color-dark-xl;
     padding-top: 25px;
     }
@@ -361,6 +352,7 @@ padding-top: 25px;
         background-color: $color-light-s;
         border-radius: 9px;
         cursor: pointer;
+        transition: 0.3s;
         &:hover {
          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
          background-color: $color-light-xl;
@@ -396,7 +388,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 23px;
-/* identical to box height */
+// identical to box height 
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
@@ -417,7 +409,7 @@ padding-bottom: 30px;
 font-weight: 400;
 font-size: 17px;
 line-height: 130%;
-/* identical to box height, or 22px */
+// identical to box height, or 22px 
 letter-spacing: 0.06em;
 color: $color-dark-3xl;
 outline: none; // убирает рамку по умолчанию у кнопок
@@ -436,7 +428,7 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
         font-weight: 400;
         font-size: 17px;
         line-height: 130%;
-        /* identical to box height, or 22px */
+        // identical to box height, or 22px 
         letter-spacing: 0.06em;
         color: $color-dark-3xl;
         width: 261px;
@@ -525,7 +517,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 115%;
-/* identical to box height, or 23px */
+// identical to box height, or 23px 
 letter-spacing: 0.06em;
 }
 .icon-name {
@@ -558,7 +550,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 15px;
 line-height: 110%;
-/* identical to box height, or 17px */
+// identical to box height, or 17px 
 letter-spacing: 0.06em;
 color: $color-dark-l;
 }
@@ -594,7 +586,7 @@ transition: 1s;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    /* or 150% */
+    // or 150% 
     color: $color-dark-m;       
 margin-top: 20px;   
 margin-right: 182px; 
