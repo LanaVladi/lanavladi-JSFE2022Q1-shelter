@@ -637,7 +637,7 @@ h5 {
 }
 
 /* MEDIA QUERIES*/
-@media (min-width: 768px) and (max-width: 1279.9px) {
+@media (max-width: 768px) {
   .header {
     padding: 30px 0 0 0;
   }
@@ -669,7 +669,6 @@ h5 {
     flex-direction: column;
     padding-left: 99px;
     padding-right: 100px;
-    width: 100vh;
   }
 
   .start-screen-content {
@@ -685,5 +684,20 @@ h5 {
     height: 593px;
     margin-left: 70px;
     margin-top: 99px;
+  }
+
+  /*  SECTION ABOUT */
+  .about-wrapper {
+    flex-direction: column-reverse;
+    margin-right: 166px;
+  }
+
+  .about-pets {
+    margin-top: 80px;
+    margin-left: 234px;
+  }
+
+  .content-pets {
+    margin-right: 169px;
   }
 }/*# sourceMappingURL=style.css.map */

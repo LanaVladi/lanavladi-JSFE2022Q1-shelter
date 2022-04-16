@@ -1,4 +1,5 @@
-@media (min-width: 768px) and (max-width: 1279.9px) {
+// @media (min-width: 768px) and (max-width: 1279.9px) {
+  @media (max-width: 768px) {
   .header {
    padding: 30px 0 0 0;
    }
@@ -28,12 +29,10 @@
   /* START SCREEN */
 
   .start-screen-wrapper {
-      // padding-top: 60px;
-      display: flex;
-      flex-direction: column;
-  padding-left: 99px;
-  padding-right: 100px;
-  width: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 99px;
+    padding-right: 100px;
   }
   
   .start-screen-content{
@@ -49,90 +48,26 @@
    .start-screen-puppy {
     width: 569px;
      height: 593px;
-    //  padding-left: 126px;
-    //  padding-top: 100px;
     margin-left: 70px; // от своего контейнера
     margin-top: 99px; // 100px  не идеально ровно. 
-   //margin-right: 30px // в принципе не нужен
    }
-  // .heading-start-screen {
-  //   padding-left: 55px;
-  //   padding-right: 150px;
-  // }
-  
-  // .subheading-start-screen {
-  //   padding-left: 55px;
-  //   padding-right: 54px;
-  // }
 
-  //   .button-primary {
-  //    margin-left: 126px; ============ возможно будут нужны, но без них центровка отличная
-  //    margin-right: 127px;
-  // }
+   /*  SECTION ABOUT */
+
+  .about-wrapper {
+    flex-direction: column-reverse;
+    margin-right: 166px;
+  }
   
-//   .about-wrapper {
-//       display: flex;
-//       flex-direction: row;
-//       padding-top: 80px;
-//       padding-bottom: 100px;
-//       // margin: 80px 0px 100px 0px;
-//       background: $color-light-xl;
-//   }
+  .about-pets {
+    margin-top: 80px;
+    margin-left: 234px;
+  }
   
-//   .about-pets {
-//       width: 300px;
-//       height: 408px;
-//       margin-left: 175px;
-//       margin-right: 120px;
-//   }
-  
-//   .content-pets {
-//       width: 430px;
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-//       justify-content: center;
-//       text-align: start;
-//       //margin: 14px 175px 14px 120px;
-//       margin-right: 175px;
-//   }
-  
-//   h3 {
-//   font-family: 'Georgia';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 35px;
-//   line-height: 130%;
-//   // or 45px 
-//   letter-spacing: 0.06em;
-//   }
-  
-//   .heading-about-pets {
-//   padding-right: 60px;
-//   color: $color-dark-l;
-//   }
-  
-//   .subheading-pets1 {
-//   font-family: 'Arial';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 15px;
-//   line-height: 160%;
-//   // or 24px 
-//   color: $color-dark-xl;
-//   padding-top: 25px;
-//   }
-  
-//   .subheading-pets2 {
-//       font-family: 'Arial';
-//       font-style: normal;
-//       font-weight: 400;
-//       font-size: 15px;
-//       line-height: 160%;
-//       // or 24px 
-//       color: $color-dark-xl;
-//       padding-top: 25px;
-//       }
+  .content-pets {
+    margin-right: 169px;
+  }
+
   
 //       /* !SECTION OUR PETS */
   
