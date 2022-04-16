@@ -807,7 +807,43 @@ h5 {
     margin-right: 225px;
   }
 
+  .credit-card {
+    margin-left: 3px;
+  }
+
   .donation-description {
     margin-right: 194px;
+  }
+
+  /*! FOOTER */
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .contacts {
+    margin-top: 30px;
+    margin-right: 60px;
+    margin-left: 64px;
+  }
+
+  .locations {
+    margin-top: 30px;
+    margin-right: 65px;
+  }
+
+  .shelter-location-1 {
+    margin-top: 33px;
+  }
+
+  .location-1 {
+    margin-left: 0px;
+  }
+
+  .location-1-icon {
+    margin-left: -8px;
+  }
+
+  .footer-puppy {
+    margin-top: 60px;
   }
 }/*# sourceMappingURL=style.css.map */

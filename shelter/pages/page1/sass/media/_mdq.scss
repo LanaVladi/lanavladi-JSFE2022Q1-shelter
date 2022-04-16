@@ -175,116 +175,45 @@
   .button-donation {
    margin-right: 225px; 
   }
+
+  .credit-card {
+    margin-left: 3px;
+  }
   
   .donation-description  {
    margin-right: 194px; 
   }
   
   
-//   /*! FOOTER */
+   /*! FOOTER */
   
-//   .footer-wrapper {
-//       background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
-//   }
+  .footer-container {
+    flex-wrap: wrap;
+  }
   
-//   .footer-container {
-//       display: flex;
-//      // margin-top: 40px;
-//   }
-  
-//   .contacts {
-//       //display: flex;
-//       //flex-direction: column;
-//       margin-top: 56px;
-//       margin-right: 160px;
-//       //text-align: center;
-//       color: $color-light-xl;
-//   }
-  
-//   .title-contacts {
-//       display: flex;
-//   }
-  
-//   .shelter-mail {
-//       display: flex;
-//   }
-//   .mail-icon {
-//       padding-top: 40px;   
-//       padding-right: 20px;
-//       color: $color-primary;
-//   }
-  
-//   .mail {
-//   display: block;
-//   color: $color-primary;
-//   text-decoration: none;
-//   margin-top: 44px;
-//   padding-right: 26px;  
-//   } 
-  
-//   .shelter-phone {
-//       display: flex;  
-//   }
-  
-//   .phone-icon {
-//       padding-top: 40px;   
-//       padding-right: 20px;
-//       color: $color-primary;
-//   }
-  
-//   .phone {
-//       display: block;
-//       color: $color-primary;
-//       text-decoration: none;
-//       margin-top: 44px;
-//       margin-right: 38px;
-//   }
-  
-  
-//   .locations {
-//      // display: flex;
-//       margin-top: 56px;
-//       margin-right: 160px; 
-//      // text-align: center;
-//       color: $color-light-xl;
-//   }
-  
-//   .title-locations {
-//       display: flex;
-//   }
-  
-//   .shelter-location-1 {
-//       display: flex;
-//       margin-top: 34px;
-//   }
-  
-//   .location-1 {
-//       display: block;
-//       color: $color-primary;
-//       text-decoration: none;
-//       margin-left: 10px;
-//   }
-//   .location-1-icon {
-//       //margin-right: 20px;
-//       margin-top: 5px;
-//   }
-//   .shelter-location-2 {
-//       display: flex;
-//       margin-top: 35px;
-//       margin-right: 31px;
-//   }
-//   .location-2 {
-//       display: block;
-//       color: $color-primary;
-//       text-decoration: none;
-//       margin-left: 20px;
-//   }
-//   .location-2-icon {
-//       //margin-right: 20px;
-//       margin-top: -5px;
-//   }
-//   .footer-puppy { 
-//        margin-top: 40px;
-//   }
+  .contacts {
+      margin-top: 30px;
+      margin-right: 60px;
+      margin-left: 64px;
+  }
+       
+  .locations {
+      margin-top: 30px;
+      margin-right: 65px; 
+  }
+
+  .shelter-location-1 {
+   margin-top: 33px;
+}
+
+.location-1 {
+  margin-left: 0px;
+}
+.location-1-icon {
+  margin-left: -8px;
+}
+  .footer-puppy { 
+       margin-top: 60px;
+  }
   
  }
