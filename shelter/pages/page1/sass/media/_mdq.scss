@@ -1,0 +1,556 @@
+@media (min-width: 768px) and (max-width: 1279.9px) {
+  .header {
+   padding: 30px 0 0 0;
+   }
+
+ 
+  .wrapper {
+     max-width: $tablet-width; // 768px - 100vw 
+      margin: 0 auto;
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+
+  .wrapper-for-bg {
+      height: 1165px;
+      max-width: $tablet-width;
+   }
+
+   .header-wrapper {
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+   
+  .logo-container {
+      padding-right: 0px;
+  }
+
+  /* START SCREEN */
+
+  .start-screen-wrapper {
+      // padding-top: 60px;
+      display: flex;
+      flex-direction: column;
+  padding-left: 99px;
+  padding-right: 100px;
+  width: 100vh;
+  }
+  
+  .start-screen-content{
+    display: flex;
+    flex-direction: column;
+      padding-top: 0px;
+      padding-left: 55px;
+      padding-right: 54px;
+      // margin-left: 154px;
+      // margin-right: 154px;
+  }
+  
+   .start-screen-puppy {
+    width: 569px;
+     height: 593px;
+    //  padding-left: 126px;
+    //  padding-top: 100px;
+    margin-left: 70px; // от своего контейнера
+    margin-top: 99px; // 100px  не идеально ровно. 
+   //margin-right: 30px // в принципе не нужен
+   }
+  // .heading-start-screen {
+  //   padding-left: 55px;
+  //   padding-right: 150px;
+  // }
+  
+  // .subheading-start-screen {
+  //   padding-left: 55px;
+  //   padding-right: 54px;
+  // }
+
+  //   .button-primary {
+  //    margin-left: 126px; ============ возможно будут нужны, но без них центровка отличная
+  //    margin-right: 127px;
+  // }
+  
+//   .about-wrapper {
+//       display: flex;
+//       flex-direction: row;
+//       padding-top: 80px;
+//       padding-bottom: 100px;
+//       // margin: 80px 0px 100px 0px;
+//       background: $color-light-xl;
+//   }
+  
+//   .about-pets {
+//       width: 300px;
+//       height: 408px;
+//       margin-left: 175px;
+//       margin-right: 120px;
+//   }
+  
+//   .content-pets {
+//       width: 430px;
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       justify-content: center;
+//       text-align: start;
+//       //margin: 14px 175px 14px 120px;
+//       margin-right: 175px;
+//   }
+  
+//   h3 {
+//   font-family: 'Georgia';
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 35px;
+//   line-height: 130%;
+//   // or 45px 
+//   letter-spacing: 0.06em;
+//   }
+  
+//   .heading-about-pets {
+//   padding-right: 60px;
+//   color: $color-dark-l;
+//   }
+  
+//   .subheading-pets1 {
+//   font-family: 'Arial';
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 15px;
+//   line-height: 160%;
+//   // or 24px 
+//   color: $color-dark-xl;
+//   padding-top: 25px;
+//   }
+  
+//   .subheading-pets2 {
+//       font-family: 'Arial';
+//       font-style: normal;
+//       font-weight: 400;
+//       font-size: 15px;
+//       line-height: 160%;
+//       // or 24px 
+//       color: $color-dark-xl;
+//       padding-top: 25px;
+//       }
+  
+//       /* !SECTION OUR PETS */
+  
+//       .ourpets-wrapper {
+//           display: flex;
+//           flex-direction: column;
+//           padding-top: 80px;
+//           padding-bottom: 100px;
+//           background: $color-light-l;
+//       }
+  
+//       .heading-our-pets {
+//        display: flex;
+//       text-align: center;
+//       color: $color-dark-l;
+//       margin-right: 400px;
+//       margin-left: 400px;
+//       //Здесь можно поставить max-width: 400: margin: 0 auto;
+//       }
+  
+//       span {
+//           display: block;
+//       }
+  
+//       .slider-container {
+//           margin-top: 60px;
+//           // margin-bottom: 60px;
+//           display: flex;
+  
+//           .button-arrow-left {
+//           width: 52px;
+//           height: 52px;
+//           border: 2px solid $color-primary;
+//           box-sizing: border-box;
+//           border-radius: 100px;
+//           position: relative;
+//           top: 192px;
+//           right: 52px;
+//           color: $color-light-l;
+//           cursor: pointer;
+//           transition: 0.5s;
+//           &:hover {
+//               background-color: $color-primary-light;
+//               border-color: $color-primary-light;
+//           }
+//           }
+//           .button-arrow-right {
+//               width: 52px;
+//               height: 52px;
+//               border: 2px solid $color-primary;
+//               box-sizing: border-box;
+//               border-radius: 100px;
+//               position: relative;
+//               top: 192px;
+//               left: 53px;
+//               color: $color-light-l;
+//               cursor: pointer;
+//               transition: 0.5s;
+//               &:hover {
+//                   background-color: $color-primary-light;
+//                   border-color: $color-primary-light;
+//               }
+//               }
+//       }
+  
+//       .card-container {
+//           display: flex;
+//           flex-direction: column;
+//           align-items: center;
+//           justify-content: center;
+//           background-color: $color-light-s;
+//           border-radius: 9px;
+//           cursor: pointer;
+//           transition: 0.3s;
+//           &:hover {
+//            box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+//            background-color: $color-light-xl;
+//            .button-learn-more {
+//                     /* card-hover */
+//                     background-color: $color-primary-light;
+//                     border-color: $color-primary-light;
+//           }
+//           }
+//       }
+  
+//       .card-1 {
+//           margin-right: 90px;
+//       }
+      
+//      .card-2 {
+//          margin-right: 90px;
+//       }
+  
+//       .card {
+//           border-top-left-radius: 9px;
+//           border-top-right-radius: 9px;
+//       }
+     
+//          .card-jennifer {
+//          // margin-right: 90px;
+//           position: relative; //для позиционирования стрелок
+//       }
+  
+//   .pets-name {
+//   font-family: 'Georgia';
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 20px;
+//   line-height: 23px;
+//   // identical to box height 
+//   align-items: center;
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   color: $color-dark-l;
+//   padding-top: 30px;
+//   padding-bottom: 30px;
+//       }
+  
+//   .button-learn-more {
+//       border: 2px solid $color-primary;
+//       box-sizing: border-box;
+//       border-radius: 100px;
+//       width: 187px;
+//       height: 52px;        
+//       background-color: $color-light-s;
+//       font-family: 'Georgia';        
+//       font-style: normal;
+//   font-weight: 400;
+//   font-size: 17px;
+//   line-height: 130%;
+//   // identical to box height, or 22px 
+//   letter-spacing: 0.06em;
+//   color: $color-dark-3xl;
+//   outline: none; // убирает рамку по умолчанию у кнопок
+//   cursor: pointer;
+//   transition: 1s;
+//   margin-bottom: 30px; // чтобы карточку удлинить снизу
+//       &:hover {
+//           background-color: $color-primary-light;
+//           border-color: $color-primary-light;
+//   }
+//       }
+  
+//       .button-get-to {
+//           font-family: 'Georgia';
+//           font-style: normal;
+//           font-weight: 400;
+//           font-size: 17px;
+//           line-height: 130%;
+//           // identical to box height, or 22px 
+//           letter-spacing: 0.06em;
+//           color: $color-dark-3xl;
+//           width: 261px;
+//           height: 52px;
+//           // left: calc(50% - 207px/2 - 126.5px);
+//            background: $color-primary;
+//           outline: none; // убирает рамку по умолчанию у кнопок
+//           border-radius: 100px;
+//           margin-top: 60px; 
+//           cursor: pointer;
+//           transition: 1s;
+//           border-style: none; // убирает рамку по умолчанию у кнопок
+//           border-color: $color-primary;
+//           &:hover {
+//               background-color: $color-primary-light;
+//               border-color: $color-primary-light;
+//               outline: none; 
+//               border-style: solid;
+//           }
+//           }
+  
+//           .help-wrapper {
+//               background-color: $color-light-xl;
+//           }
+//           .heading-help {
+//       display: flex;
+//       text-align: center;
+//       margin-right: 445px;
+//       margin-left: 445px;
+//      margin-top: 80px;
+//      color: $color-dark-l;
+//               }
+  
+//               .help-container {
+//                   display: flex;
+//                   flex-direction: row;
+//                   flex-wrap: wrap;
+//                   //max-width: 1026px;
+//                   margin-left: 87px;
+//                   margin-right: 87px;
+//                  // padding-right: 120px;
+//               //    margin-top: 80px;
+//                  margin-bottom: 100px;
+//               }
+  
+//    .help-icon {
+//       display: flex;
+//       flex-direction: column;
+//       flex-wrap: wrap;
+//      // max-width: 1026px;
+//       margin-top: 60px;
+//    }
+//   .icon-2 {
+//       margin-left: 120px;
+//   }
+//   .icon-3 {
+//       margin-left: 120px;
+//   }
+//   .icon-4 {
+//       margin-left: 120px;
+//   }
+//   .icon-5 {
+//       margin-left: 117px; //неправильные размеры в макете
+//       // margin-left: 87px;
+//   }
+//   .icon-6 {
+//       margin-left: 84px;
+//       margin-top: 55px;
+//   }
+//   .icon-7 {
+//       margin-left: 120px;
+//       margin-top: 55px;
+//   }
+//   .icon-8 {
+//       margin-left: 120px;
+//       margin-top: 55px;
+//   }
+//   .icon-9 {
+//       margin-left: 117px; //неправильные размеры в макете
+//       margin-top: 55px;
+//       margin-right: 84px;
+//   }
+//   h4 { 
+//   font-family: 'Georgia';
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 20px;
+//   line-height: 115%;
+//   // identical to box height, or 23px 
+//   letter-spacing: 0.06em;
+//   }
+//   .icon-name {
+//   margin-top: 30px;
+//   color: $color-dark-l;   
+//   }
+  
+  
+  
+//   /* SECTION DONATION */
+//   .donation-wrapper {
+//       background-color: $color-light-l ;
+//   }
+//   .donation-container {
+//       display: flex;
+//   }
+  
+//   .donation-dog {
+//       margin: 89px 30px 110px 141px;  //неправильные размеры в макете
+//   }
+  
+//   .heading-donation {
+//       margin-top: 80px;
+//       color: $color-dark-l;
+//   }
+  
+//   h5 {
+//   font-family: 'Georgia';
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 15px;
+//   line-height: 110%;
+//   // identical to box height, or 17px 
+//   letter-spacing: 0.06em;
+//   color: $color-dark-l;
+//   }
+  
+//   .subheading-donation {
+//       margin-top: 18px; // 20px было по макету 
+//   }
+  
+//   .button-donation {
+//   display: flex;
+//   width: 349px;
+//   height: 43px;
+//   background: $color-primary;
+//   border-radius: 9px;
+//   padding-top: 7px;
+//   padding-left: 10px;
+//   margin-top: 20px;
+//   margin-right: 213px; 
+//   border-style: none; 
+//   border-style: solid;
+//   border-color: $color-primary;
+//   cursor: pointer;
+//   transition: 1s;
+//   &:hover {
+//       background-color: $color-primary-light;
+//       border-color: $color-primary-light;
+//   }
+//   }
+  
+//   .donation-description  {
+//       font-family: 'Arial';
+//       font-style: italic;
+//       font-weight: 400;
+//       font-size: 12px;
+//       line-height: 18px;
+//       // or 150% 
+//       color: $color-dark-m;       
+//   margin-top: 20px;   
+//   margin-right: 182px; 
+//   }
+  
+  
+//   /*! FOOTER */
+  
+//   .footer-wrapper {
+//       background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
+//   }
+  
+//   .footer-container {
+//       display: flex;
+//      // margin-top: 40px;
+//   }
+  
+//   .contacts {
+//       //display: flex;
+//       //flex-direction: column;
+//       margin-top: 56px;
+//       margin-right: 160px;
+//       //text-align: center;
+//       color: $color-light-xl;
+//   }
+  
+//   .title-contacts {
+//       display: flex;
+//   }
+  
+//   .shelter-mail {
+//       display: flex;
+//   }
+//   .mail-icon {
+//       padding-top: 40px;   
+//       padding-right: 20px;
+//       color: $color-primary;
+//   }
+  
+//   .mail {
+//   display: block;
+//   color: $color-primary;
+//   text-decoration: none;
+//   margin-top: 44px;
+//   padding-right: 26px;  
+//   } 
+  
+//   .shelter-phone {
+//       display: flex;  
+//   }
+  
+//   .phone-icon {
+//       padding-top: 40px;   
+//       padding-right: 20px;
+//       color: $color-primary;
+//   }
+  
+//   .phone {
+//       display: block;
+//       color: $color-primary;
+//       text-decoration: none;
+//       margin-top: 44px;
+//       margin-right: 38px;
+//   }
+  
+  
+//   .locations {
+//      // display: flex;
+//       margin-top: 56px;
+//       margin-right: 160px; 
+//      // text-align: center;
+//       color: $color-light-xl;
+//   }
+  
+//   .title-locations {
+//       display: flex;
+//   }
+  
+//   .shelter-location-1 {
+//       display: flex;
+//       margin-top: 34px;
+//   }
+  
+//   .location-1 {
+//       display: block;
+//       color: $color-primary;
+//       text-decoration: none;
+//       margin-left: 10px;
+//   }
+//   .location-1-icon {
+//       //margin-right: 20px;
+//       margin-top: 5px;
+//   }
+//   .shelter-location-2 {
+//       display: flex;
+//       margin-top: 35px;
+//       margin-right: 31px;
+//   }
+//   .location-2 {
+//       display: block;
+//       color: $color-primary;
+//       text-decoration: none;
+//       margin-left: 20px;
+//   }
+//   .location-2-icon {
+//       //margin-right: 20px;
+//       margin-top: -5px;
+//   }
+//   .footer-puppy { 
+//        margin-top: 40px;
+//   }
+  
+ }

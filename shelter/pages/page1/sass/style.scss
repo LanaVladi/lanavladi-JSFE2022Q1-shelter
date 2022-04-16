@@ -11,7 +11,6 @@
 }   
 
 $color-gradient: radial-gradient((100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20);
-// radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 $color-light-s: #FAFAFA;
 $color-light-l: #F6F6F6;
 $color-light-xl: #FFFFFF;
@@ -28,6 +27,7 @@ $font-h1-logo_title: 400 32px 'Georgia', serif;
 $font-h2-logo_subtitle: 400 13px 'Arial', sans-serif;
 
 $content-width: 1280px;
+// $content-width2: 100vw;
 
 $tablet-width: 768px;
 $mobile-width: 320px;
@@ -90,6 +90,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-right: 490px;
+     //padding-right: auto;
 }
 
 h1 a {
@@ -215,6 +216,14 @@ transition: 1s;
     border-color: $color-primary-light;
 }
 }
+
+// .start-screen-puppy {
+// background-image: url(../../../assets/img/start-screen-puppy@2x.png);
+// width: 698px;
+// height: 728px;
+// // background-repeat: no-repeat;
+// // background-position: center 0;
+// }
 
 .about-wrapper {
     display: flex;
@@ -698,3 +707,8 @@ padding-right: 26px;
 .footer-puppy { 
      margin-top: 40px;
 }
+
+/* MEDIA QUERIES*/
+
+@import './media/mdq';
+

@@ -634,4 +634,56 @@ h5 {
 
 .footer-puppy {
   margin-top: 40px;
+}
+
+/* MEDIA QUERIES*/
+@media (min-width: 768px) and (max-width: 1279.9px) {
+  .header {
+    padding: 30px 0 0 0;
+  }
+
+  .wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .wrapper-for-bg {
+    height: 1165px;
+    max-width: 768px;
+  }
+
+  .header-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .logo-container {
+    padding-right: 0px;
+  }
+
+  /* START SCREEN */
+  .start-screen-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 99px;
+    padding-right: 100px;
+    width: 100vh;
+  }
+
+  .start-screen-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-left: 55px;
+    padding-right: 54px;
+  }
+
+  .start-screen-puppy {
+    width: 569px;
+    height: 593px;
+    margin-left: 70px;
+    margin-top: 99px;
+  }
 }/*# sourceMappingURL=style.css.map */
