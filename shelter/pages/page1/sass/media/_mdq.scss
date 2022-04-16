@@ -107,84 +107,56 @@
   
 
           /* SECTION HELP */
-          
-//           .help-wrapper {
-//               background-color: $color-light-xl;
-//           }
-//           .heading-help {
-//       display: flex;
-//       text-align: center;
-//       margin-right: 445px;
-//       margin-left: 445px;
-//      margin-top: 80px;
-//      color: $color-dark-l;
-//               }
+       
+.heading-help {
+  margin-right: 161px;
+  margin-left: 161px;
+}
   
-//               .help-container {
-//                   display: flex;
-//                   flex-direction: row;
-//                   flex-wrap: wrap;
-//                   //max-width: 1026px;
-//                   margin-left: 87px;
-//                   margin-right: 87px;
-//                  // padding-right: 120px;
-//               //    margin-top: 80px;
-//                  margin-bottom: 100px;
-//               }
+ .help-container {
+  margin-left: 69px;
+  margin-right: 69px;
+  }
   
-//    .help-icon {
-//       display: flex;
-//       flex-direction: column;
-//       flex-wrap: wrap;
-//      // max-width: 1026px;
-//       margin-top: 60px;
-//    }
-//   .icon-2 {
-//       margin-left: 120px;
-//   }
-//   .icon-3 {
-//       margin-left: 120px;
-//   }
-//   .icon-4 {
-//       margin-left: 120px;
-//   }
-//   .icon-5 {
-//       margin-left: 117px; //неправильные размеры в макете
-//       // margin-left: 87px;
-//   }
-//   .icon-6 {
-//       margin-left: 84px;
-//       margin-top: 55px;
-//   }
-//   .icon-7 {
-//       margin-left: 120px;
-//       margin-top: 55px;
-//   }
-//   .icon-8 {
-//       margin-left: 120px;
-//       margin-top: 55px;
-//   }
-//   .icon-9 {
-//       margin-left: 117px; //неправильные размеры в макете
-//       margin-top: 55px;
-//       margin-right: 84px;
-//   }
-//   h4 { 
-//   font-family: 'Georgia';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 20px;
-//   line-height: 115%;
-//   // identical to box height, or 23px 
-//   letter-spacing: 0.06em;
-//   }
-//   .icon-name {
-//   margin-top: 30px;
-//   color: $color-dark-l;   
-//   }
-  
-  
-  
+   .help-icon {
+  width: 170px;
+  height: 113px;
+   }
+
+  .icon-1 {
+    margin-left: 0px;
+}
+  .icon-2 {
+      margin-left: 60px;
+  }
+  .icon-3 {
+    margin-left: 60px;
+  }
+  .icon-4 {
+      margin-left: 0px;
+      margin-top: 55px;
+  }
+  .icon-5 {
+    margin-left: 60px; //неправильные размеры в макете
+    margin-top: 55px;
+  }
+  .icon-6 {
+    margin-left: 60px;
+    // margin-top: 55px;
+  }
+  .icon-7 {
+    margin-left: 0px;
+  //     margin-top: 55px;
+   }
+  .icon-8 {
+    margin-left: 60px;
+      // margin-top: 55px;
+  }
+  .icon-9 {
+    margin-left: 60px; 
+    margin-right: 0px;//неправильные размеры в макете
+  }
+ 
 //   /* SECTION DONATION */
 //   .donation-wrapper {
 //       background-color: $color-light-l ;
