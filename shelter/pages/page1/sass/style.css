@@ -785,4 +785,29 @@ h5 {
     margin-left: 60px;
     margin-right: 0px;
   }
+
+  /* SECTION DONATION */
+  .donation-container {
+    flex-direction: column-reverse;
+  }
+
+  .donation-content {
+    margin-left: 194px;
+  }
+
+  .donation-dog {
+    margin: 60px 132px 100px 131px;
+  }
+
+  .subheading-donation {
+    margin-top: 19px;
+  }
+
+  .button-donation {
+    margin-right: 225px;
+  }
+
+  .donation-description {
+    margin-right: 194px;
+  }
 }/*# sourceMappingURL=style.css.map */

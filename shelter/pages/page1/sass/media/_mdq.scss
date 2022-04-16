@@ -98,7 +98,7 @@
      }
 
       .card-3 {
-       display: none; // 3-я карточка не показывается
+       display: none; // 3-я карточка скрыта
      }
   
       .button-get-to {
@@ -137,90 +137,48 @@
       margin-top: 55px;
   }
   .icon-5 {
-    margin-left: 60px; //неправильные размеры в макете
+    margin-left: 60px; 
     margin-top: 55px;
   }
   .icon-6 {
     margin-left: 60px;
-    // margin-top: 55px;
   }
   .icon-7 {
     margin-left: 0px;
-  //     margin-top: 55px;
-   }
+  }
   .icon-8 {
     margin-left: 60px;
-      // margin-top: 55px;
   }
   .icon-9 {
     margin-left: 60px; 
-    margin-right: 0px;//неправильные размеры в макете
+    margin-right: 0px;
   }
  
-//   /* SECTION DONATION */
-//   .donation-wrapper {
-//       background-color: $color-light-l ;
-//   }
-//   .donation-container {
-//       display: flex;
-//   }
+  /* SECTION DONATION */
+ 
+  .donation-container {
+      flex-direction: column-reverse;
+  }
   
-//   .donation-dog {
-//       margin: 89px 30px 110px 141px;  //неправильные размеры в макете
-//   }
+  .donation-content {
+   margin-left: 194px;
+}
+
+  .donation-dog {
+    margin: 60px 132px 100px 131px; 
+  }
   
-//   .heading-donation {
-//       margin-top: 80px;
-//       color: $color-dark-l;
-//   }
+  .subheading-donation {
+      margin-top: 19px; // 20px было по макету 
+  }
   
-//   h5 {
-//   font-family: 'Georgia';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 15px;
-//   line-height: 110%;
-//   // identical to box height, or 17px 
-//   letter-spacing: 0.06em;
-//   color: $color-dark-l;
-//   }
+  .button-donation {
+   margin-right: 225px; 
+  }
   
-//   .subheading-donation {
-//       margin-top: 18px; // 20px было по макету 
-//   }
-  
-//   .button-donation {
-//   display: flex;
-//   width: 349px;
-//   height: 43px;
-//   background: $color-primary;
-//   border-radius: 9px;
-//   padding-top: 7px;
-//   padding-left: 10px;
-//   margin-top: 20px;
-//   margin-right: 213px; 
-//   border-style: none; 
-//   border-style: solid;
-//   border-color: $color-primary;
-//   cursor: pointer;
-//   transition: 1s;
-//   &:hover {
-//       background-color: $color-primary-light;
-//       border-color: $color-primary-light;
-//   }
-//   }
-  
-//   .donation-description  {
-//       font-family: 'Arial';
-//       font-style: italic;
-//       font-weight: 400;
-//       font-size: 12px;
-//       line-height: 18px;
-//       // or 150% 
-//       color: $color-dark-m;       
-//   margin-top: 20px;   
-//   margin-right: 182px; 
-//   }
+  .donation-description  {
+   margin-right: 194px; 
+  }
   
   
 //   /*! FOOTER */
