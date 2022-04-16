@@ -69,176 +69,45 @@
   }
 
   
-//       /* !SECTION OUR PETS */
+      /* !SECTION OUR PETS */
   
-//       .ourpets-wrapper {
-//           display: flex;
-//           flex-direction: column;
-//           padding-top: 80px;
-//           padding-bottom: 100px;
-//           background: $color-light-l;
-//       }
+      .heading-our-pets {
+      margin-right: 0px;
+      margin-left: 0px;
+       }
   
-//       .heading-our-pets {
-//        display: flex;
-//       text-align: center;
-//       color: $color-dark-l;
-//       margin-right: 400px;
-//       margin-left: 400px;
-//       //Здесь можно поставить max-width: 400: margin: 0 auto;
-//       }
-  
-//       span {
-//           display: block;
-//       }
-  
-//       .slider-container {
-//           margin-top: 60px;
-//           // margin-bottom: 60px;
-//           display: flex;
-  
-//           .button-arrow-left {
-//           width: 52px;
-//           height: 52px;
-//           border: 2px solid $color-primary;
-//           box-sizing: border-box;
-//           border-radius: 100px;
-//           position: relative;
-//           top: 192px;
-//           right: 52px;
-//           color: $color-light-l;
-//           cursor: pointer;
-//           transition: 0.5s;
-//           &:hover {
-//               background-color: $color-primary-light;
-//               border-color: $color-primary-light;
-//           }
-//           }
-//           .button-arrow-right {
-//               width: 52px;
-//               height: 52px;
-//               border: 2px solid $color-primary;
-//               box-sizing: border-box;
-//               border-radius: 100px;
-//               position: relative;
-//               top: 192px;
-//               left: 53px;
-//               color: $color-light-l;
-//               cursor: pointer;
-//               transition: 0.5s;
-//               &:hover {
-//                   background-color: $color-primary-light;
-//                   border-color: $color-primary-light;
-//               }
-//               }
-//       }
-  
-//       .card-container {
-//           display: flex;
-//           flex-direction: column;
-//           align-items: center;
-//           justify-content: center;
-//           background-color: $color-light-s;
-//           border-radius: 9px;
-//           cursor: pointer;
-//           transition: 0.3s;
-//           &:hover {
-//            box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-//            background-color: $color-light-xl;
-//            .button-learn-more {
-//                     /* card-hover */
-//                     background-color: $color-primary-light;
-//                     border-color: $color-primary-light;
-//           }
-//           }
-//       }
-  
-//       .card-1 {
-//           margin-right: 90px;
-//       }
+      .slider-container {
+          .button-arrow-left {
+          right: 0px;
+          // left: 30px;
+          }
+
+          .button-arrow-right {
+              left: 0px;
+              //right: 30px;
+          }
+        }
       
-//      .card-2 {
-//          margin-right: 90px;
-//       }
+      .card-1 {
+        margin-right: 40px;
+        margin-left: 12px;
+      }
+      
+     .card-2 {
+         margin-right: 12px;
+     }
+
+      .card-3 {
+       display: none; // 3-я карточка не показывается
+     }
   
-//       .card {
-//           border-top-left-radius: 9px;
-//           border-top-right-radius: 9px;
-//       }
-     
-//          .card-jennifer {
-//          // margin-right: 90px;
-//           position: relative; //для позиционирования стрелок
-//       }
+      .button-get-to {
+       margin-top: 58px; 
+      }
   
-//   .pets-name {
-//   font-family: 'Georgia';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 20px;
-//   line-height: 23px;
-//   // identical to box height 
-//   align-items: center;
-//   text-align: center;
-//   letter-spacing: 0.06em;
-//   color: $color-dark-l;
-//   padding-top: 30px;
-//   padding-bottom: 30px;
-//       }
-  
-//   .button-learn-more {
-//       border: 2px solid $color-primary;
-//       box-sizing: border-box;
-//       border-radius: 100px;
-//       width: 187px;
-//       height: 52px;        
-//       background-color: $color-light-s;
-//       font-family: 'Georgia';        
-//       font-style: normal;
-//   font-weight: 400;
-//   font-size: 17px;
-//   line-height: 130%;
-//   // identical to box height, or 22px 
-//   letter-spacing: 0.06em;
-//   color: $color-dark-3xl;
-//   outline: none; // убирает рамку по умолчанию у кнопок
-//   cursor: pointer;
-//   transition: 1s;
-//   margin-bottom: 30px; // чтобы карточку удлинить снизу
-//       &:hover {
-//           background-color: $color-primary-light;
-//           border-color: $color-primary-light;
-//   }
-//       }
-  
-//       .button-get-to {
-//           font-family: 'Georgia';
-//           font-style: normal;
-//           font-weight: 400;
-//           font-size: 17px;
-//           line-height: 130%;
-//           // identical to box height, or 22px 
-//           letter-spacing: 0.06em;
-//           color: $color-dark-3xl;
-//           width: 261px;
-//           height: 52px;
-//           // left: calc(50% - 207px/2 - 126.5px);
-//            background: $color-primary;
-//           outline: none; // убирает рамку по умолчанию у кнопок
-//           border-radius: 100px;
-//           margin-top: 60px; 
-//           cursor: pointer;
-//           transition: 1s;
-//           border-style: none; // убирает рамку по умолчанию у кнопок
-//           border-color: $color-primary;
-//           &:hover {
-//               background-color: $color-primary-light;
-//               border-color: $color-primary-light;
-//               outline: none; 
-//               border-style: solid;
-//           }
-//           }
-  
+
+          /* SECTION HELP */
+          
 //           .help-wrapper {
 //               background-color: $color-light-xl;
 //           }

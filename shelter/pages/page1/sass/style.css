@@ -261,7 +261,7 @@ span {
   box-sizing: border-box;
   border-radius: 100px;
   position: relative;
-  top: 192px;
+  top: 189px;
   right: 52px;
   color: #F6F6F6;
   cursor: pointer;
@@ -278,7 +278,7 @@ span {
   box-sizing: border-box;
   border-radius: 100px;
   position: relative;
-  top: 192px;
+  top: 189px;
   left: 53px;
   color: #F6F6F6;
   cursor: pointer;
@@ -700,4 +700,36 @@ h5 {
   .content-pets {
     margin-right: 169px;
   }
+
+  /* !SECTION OUR PETS */
+  .heading-our-pets {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .slider-container .button-arrow-left {
+    right: 0px;
+  }
+  .slider-container .button-arrow-right {
+    left: 0px;
+  }
+
+  .card-1 {
+    margin-right: 40px;
+    margin-left: 12px;
+  }
+
+  .card-2 {
+    margin-right: 12px;
+  }
+
+  .card-3 {
+    display: none;
+  }
+
+  .button-get-to {
+    margin-top: 58px;
+  }
+
+  /* SECTION HELP */
 }/*# sourceMappingURL=style.css.map */
