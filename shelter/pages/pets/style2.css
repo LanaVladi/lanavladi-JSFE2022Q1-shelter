@@ -1,16 +1,17 @@
 @font-face {
   font-family: "Arial";
-  src: url("../../assets/fonts/Arial/arial.ttf");
+  src: url("../../assets/fonts/arial.ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: "Georgia";
-  src: url("../../assets/fonts/Georgia/georgia.ttf");
+  src: url("../../assets/fonts/georgia.ttf");
   font-weight: 400;
 }
 * {
   box-sizing: border-box;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -43,16 +44,16 @@ body {
 .logo-container {
   display: flex;
   flex-direction: column;
-  padding-right: 505px;
+  padding-right: 490px;
   color: #545454;
 }
 
 h1 a {
+  font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 110%;
-  /* or 35px */
   letter-spacing: 0.06em;
   color: #545454;
   list-style: none;
@@ -65,7 +66,6 @@ h1 a {
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
-  /* identical to box height */
   letter-spacing: 0.1em;
   color: #292929;
   padding-top: 8px;
@@ -81,7 +81,6 @@ h1 a {
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
-  /* identical to box height, or 24px */
   color: #292929;
   display: inline;
   border-bottom: 3px solid #F1CDB3;
@@ -96,7 +95,6 @@ h1 a {
   list-style: none;
   text-decoration: none;
   padding-left: 35px;
-  /* identical to box height, or 24px */
 }
 
 li a {
@@ -114,7 +112,6 @@ h3 {
   font-weight: 400;
   font-size: 35px;
   line-height: 130%;
-  /* or 45px */
   letter-spacing: 0.06em;
 }
 
@@ -156,6 +153,7 @@ span {
   background-color: #FAFAFA;
   border-radius: 9px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .card-container:hover {
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
@@ -219,7 +217,6 @@ span {
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
-  /* identical to box height */
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -240,7 +237,6 @@ span {
   font-weight: 400;
   font-size: 17px;
   line-height: 130%;
-  /* identical to box height, or 22px */
   letter-spacing: 0.06em;
   color: #292929;
   outline: none;
@@ -331,7 +327,6 @@ h4 {
   font-weight: 400;
   font-size: 20px;
   line-height: 115%;
-  /* identical to box height, or 23px */
   letter-spacing: 0.06em;
 }
 
