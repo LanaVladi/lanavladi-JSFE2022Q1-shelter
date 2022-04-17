@@ -1,0 +1,124 @@
+@media (max-width: 768px) {
+    /* HEADER 768px */
+  
+  .header {
+    padding: 29px 0 0 0;
+    }
+ 
+  
+   .wrapper {
+      max-width: $tablet-width; // 768px - 100vw 
+       margin: 0 auto;
+       padding-left: 0px;
+       padding-right: 0px;
+   }
+ 
+    .header-wrapper {
+       padding-left: 30px;
+       padding-right: 30px;
+       margin-bottom: 30px;
+   }
+    
+   .logo-container {
+       padding-right: 0px;
+   }
+
+
+     /* !SECTION OUR PETS */
+
+     .ourpets-wrapper {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+  
+    .heading-our-pets {
+    margin-right: 154px;
+    margin-left: 154px;
+    margin-top: 20px;
+    }
+  
+    .cards-container {
+        margin-top: 30px;
+    }
+    
+    .card-1 {
+      margin-left: 94px;
+      margin-right: 0px;
+      margin-top: 0px;
+    }
+    .card-2 {
+      margin-right: 94px;
+      margin-top: 0px;
+    }
+    .card-3 {
+      margin-left: 94px;
+      margin-right: 0px;
+      margin-top: 30px;
+    }
+    .card-4 {
+      margin-top: 30px;
+      margin-right: 94px;
+    }
+    .card-5 {
+      margin-right: 0px;
+      margin-top: 30px;
+      margin-bottom: 0px;
+      margin-left: 94px;
+    }
+    .card-6 {
+      margin-right: 94px;
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+    .card-7 {
+        display: none;
+      margin-right: 0px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .card-8 {
+        display: none;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  
+  .navigation {
+    margin-top: 40px;
+    margin-left: 214px;
+    margin-right: 214px;
+    margin-bottom: 5px;
+  }
+
+ 
+/* FOOTER 768px */
+  
+.footer-container {
+    flex-wrap: wrap;
+  }
+  
+  .contacts {
+      margin-top: 30px;
+      margin-right: 60px;
+      margin-left: 64px;
+  }
+       
+  .locations {
+      margin-top: 30px;
+      margin-right: 65px; 
+  }
+
+  .shelter-location-1 {
+   margin-top: 33px;
+}
+
+.location-1 {
+  margin-left: 0px;
+}
+.location-1-icon {
+  margin-left: -8px;
+}
+  .footer-puppy { 
+       margin-top: 60px;
+  }
+
+}

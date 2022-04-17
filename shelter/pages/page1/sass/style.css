@@ -523,6 +523,10 @@ h5 {
   border-color: #FDDCC4;
 }
 
+.bank-account {
+  padding-left: 5px;
+}
+
 .donation-description {
   font-family: "Arial";
   font-style: italic;
@@ -638,6 +642,7 @@ h5 {
 
 /* MEDIA QUERIES*/
 @media (max-width: 768px) {
+  /* HEADER 768px */
   .header {
     padding: 30px 0 0 0;
   }
@@ -663,7 +668,7 @@ h5 {
     padding-right: 0px;
   }
 
-  /* START SCREEN */
+  /* START SCREEN 768px */
   .start-screen-wrapper {
     display: flex;
     flex-direction: column;
@@ -686,7 +691,7 @@ h5 {
     margin-top: 99px;
   }
 
-  /*  SECTION ABOUT */
+  /*  SECTION ABOUT 768px */
   .about-wrapper {
     flex-direction: column-reverse;
     margin-right: 166px;
@@ -701,7 +706,7 @@ h5 {
     margin-right: 169px;
   }
 
-  /* !SECTION OUR PETS */
+  /* SECTION OUR PETS 768px */
   .heading-our-pets {
     margin-right: 0px;
     margin-left: 0px;
@@ -731,7 +736,7 @@ h5 {
     margin-top: 58px;
   }
 
-  /* SECTION HELP */
+  /* SECTION HELP 768px */
   .heading-help {
     margin-right: 161px;
     margin-left: 161px;
@@ -786,7 +791,7 @@ h5 {
     margin-right: 0px;
   }
 
-  /* SECTION DONATION */
+  /* SECTION DONATION 768px */
   .donation-container {
     flex-direction: column-reverse;
   }
@@ -815,7 +820,7 @@ h5 {
     margin-right: 194px;
   }
 
-  /*! FOOTER */
+  /* FOOTER 768px */
   .footer-container {
     flex-wrap: wrap;
   }
@@ -846,4 +851,7 @@ h5 {
   .footer-puppy {
     margin-top: 60px;
   }
-}/*# sourceMappingURL=style.css.map */
+
+  /* STYLES DONATION SECTION FOR MOZILLA 768PX*/
+}
+/* START SCREEN 768px *//*# sourceMappingURL=style.css.map */

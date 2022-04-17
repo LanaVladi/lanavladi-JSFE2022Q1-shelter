@@ -1,5 +1,8 @@
 // @media (min-width: 768px) and (max-width: 1279.9px) {
+
   @media (max-width: 768px) {
+    /* HEADER 768px */
+
   .header {
    padding: 30px 0 0 0;
    }
@@ -26,7 +29,7 @@
       padding-right: 0px;
   }
 
-  /* START SCREEN */
+  /* START SCREEN 768px */
 
   .start-screen-wrapper {
     display: flex;
@@ -52,7 +55,7 @@
     margin-top: 99px; // 100px  не идеально ровно. 
    }
 
-   /*  SECTION ABOUT */
+   /*  SECTION ABOUT 768px */
 
   .about-wrapper {
     flex-direction: column-reverse;
@@ -69,7 +72,7 @@
   }
 
   
-      /* !SECTION OUR PETS */
+      /* SECTION OUR PETS 768px */
   
       .heading-our-pets {
       margin-right: 0px;
@@ -79,12 +82,10 @@
       .slider-container {
           .button-arrow-left {
           right: 0px;
-          // left: 30px;
           }
 
           .button-arrow-right {
               left: 0px;
-              //right: 30px;
           }
         }
       
@@ -106,7 +107,7 @@
       }
   
 
-          /* SECTION HELP */
+          /* SECTION HELP 768px */
        
 .heading-help {
   margin-right: 161px;
@@ -154,7 +155,7 @@
     margin-right: 0px;
   }
  
-  /* SECTION DONATION */
+  /* SECTION DONATION 768px */
  
   .donation-container {
       flex-direction: column-reverse;
@@ -179,13 +180,13 @@
   .credit-card {
     margin-left: 3px;
   }
-  
-  .donation-description  {
+
+   .donation-description  {
    margin-right: 194px; 
   }
   
   
-   /*! FOOTER */
+   /* FOOTER 768px */
   
   .footer-container {
     flex-wrap: wrap;
@@ -216,4 +217,237 @@
        margin-top: 60px;
   }
   
- }
+ 
+
+
+ /* STYLES DONATION SECTION FOR MOZILLA 768PX*/
+
+//  @-moz-document url-prefix()
+//  {
+//    .bank-account {
+//     padding-left: 5px;
+//    }
+//  }
+
+}
+
+
+// @media (max-width: 320px) {
+//   /* HEADER 320px */
+
+// .header {
+//  padding: 30px 0 0 0;
+//  }
+
+
+// .wrapper {
+//    max-width: $mobile-width; // 320px 
+//     margin: 0 auto;
+//     padding-left: 0px;
+//     padding-right: 0px;
+// }
+
+// .wrapper-for-bg {
+//     height: 1165px;
+//     max-width: $tablet-width;
+//  }
+
+//  .header-wrapper {
+//     padding-left: 30px;
+//     padding-right: 30px;
+// }
+ 
+// .logo-container {
+//     padding-right: 0px;
+// }
+
+/* START SCREEN 768px */
+
+// .start-screen-wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   padding-left: 99px;
+//   padding-right: 100px;
+// }
+
+// .start-screen-content{
+//   display: flex;
+//   flex-direction: column;
+//     padding-top: 0px;
+//     padding-left: 55px;
+//     padding-right: 54px;
+//     // margin-left: 154px;
+//     // margin-right: 154px;
+// }
+
+//  .start-screen-puppy {
+//   width: 569px;
+//    height: 593px;
+//   margin-left: 70px; // от своего контейнера
+//   margin-top: 99px; // 100px  не идеально ровно. 
+//  }
+
+//  /*  SECTION ABOUT 768px */
+
+// .about-wrapper {
+//   flex-direction: column-reverse;
+//   margin-right: 166px;
+// }
+
+// .about-pets {
+//   margin-top: 80px;
+//   margin-left: 234px;
+// }
+
+// .content-pets {
+//   margin-right: 169px;
+// }
+
+
+//     /* SECTION OUR PETS 768px */
+
+//     .heading-our-pets {
+//     margin-right: 0px;
+//     margin-left: 0px;
+//      }
+
+//     .slider-container {
+//         .button-arrow-left {
+//         right: 0px;
+//         }
+
+//         .button-arrow-right {
+//             left: 0px;
+//         }
+//       }
+    
+//     .card-1 {
+//       margin-right: 40px;
+//       margin-left: 12px;
+//     }
+    
+//    .card-2 {
+//        margin-right: 12px;
+//    }
+
+//     .card-3 {
+//      display: none; // 3-я карточка скрыта
+//    }
+
+//     .button-get-to {
+//      margin-top: 58px; 
+//     }
+
+
+//         /* SECTION HELP 768px */
+     
+// .heading-help {
+// margin-right: 161px;
+// margin-left: 161px;
+// }
+
+// .help-container {
+// margin-left: 69px;
+// margin-right: 69px;
+// }
+
+//  .help-icon {
+// width: 170px;
+// height: 113px;
+//  }
+
+// .icon-1 {
+//   margin-left: 0px;
+// }
+// .icon-2 {
+//     margin-left: 60px;
+// }
+// .icon-3 {
+//   margin-left: 60px;
+// }
+// .icon-4 {
+//     margin-left: 0px;
+//     margin-top: 55px;
+// }
+// .icon-5 {
+//   margin-left: 60px; 
+//   margin-top: 55px;
+// }
+// .icon-6 {
+//   margin-left: 60px;
+// }
+// .icon-7 {
+//   margin-left: 0px;
+// }
+// .icon-8 {
+//   margin-left: 60px;
+// }
+// .icon-9 {
+//   margin-left: 60px; 
+//   margin-right: 0px;
+// }
+
+// /* SECTION DONATION 768px */
+
+// .donation-container {
+//     flex-direction: column-reverse;
+// }
+
+// .donation-content {
+//  margin-left: 194px;
+// }
+
+// .donation-dog {
+//   margin: 60px 132px 100px 131px; 
+// }
+
+// .subheading-donation {
+//     margin-top: 19px; // 20px было по макету 
+// }
+
+// .button-donation {
+//  margin-right: 225px; 
+// }
+
+// .credit-card {
+//   margin-left: 3px;
+// }
+
+//  .donation-description  {
+//  margin-right: 194px; 
+// }
+
+
+//  /* FOOTER 768px */
+
+// .footer-container {
+//   flex-wrap: wrap;
+// }
+
+// .contacts {
+//     margin-top: 30px;
+//     margin-right: 60px;
+//     margin-left: 64px;
+// }
+     
+// .locations {
+//     margin-top: 30px;
+//     margin-right: 65px; 
+// }
+
+// .shelter-location-1 {
+//  margin-top: 33px;
+// }
+
+// .location-1 {
+// margin-left: 0px;
+// }
+// .location-1-icon {
+// margin-left: -8px;
+// }
+// .footer-puppy { 
+//      margin-top: 60px;
+// }
+
+
+
