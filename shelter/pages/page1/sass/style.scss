@@ -27,8 +27,6 @@ $font-h1-logo_title: 400 32px 'Georgia', serif;
 $font-h2-logo_subtitle: 400 13px 'Arial', sans-serif;
 
 $content-width: 1280px;
-// $content-width2: 100vw;
-
 $tablet-width: 768px;
 $mobile-width: 320px;
 
@@ -54,23 +52,14 @@ body {
 //     //padding-top: 120px; // для выравнивания фона между header и start-screen
 // }
 
-.start-screen-wrapper {
-    display: flex;
-    padding-top: 60px;
-}
-
-.start-screen-content{
-    padding-top: 163px;
-    padding-right: 42px;
-   
-}
-
 .wrapper {
     width: $content-width; // 1200px 
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
 }
+
+/* HEADER 1280px*/
 
 .header {
    // background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
@@ -156,6 +145,57 @@ color: $color-dark-s;
 }
 }
 
+.burger-menu {
+    width: 30px;
+    height: 22px;
+    // flex-direction: column;
+    // justify-content: space-between;
+    cursor: pointer;
+    //user-select: none;
+    position: relative;
+    z-index: 2;
+   // margin-top: 30px;
+    display: none;
+    margin-right: 53px;
+    // margin-left: 20px;
+}
+
+.burger-menu span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: $color-primary;
+    position: absolute;
+    //border: 2px solid $color-primary;
+    //position: absolute;
+	top: 50%;
+	left: 50%;
+    //background-color: #ffffff;
+    transform: translate(-50%, -50%);
+    //border-radius: 2px;
+    //-webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.burger-menu span:nth-of-type(2) {
+    top: calc(50% - 10px);
+}
+
+.burger-menu span:nth-of-type(3) {
+    top: calc(50% + 10px);
+}
+
+ /* SECTION START SCREEN 1280px */
+
+.start-screen-wrapper {
+    display: flex;
+    padding-top: 60px;
+}
+
+.start-screen-content{
+    padding-top: 163px;
+    padding-right: 42px;
+}
 
 h2 {
     font-family: 'Georgia';
@@ -165,16 +205,10 @@ h2 {
     line-height: 130%;
     // or 57px
     color: $color-light-xl;
+    // letter-spacing: 0.06em; ни в коем случае не трогать!!! полетит верстка 768px!!!!!
 }
 
 .heading-start-screen {
-font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 160%;
-// or 24px 
-color: $color-dark-s;
 padding-right: 150px;
 }
 
@@ -225,6 +259,8 @@ transition: 1s;
 // // background-position: center 0;
 // }
 
+ /*  SECTION ABOUT 1280px */
+
 .about-wrapper {
     display: flex;
     flex-direction: row;
@@ -242,7 +278,6 @@ transition: 1s;
 }
 
 .content-pets {
-    width: 430px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,7 +324,7 @@ padding-top: 25px;
     padding-top: 25px;
     }
 
-    /* !SECTION OUR PETS */
+    /* !SECTION OUR PETS 1280px*/
 
     .ourpets-wrapper {
         display: flex;
@@ -459,29 +494,31 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
         }
         }
 
-        .help-wrapper {
-            background-color: $color-light-xl;
-        }
-        .heading-help {
-    display: flex;
-    text-align: center;
-    margin-right: 445px;
-    margin-left: 445px;
-   margin-top: 80px;
-   color: $color-dark-l;
-            }
 
-            .help-container {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                //max-width: 1026px;
-                margin-left: 87px;
-                margin-right: 87px;
-               // padding-right: 120px;
-            //    margin-top: 80px;
-               margin-bottom: 100px;
-            }
+         /*  SECTION HELP 1280px */
+
+.help-wrapper {
+   background-color: $color-light-xl;
+}
+
+.heading-help {
+display: flex;
+text-align: center;
+margin-right: 445px;
+margin-left: 445px;
+margin-top: 80px;
+color: $color-dark-l;
+}
+
+.help-container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+//max-width: 1026px;
+margin-left: 87px;
+margin-right: 87px;
+margin-bottom: 100px;
+}
 
  .help-icon {
     display: flex;
@@ -535,8 +572,8 @@ color: $color-dark-l;
 }
 
 
+/* SECTION DONATION 1280px*/
 
-/* SECTION DONATION */
 .donation-wrapper {
     background-color: $color-light-l ;
 }
@@ -606,7 +643,7 @@ margin-right: 182px;
 }
 
 
-/*! FOOTER */
+/*! FOOTER 1280px */
 
 .footer-wrapper {
     background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;

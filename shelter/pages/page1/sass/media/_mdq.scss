@@ -29,7 +29,7 @@
       padding-right: 0px;
   }
 
-  /* START SCREEN 768px */
+  /* SECTION START SCREEN 768px */
 
   .start-screen-wrapper {
     display: flex;
@@ -69,6 +69,7 @@
   
   .content-pets {
     margin-right: 169px;
+    width: 430px;
   }
 
   
@@ -232,193 +233,305 @@
 }
 
 
-// @media (max-width: 320px) {
-//   /* HEADER 320px */
+@media (max-width: 320px) {
+  /* HEADER 320px */
 
-// .header {
-//  padding: 30px 0 0 0;
-//  }
+.header {
+ padding: 30px 0 0 0;
+ }
 
 
-// .wrapper {
-//    max-width: $mobile-width; // 320px 
-//     margin: 0 auto;
-//     padding-left: 0px;
-//     padding-right: 0px;
-// }
+.wrapper {
+   max-width: $mobile-width; // 320px 
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
-// .wrapper-for-bg {
-//     height: 1165px;
-//     max-width: $tablet-width;
-//  }
+.wrapper-for-bg {
+    height: 823px;
+    max-width: $mobile-width;
+ }
 
 //  .header-wrapper {
-//     padding-left: 30px;
-//     padding-right: 30px;
+//     //padding-left: 10px;
+//    // padding-right: 53px;
 // }
  
 // .logo-container {
-//     padding-right: 0px;
+//     //padding-right: 43px;
 // }
 
-/* START SCREEN 768px */
+.nav-list {
+  display: none;
+   }
 
-// .start-screen-wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   padding-left: 99px;
-//   padding-right: 100px;
-// }
+   .burger-menu {
+     display: flex;
+   }
 
-// .start-screen-content{
-//   display: flex;
-//   flex-direction: column;
-//     padding-top: 0px;
-//     padding-left: 55px;
-//     padding-right: 54px;
-//     // margin-left: 154px;
-//     // margin-right: 154px;
-// }
+/* START SCREEN 320px */
 
-//  .start-screen-puppy {
-//   width: 569px;
-//    height: 593px;
-//   margin-left: 70px; // от своего контейнера
-//   margin-top: 99px; // 100px  не идеально ровно. 
-//  }
+.start-screen-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
-//  /*  SECTION ABOUT 768px */
+h2 {
+  font-size: 25px;
+  line-height: 130%;
+  /* or 32px */
+  }
 
-// .about-wrapper {
-//   flex-direction: column-reverse;
-//   margin-right: 166px;
-// }
-
-// .about-pets {
-//   margin-top: 80px;
-//   margin-left: 234px;
-// }
-
-// .content-pets {
-//   margin-right: 169px;
-// }
-
-
-//     /* SECTION OUR PETS 768px */
-
-//     .heading-our-pets {
-//     margin-right: 0px;
-//     margin-left: 0px;
-//      }
-
-//     .slider-container {
-//         .button-arrow-left {
-//         right: 0px;
-//         }
-
-//         .button-arrow-right {
-//             left: 0px;
-//         }
-//       }
+  .heading-start-screen {
+    padding-right: 0px;
+    // margin-right: 35px; // работающие отступы
+    // margin-left: 35px; // работающие отступы
+    letter-spacing: 0.1em;
+    width: calc(100% - 70px);
+    }
     
-//     .card-1 {
-//       margin-right: 40px;
-//       margin-left: 12px;
-//     }
+    .subheading-start-screen {
+     padding-top: 42px;
+    }
+
+.start-screen-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    // margin-left: 154px;
+    // margin-right: 154px;
+}
+
+.button-primary {
+  margin-top: 41px;
+}
+
+ .start-screen-puppy {
+  width: 260px;
+  height: 271.77px;
+  margin-left: 40px;
+  margin-top: 105px; 
+  margin-bottom: 0.23px;
+ }
+
+  /*  SECTION ABOUT 320px */
+
+.about-wrapper {
+  flex-direction: column-reverse;
+  margin-right: 0px;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+.about-pets {
+  width: 260px;
+    height: 353.6px;
+    margin-top: 42px;
+    margin-left: 32px;
+}
+
+.content-pets {
+  margin-right: 0px;
+  width: 300px;
+}
+
+h3 {
+  font-size: 25px;
+ }
+
+ .heading-about-pets {
+  text-align: center;
+  padding-right: 0px; // Обнуляю
+    margin-right: 40px;
+    margin-left: 20px;
+  }
+  
+  .subheading-pets1 {
+    text-align: justify;
+    margin-left: 5px;
+    width: 270px;
+    letter-spacing: normal;
+  }
+  
+  .subheading-pets2 {
+    padding-top: 22px;
+    width: 270px;
+    letter-spacing: normal;
+    text-align: justify;
+    margin-left: 5px;
+  }
+
+
+     /* SECTION OUR PETS 320px */
+     .ourpets-wrapper {
+      padding-top: 42px;
+      padding-bottom: 42px;
+  }
+
+    .heading-our-pets {
+    margin-right: 0px;
+    margin-left: 0px;
+     }
+
+    .slider-container {
+      margin-top: 39px;
+    position: relative;
+      .button-arrow-left {
+        width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 454px;
+    right: 200px;
+        }
+        .button-arrow-right {
+          width: 52px;
+          height: 52px;
+          position: absolute;
+          top: 454px;
+          left: 200px;
+        }
+    }
     
-//    .card-2 {
-//        margin-right: 12px;
-//    }
+    .card-1 {
+      margin-right: 25px;
+      margin-left: 25px;
+    }
+    
+   .card-2 {
+    display: none;
+    margin-right: 0px;
+   }
 
-//     .card-3 {
-//      display: none; // 3-я карточка скрыта
-//    }
+    .card-3 {
+     display: none; // 3-я карточка скрыта
+   }
 
-//     .button-get-to {
-//      margin-top: 58px; 
-//     }
+    .button-get-to {
+     margin-top: 114px; 
+    }
 
 
-//         /* SECTION HELP 768px */
+         /* SECTION HELP 320px */
      
-// .heading-help {
-// margin-right: 161px;
-// margin-left: 161px;
-// }
+.heading-help {
+  margin-right: 48px;
+  margin-left: 50px;
+  margin-top: 42px;
+}
 
-// .help-container {
-// margin-left: 69px;
-// margin-right: 69px;
-// }
+.help-container {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 42px;
+  margin-top: 42px;
+}
 
-//  .help-icon {
-// width: 170px;
-// height: 113px;
-//  }
+ .help-icon {
+width: 130px;
+height: 87px;
+flex-wrap: nowrap;
+margin-top: 0px;
+ }
 
-// .icon-1 {
-//   margin-left: 0px;
-// }
-// .icon-2 {
-//     margin-left: 60px;
-// }
-// .icon-3 {
-//   margin-left: 60px;
-// }
-// .icon-4 {
-//     margin-left: 0px;
-//     margin-top: 55px;
-// }
-// .icon-5 {
-//   margin-left: 60px; 
-//   margin-top: 55px;
-// }
-// .icon-6 {
-//   margin-left: 60px;
-// }
-// .icon-7 {
-//   margin-left: 0px;
-// }
-// .icon-8 {
-//   margin-left: 60px;
-// }
-// .icon-9 {
-//   margin-left: 60px; 
-//   margin-right: 0px;
-// }
+ .icon {
+   width: 50px;
+   height: 50px;
+ }
 
-// /* SECTION DONATION 768px */
+ h4 {
+   font-size: 15px;
+  letter-spacing: 0.06em;
+ }
 
-// .donation-container {
-//     flex-direction: column-reverse;
-// }
+.icon-1 {
+  margin-left: 0px;
+}
+.icon-2 {
+    margin-left: 30px;
+}
+.icon-3 {
+  margin-top: 30px;
+  margin-left: 0px;
+}
+.icon-4 {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.icon-5 {
+  margin-left: 00px; 
+  margin-top: 30px;
+}
+.icon-6 {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.icon-7 {
+  margin-left: 0px;
+  margin-top: 30px;
+}
+.icon-8 {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.icon-9 {
+  margin-left: 0px; 
+  margin-top: 30px;
+}
 
-// .donation-content {
-//  margin-left: 194px;
-// }
+.icon-name {
+  margin-top: 20px;
+}
 
-// .donation-dog {
-//   margin: 60px 132px 100px 131px; 
-// }
+ /* SECTION DONATION 320px */
 
-// .subheading-donation {
-//     margin-top: 19px; // 20px было по макету 
-// }
+.donation-container {
+    flex-direction: column-reverse;
+}
 
-// .button-donation {
-//  margin-right: 225px; 
-// }
+.donation-content {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
 
-// .credit-card {
-//   margin-left: 3px;
-// }
+.donation-dog {
+  margin: 42px 30px 42px 30px; 
+}
 
-//  .donation-description  {
-//  margin-right: 194px; 
-// }
+.heading-donation {
+  margin-top: 42px;
+    margin-left: 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.subheading-donation {
+    margin-top: 21px; // 20px было по макету 
+}
+
+.button-donation {
+ margin-right: 0px; 
+ width: 281px;
+ height: 43px;
+}
+
+.credit-card {
+  margin-left: 3px;
+
+}
+
+ .donation-description  {
+ margin-right: 0px; 
+}
 
 
-//  /* FOOTER 768px */
+//  /* FOOTER 320px */
 
 // .footer-container {
 //   flex-wrap: wrap;
@@ -447,7 +560,7 @@
 // }
 // .footer-puppy { 
 //      margin-top: 60px;
-// }
+ }
 
 
 
