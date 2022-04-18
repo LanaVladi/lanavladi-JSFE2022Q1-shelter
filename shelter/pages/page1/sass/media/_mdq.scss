@@ -39,15 +39,26 @@
     padding-right: 100px;
   }
   
+  // .start-screen-content{
+  //   display: flex;
+  //   flex-direction: column;
+  //     padding-top: 0px;
+  //     padding-left: 55px;
+  //     padding-right: 54px;
+  // }
+
   .start-screen-content{
     display: flex;
     flex-direction: column;
-      padding-top: 0px;
-      padding-left: 55px;
-      padding-right: 54px;
-      // margin-left: 154px;
-      // margin-right: 154px;
+    padding-top: 0px;
+    // padding-left: 155px; 
+    // padding-right: 154px;
+    margin-right: 154px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+    margin-left: 55px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
   }
+
+
+   // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
   
    .start-screen-puppy {
     width: 569px;
@@ -183,9 +194,9 @@
     margin-left: 3px;
   }
 
-   .donation-description  {
-   margin-right: 194px; 
-  }
+  //  .donation-description  {
+  // //  margin-right: 194px;  // УБРАЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+  // }
   
   
    /* FOOTER 768px */
@@ -242,15 +253,26 @@
 }
 .location-1-icon {
   // margin-left: -8px;
-  margin-top: 7px;
-  padding-right: 12px;
+  // margin-top: 7px;
+  // padding-right: 12px;
+  margin-top: 4px;
+    padding-right: 9px;
 }
 
 .shelter-location-2 {
   display: flex;
-  margin-top: 38px;
-  margin-right: 32px;
+  margin-top: 2px;
+ // margin-right: 32px;
 }
+
+.location-2-icon {
+  // margin-left: -8px;
+  // margin-top: 7px;
+  // padding-right: 12px;
+  margin-top: 7px;
+    margin-right: 5px;
+}
+
 
   .footer-puppy { 
        margin-top: 60px;
@@ -261,15 +283,25 @@
 
 //  @-moz-document url-prefix()
 //  {
-//    .bank-account {
-//     padding-left: 5px;
-//    }
+//   //  .bank-account {
+//   //   padding-left: 5px;
+//   //  }
+
+// .donation-dog {
+//   width: 505px;
+// }
+
+// .button-donation {
+//   margin-right: 415px;
+// }
+
 //  }
 
 }
 
 // @media (min-width: 0px) and (max-width: 767.9px) {
-@media (max-width: 320px) {
+@media (max-width: 767.9px) {
+
   /* HEADER 320px */
 
 .header {
@@ -330,18 +362,30 @@ h2 {
     }
     
     .subheading-start-screen {
-     padding-top: 42px;
+     padding-top: 41px;
     }
+
+// .start-screen-content{
+//   display: flex;
+//   flex-direction: column;
+//   text-align: center;
+//     padding-top: 0px;
+//     padding-left: 0px;
+//     padding-right: 0px;
+// }
+
 
 .start-screen-content{
   display: flex;
-  flex-direction: column;
-  text-align: center;
+    flex-direction: column;
+    text-align: center;
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
-    // margin-left: 154px;
-    // margin-right: 154px;
+    width: 300px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+    height: 296px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+    margin-right: 0px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+    margin-left: 0px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
 }
 
 .button-primary {
@@ -361,7 +405,7 @@ h2 {
 .about-wrapper {
   flex-direction: column-reverse;
   margin-right: 0px;
-  padding-top: 42px;
+  padding-top: 41px;
   padding-bottom: 42px;
 }
 
@@ -396,7 +440,7 @@ h3 {
   }
   
   .subheading-pets2 {
-    padding-top: 20px;
+    padding-top: 22px;
     width: 270px;
     letter-spacing: normal;
     text-align: justify;
@@ -534,14 +578,17 @@ margin-top: 0px;
   margin-left: 10px;
   margin-right: 10px;
   text-align: center;
+  width: 300px; // // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+  height: 281px; // // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+  margin-top: 40px; // // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
 }
 
 .donation-dog {
-  margin: 42px 30px 42px 30px; 
+  margin: 43px 30px 42px 30px; 
 }
 
 .heading-donation {
-  margin-top: 40px;
+  // margin-top: 40px; // // УБРАЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
     margin-left: 10px;
     text-align: center;
     margin-right: 10px;
@@ -589,27 +636,93 @@ h5 {
 }
 
 .contacts {
-    margin-top: 30px;
-    margin-right: 60px;
-    margin-left: 64px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-right: 21px;
+  margin-left: 21px;
 }
-     
-.locations {
-    margin-top: 30px;
-    margin-right: 65px; 
+.shelter-mail {
+  padding-top: 41px;
+}
+.mail {
+  padding-right: 0px;
+}
+.shelter-phone {
+  display: flex;
+  padding-top: 38px;
+  align-items: center;
+}
+.phone-icon {
+  padding-top: 2px;
+  padding-right: 20px;
+  /* padding-left: 19px; */
+}
+.phone {
+  margin-right: 0px;
+  margin-top: 0px;
+  /* padding-right: 0px; */
 }
 
+.locations {
+  // margin-top: 36px;
+  //   margin-right: 21px;
+  //   margin-left: 21px;
+  //   width: 300px;
+  //   flex-direction: column;
+  //   display: flex;
+  //   align-items: center;
+  //   text-align: center;
+  margin-top: 36px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 300px;
+    flex-direction: column;
+    display: flex;
+}
+.title-locations {
+  display: flex;
+    margin-right: 11px;
+    margin-left: 12px;
+    /* width: 237px; */
+    text-align: center;
+
+}
 .shelter-location-1 {
- margin-top: 33px;
+ margin-top: 39px;
 }
 
 .location-1 {
+// margin-left: 0px;
 margin-left: 0px;
+padding-right: 0px;
 }
 .location-1-icon {
-margin-left: -8px;
+// margin-left: -8px;
+padding-right: 10px;
+padding-left: 0px;
 }
+
+.shelter-location-2 {
+  // display: flex;
+  // margin-top: 35px;
+  // margin-right: 31px;
+  // display: flex;
+  margin-top: 26px;
+  // margin-right: 31px;
+}
+.location-2 {
+  margin-left: 7px;
+}
+.location-2-icon {
+  margin-top: 7px;
+    margin-right: 6px;
+}
+
 .footer-puppy { 
-     margin-top: 60px;
+  margin-top: 36px;
+  width: 260px;
  }
 }

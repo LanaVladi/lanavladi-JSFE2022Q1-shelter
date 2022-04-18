@@ -66,7 +66,7 @@ body {
     //position: absolute; // убрала bg и добавила position: absolute; для выравнивания фона. 
     //добавила padding-left: 175px; в header и padding-top: 120px; в start-screen
     //padding: 60px 0 0 175px;
-    padding: 60px 0 0 0;
+    padding: 59px 0 0 0;
 }
 
 .header-wrapper {
@@ -145,6 +145,8 @@ color: $color-dark-s;
 }
 }
 
+/* BURGER MENU */
+
 .burger-menu {
     width: 30px;
     height: 22px;
@@ -192,10 +194,19 @@ color: $color-dark-s;
     padding-top: 60px;
 }
 
+// .start-screen-content{
+//     padding-top: 163px;
+//     padding-right: 42px;
+// }
+
 .start-screen-content{
     padding-top: 163px;
-    padding-right: 42px;
-}
+    margin-right: 42px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+    width: 460px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+    height: 322px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+} // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+
+
 
 h2 {
     font-family: 'Georgia';
@@ -220,7 +231,7 @@ font-size: 15px;
 line-height: 160%;
 // or 24px 
 color: $color-dark-s;
-padding-top: 42px;
+ padding-top: 42px; // УБРАЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
 }
 
 .button-primary {
@@ -537,7 +548,7 @@ margin-bottom: 100px;
     margin-left: 120px;
 }
 .icon-5 {
-    margin-left: 117px; //неправильные размеры в макете
+    margin-left: 117px; //другие размеры в макете
     // margin-left: 87px;
 }
 .icon-6 {
@@ -553,7 +564,7 @@ margin-bottom: 100px;
     margin-top: 55px;
 }
 .icon-9 {
-    margin-left: 117px; //неправильные размеры в макете
+    margin-left: 117px; // другие размеры в макете
     margin-top: 55px;
     margin-right: 84px;
 }
@@ -581,12 +592,20 @@ color: $color-dark-l;
     display: flex;
 }
 
+.donation-content {
+    margin-top: 80px;
+    width: 380px;
+    height: 282px;
+    margin-right: 182px;
+} // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+
+
 .donation-dog {
-    margin: 89px 30px 110px 141px;  //неправильные размеры в макете
+    margin: 89px 30px 110px 141px;  //Другие размеры в макете
 }
 
 .heading-donation {
-    margin-top: 80px;
+    // margin-top: 80px; УБРАЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
     color: $color-dark-l;
 }
 
@@ -639,11 +658,40 @@ transition: 1s;
     // or 150% 
     color: $color-dark-m;       
 margin-top: 20px;   
-margin-right: 182px; 
+// margin-right: 182px;  УБРАЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
 }
 
 
+
+ /* STYLES DONATION SECTION FOR MOZILLA 1280PX*/
+
+//  @-moz-document url-prefix()
+//  {
+//   //  .bank-account {
+//   //   padding-left: 5px;
+//   //  }
+
+// .donation-dog {
+//   width: 505px;
+// }
+
+// .button-donation {
+//   margin-right: 415px;
+// }
+
+//  }
+
 /*! FOOTER 1280px */
+
+h6 { 
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    // identical to box height, or 23px 
+    letter-spacing: 0.06em;
+    }
 
 .footer-wrapper {
     background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
@@ -723,39 +771,42 @@ padding-top: 1px;
     // margin-top: 34px;
     display: flex;
     margin-top: 32px;
-    margin-right: 5px;
+    //margin-right: 5px;
 }
 
 .location-1 {
-    display: block;
+   // display: block;
     color: $color-primary;
     text-decoration: none;
     // margin-left: 10px;
-    padding-right: 1px;
+    //padding-right: 1px;
 }
 .location-1-icon {
     //margin-right: 20px;
     // margin-top: 5px;
-    margin-top: 6px;
-    padding-right: 20px;
+    margin-top: 3px;
+    padding-right: 10px;
 }
 .shelter-location-2 {
     // display: flex;
     // margin-top: 35px;
     // margin-right: 31px;
     display: flex;
-    margin-top: 37px;
+    margin-top: 19px;
     margin-right: 31px;
 }
 .location-2 {
-    display: block;
+    //display: block;
     color: $color-primary;
     text-decoration: none;
-    margin-left: 20px;
+   // margin-left: 20px;
+   margin-left: 6px;
 }
 .location-2-icon {
     //margin-right: 20px;
-    margin-top: -5px;
+    //margin-top: -5px;
+    margin-top: 7px;
+    margin-right: 7px;
 }
 .footer-puppy { 
      margin-top: 40px;
