@@ -1,5 +1,7 @@
-@media (max-width: 768px) {
-    /* HEADER 768px */
+// @media (max-width: 768px) {
+  @media (max-width: 1279.9px) {
+   
+    /* HEADER 768px - 1279.9px */
   
   .header {
     padding: 29px 0 0 0;
@@ -7,7 +9,7 @@
  
   
    .wrapper {
-      max-width: $tablet-width; // 768px - 100vw 
+      max-width: $tablet-width; // 768px
        margin: 0 auto;
        padding-left: 0px;
        padding-right: 0px;
@@ -131,26 +133,20 @@ padding-right: 20px;
 .shelter-location-1 {
  margin-top: 31px;
  margin-right: 5px;
-
-
 }
 
 .location-1 {
-// margin-left: 0px;
-//margin-top: 7px;
-//padding-right: 12px;
 padding-right: 1px;
 
 }
 .location-1-icon {
-// margin-left: -8px;
-margin-top: 7px;
-padding-right: 12px;
+margin-top: 4px;
+    padding-right: 9px;
 }
 
 .shelter-location-2 {
 display: flex;
-margin-top: 38px;
+margin-top: 2px;
 margin-right: 32px;
 }
 
@@ -158,34 +154,181 @@ margin-right: 32px;
      margin-top: 60px;
 }
 
+}
 
-// .footer-container {
-//     flex-wrap: wrap;
-//   }
+/* MEDIA QUERIES 320px - 767.9px */
+
+@media (max-width: 767.9px) {
+
+  /* HEADER 320px */
+
+.header {
+  padding: 30px 0 0 0;
+  margin-bottom: 30px;
+  }
+ 
+ .wrapper {
+    max-width: $mobile-width; // 320px 
+     margin: 0 auto;
+     padding-left: 0px;
+     padding-right: 0px;
+ }
+ 
+ .nav-list {
+   display: none;
+    }
+ 
+    .burger-menu {
+      display: flex;
+    }
+
+      /* !SECTION OUR PETS 320px */
+
+      .ourpets-wrapper {
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+
+    h3 {
+      font-size: 25px;
+      letter-spacing: 0.06em;
+    }
+    .heading-our-pets {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+    }
   
-//   .contacts {
-//       margin-top: 30px;
-//       margin-right: 60px;
-//       margin-left: 64px;
-//   }
-       
-//   .locations {
-//       margin-top: 30px;
-//       margin-right: 65px; 
-//   }
+    .cards-container {
+        margin-top: 41px;
+    }
+  
+    .card-1 {
+      margin-left: 25px;
+      margin-top: 0px;
+    }
+    .card-2 {
+      margin-right: 0px;
+      margin-left: 25px;
+      margin-top: 30px;
+    }
+    .card-3 {
+      margin-right: 0px;
+    margin-left: 25px;
+    margin-top: 30px;
+    }
+    .card-4 {
+      display: none;
+      // margin-top: 15px;
+    }
+    .card-5 {
+      display: none;
+      // margin-right: 40px;
+      // margin-top: 30px;
+      // margin-bottom: 15px;
+    }
+    .card-6 {
+      display: none;
+      // margin-right: 40px;
+      // margin-top: 30px;
+      // margin-bottom: 15px;
+    }
+    .card-7 {
+      display: none;
+      // margin-right: 40px;
+      // margin-top: 30px;
+      // margin-bottom: 15px;
+    }
+    .card-8 {
+      display: none;
+   }
+      
+  .navigation {
+    margin-top: 43px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+ 
 
-//   .shelter-location-1 {
-//    margin-top: 33px;
-// }
+  /*! FOOTER page 2 - 320px */
 
-// .location-1 {
-//   margin-left: 0px;
-// }
-// .location-1-icon {
-//   margin-left: -8px;
-// }
-//   .footer-puppy { 
-//        margin-top: 60px;
-//   }
 
+  .footer-container {
+    flex-wrap: wrap;
+  }
+  
+  .contacts {
+    margin-top: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-right: 21px;
+    margin-left: 21px;
+  }
+  .shelter-mail {
+    padding-top: 41px; 
+  }
+  .mail {
+    padding-right: 0px;
+  }
+  .shelter-phone {
+    display: flex;
+    padding-top: 38px;
+    align-items: center;
+  }
+  .phone-icon {
+    padding-top: 2px;
+    padding-right: 20px;
+  }
+  .phone {
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  
+  .locations {
+      margin-top: 36px;
+      margin-right: 10px;
+      margin-left: 10px;
+      width: 300px;
+      flex-direction: column;
+      display: flex;
+  }
+  .title-locations {
+    display: flex;
+      margin-right: 11px;
+      margin-left: 12px;
+      // width: 237px; 
+      text-align: center;
+  }
+  .shelter-location-1 {
+   margin-top: 39px;
+  }
+  
+  .location-1 {
+  margin-left: 0px;
+  padding-right: 0px;
+  }
+  .location-1-icon {
+  padding-right: 10px;
+  padding-left: 0px;
+  }
+  
+  .shelter-location-2 {
+     margin-top: 26px;
+  }
+  .location-2 {
+    margin-left: 6px;
+  }
+  .location-2-icon {
+    margin-top: 7px;
+      margin-right: 6px;
+  }
+  
+  .footer-puppy { 
+    margin-top: 37px;
+    width: 260px;
+   }
+  
 }
