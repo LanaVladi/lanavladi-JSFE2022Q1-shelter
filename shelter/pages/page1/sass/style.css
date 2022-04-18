@@ -578,6 +578,7 @@ h5 {
   margin-top: 56px;
   margin-right: 160px;
   color: #FFFFFF;
+  width: 279px;
 }
 
 .title-contacts {
@@ -586,11 +587,11 @@ h5 {
 
 .shelter-mail {
   display: flex;
+  padding-top: 40px;
 }
 
 .mail-icon {
-  padding-top: 40px;
-  padding-right: 20px;
+  padding-right: 10px;
   color: #F1CDB3;
 }
 
@@ -598,8 +599,8 @@ h5 {
   display: block;
   color: #F1CDB3;
   text-decoration: none;
-  margin-top: 44px;
-  padding-right: 26px;
+  padding-top: 1px;
+  padding-right: 20px;
 }
 
 .shelter-phone {
@@ -617,7 +618,7 @@ h5 {
   color: #F1CDB3;
   text-decoration: none;
   margin-top: 44px;
-  margin-right: 38px;
+  margin-right: 39px;
 }
 
 .locations {
@@ -632,23 +633,25 @@ h5 {
 
 .shelter-location-1 {
   display: flex;
-  margin-top: 34px;
+  margin-top: 32px;
+  margin-right: 5px;
 }
 
 .location-1 {
   display: block;
   color: #F1CDB3;
   text-decoration: none;
-  margin-left: 10px;
+  padding-right: 1px;
 }
 
 .location-1-icon {
-  margin-top: 5px;
+  margin-top: 6px;
+  padding-right: 20px;
 }
 
 .shelter-location-2 {
   display: flex;
-  margin-top: 35px;
+  margin-top: 37px;
   margin-right: 31px;
 }
 
@@ -1178,5 +1181,37 @@ h5 {
     margin-right: 10px;
     margin-left: 10px;
     text-align: justify;
+  }
+
+  /* FOOTER 320px */
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .contacts {
+    margin-top: 30px;
+    margin-right: 60px;
+    margin-left: 64px;
+  }
+
+  .locations {
+    margin-top: 30px;
+    margin-right: 65px;
+  }
+
+  .shelter-location-1 {
+    margin-top: 33px;
+  }
+
+  .location-1 {
+    margin-left: 0px;
+  }
+
+  .location-1-icon {
+    margin-left: -8px;
+  }
+
+  .footer-puppy {
+    margin-top: 60px;
   }
 }/*# sourceMappingURL=style.css.map */
