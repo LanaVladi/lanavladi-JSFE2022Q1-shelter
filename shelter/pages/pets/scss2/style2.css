@@ -313,9 +313,9 @@ span {
   border-style: solid;
 }
 
-/*! FOOTER */
+/*! FOOTER page 2 - 1280px */
 .footer-wrapper {
-  background: url(./../../assets/img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%, #211F20);
+  background: url(../../../assets/img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%, #211F20);
 }
 
 .footer-container {
@@ -335,6 +335,7 @@ h4 {
   margin-top: 56px;
   margin-right: 160px;
   color: #FFFFFF;
+  width: 279px;
 }
 
 .title-contacts {
@@ -343,11 +344,11 @@ h4 {
 
 .shelter-mail {
   display: flex;
+  padding-top: 40px;
 }
 
 .mail-icon {
-  padding-top: 40px;
-  padding-right: 20px;
+  padding-right: 10px;
   color: #F1CDB3;
 }
 
@@ -355,8 +356,8 @@ h4 {
   display: block;
   color: #F1CDB3;
   text-decoration: none;
-  margin-top: 44px;
-  padding-right: 26px;
+  padding-top: 1px;
+  padding-right: 20px;
 }
 
 .shelter-phone {
@@ -374,7 +375,7 @@ h4 {
   color: #F1CDB3;
   text-decoration: none;
   margin-top: 44px;
-  margin-right: 38px;
+  margin-right: 39px;
 }
 
 .locations {
@@ -389,23 +390,25 @@ h4 {
 
 .shelter-location-1 {
   display: flex;
-  margin-top: 34px;
+  margin-top: 32px;
+  margin-right: 5px;
 }
 
 .location-1 {
   display: block;
   color: #F1CDB3;
   text-decoration: none;
-  margin-left: 10px;
+  padding-right: 1px;
 }
 
 .location-1-icon {
-  margin-top: 5px;
+  margin-top: 6px;
+  padding-right: 20px;
 }
 
 .shelter-location-2 {
   display: flex;
-  margin-top: 35px;
+  margin-top: 37px;
   margin-right: 31px;
 }
 
@@ -530,21 +533,50 @@ h4 {
     margin-left: 64px;
   }
 
+  .shelter-mail {
+    padding-top: 41px;
+  }
+
+  .shelter-phone {
+    display: flex;
+    padding-top: 38px;
+    align-items: center;
+  }
+
+  .phone-icon {
+    padding-top: 1px;
+    padding-right: 20px;
+  }
+
+  .phone {
+    margin-right: 39px;
+    margin-top: 0px;
+  }
+
   .locations {
     margin-top: 30px;
-    margin-right: 65px;
+    margin-right: 63px;
+    width: 302px;
   }
 
   .shelter-location-1 {
-    margin-top: 33px;
+    margin-top: 31px;
+    margin-right: 5px;
   }
 
   .location-1 {
-    margin-left: 0px;
+    padding-right: 1px;
   }
 
   .location-1-icon {
-    margin-left: -8px;
+    margin-top: 7px;
+    padding-right: 12px;
+  }
+
+  .shelter-location-2 {
+    display: flex;
+    margin-top: 38px;
+    margin-right: 32px;
   }
 
   .footer-puppy {

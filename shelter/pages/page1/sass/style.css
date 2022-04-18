@@ -862,21 +862,50 @@ h5 {
     margin-left: 64px;
   }
 
+  .shelter-mail {
+    padding-top: 41px;
+  }
+
+  .shelter-phone {
+    display: flex;
+    padding-top: 38px;
+    align-items: center;
+  }
+
+  .phone-icon {
+    padding-top: 1px;
+    padding-right: 20px;
+  }
+
+  .phone {
+    margin-right: 39px;
+    margin-top: 0px;
+  }
+
   .locations {
     margin-top: 30px;
-    margin-right: 65px;
+    margin-right: 63px;
+    width: 302px;
   }
 
   .shelter-location-1 {
-    margin-top: 33px;
+    margin-top: 31px;
+    margin-right: 5px;
   }
 
   .location-1 {
-    margin-left: 0px;
+    padding-right: 1px;
   }
 
   .location-1-icon {
-    margin-left: -8px;
+    margin-top: 7px;
+    padding-right: 12px;
+  }
+
+  .shelter-location-2 {
+    display: flex;
+    margin-top: 38px;
+    margin-right: 32px;
   }
 
   .footer-puppy {
