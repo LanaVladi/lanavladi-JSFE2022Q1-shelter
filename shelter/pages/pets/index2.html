@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/png" sizes="50x50" rel="icon" href="../../assets/img/icons8-собачий-след-50.png">
-    <link rel="stylesheet" href="style2.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+   <link rel="stylesheet" href="./scss2/style2.css">
     <title>Shelter pets</title>
 </head>
 <body>
@@ -23,14 +24,26 @@
             <li class="nav-item"><a href="../page1/index.html" class="nav-link">About the shelter</a></li>
             <li class="nav-item"><a href="#ourpets" class="nav-link-active">Our pets</a></li>  
             <li class="nav-item"><a href="../page1/index.html#help" class="nav-link">Help the shelter</a></li>
-            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+            <li class="nav-item"><a href="#footer" class="nav-link">Contacts</a></li>
                 </ul>
                 </div>  
                 </nav>
+                          <!--BURGER MENU-->  
+                  <!-- <div class="burger-container"> -->
+        <div class="burger-menu" id="burger">
+            <!-- <span class="burger-line line1"></span>
+            <span class="burger-line line2"></span>
+            <span class="burger-line line3"></span> -->
+            <span></span>
+            <span></span>
+            <span></span>
+        <!-- </div> -->
+        </div>
         </div>
     </header>
       <!--MAIN-->
        <!--SECTION OUR PETS-->   
+       <main class="main">
        <section class="ourpets" id="ourpets">
         <div class="wrapper ourpets-wrapper">
             <div class="heading-our-pets"><h3><span>Our friends who</span> are looking for a house</h3></div>
@@ -92,39 +105,57 @@
                 <button class="button-get-to">Get to know the rest</button></form> -->
         </div>
      </section>
+       </main>
 
-      <!--FOOTER-->
-      <footer class="footer">
+     <!--FOOTER-->
+     <footer class="footer">
         <div class="wrapper footer-wrapper" id="contacts">
         <div class="footer-container">
-            <!--CONTACTS-->
+            <!--FOOTER: CONTACTS-->
             <div class="contacts" id="contacts">
-             <p class="title-contacts"><h3><span>For questions </span>and suggestions</h3></p>
+             <!-- <p class="title-contacts"><h3><span>For questions </span>and suggestions</h3></p> -->
+             <p class="title-contacts"><h3>For questions and suggestions</h3></p>
              <div class="shelter-mail">
-                <a href="mailto:email@shelter.com"><img src="../../assets/svg/mail@2x.svg" alt="shelter-mail" class="mail-icon"></a>
-                <h4><a href="mailto:email@shelter.com" class="mail">email@shelter.com</a></h4></div>
+                <div class="mail-icon"><a href="mailto:email@shelter.com">
+                    <img src="../../assets/svg/mail@2x.svg" alt="shelter-mail" class="mail-icon">
+                </a>
+            </div>
+                <div class="mail"><a href="mailto:email@shelter.com" class="mail"><h6>email@shelter.com</h6></a>
+                </div>
+            </div>
              <div class="shelter-phone">
                 <a href="tel:+13 674 567 75 54"><img src="../../assets/svg/phone@2x.svg" alt="shelter-phone" class="phone-icon"></a>
-                <h4><a href="tel:+13 674 567 75 54" class="phone">+13 674 567 75 54</a></h4></div>
+                <a href="tel:+13 674 567 75 54" class="phone"><h6>+13 674 567 75 54</h6></a>
             </div>
-             <!--LOCATIONS-->
-            <div class="locations" id="contacts">
-             <p class="title-locations"><h3><span>We are waiting </span> for your visit</h3></p>
+            </div>
+             <!--FOOTER: LOCATIONS-->
+            <div class="locations" id="footer">
+             <!-- <p class="title-locations"><h3><span>We are waiting </span> for your visit</h3></p> -->
+             <div class="title-locations"><h3>We are waiting for your visit</h3></div>
             <div class="shelter-location-1">
-                <a href="https://goo.gl/maps/o8M3ujMJzJz9Phb2A">
+                <div class="location-1-icon"><a href="https://goo.gl/maps/o8M3ujMJzJz9Phb2A">
                     <img src="../../assets/svg/pin@2x.svg" alt="shelter-location-1" class="location-1-icon"></a>
-                <h4><a href="https://goo.gl/maps/o8M3ujMJzJz9Phb2A" class="location-1"><span>1 Central Street, Boston </span>(entrance from the store)</a></h4>
+                </div>
+     <div class="location-1">
+         <a href="https://goo.gl/maps/o8M3ujMJzJz9Phb2A" class="location-1 a"><h6>1 Central Street, Boston (entrance from the store)</h6></a>
+        </div>
+                    <!-- <span>1 Central Street, Boston </span>(entrance from the store)</a></h6> -->
+                   
             </div>
             <div class="shelter-location-2">
-                <a href="https://goo.gl/maps/P5986y3kP6TSD23v5">
+                <div class="location-2-icon"><a href="https://goo.gl/maps/P5986y3kP6TSD23v5">
                     <img src="../../assets/svg/pin@2x.svg" alt="shelter-location-2" class="location-2-icon"></a>
-                <h4><a href="https://goo.gl/maps/P5986y3kP6TSD23v5" class="location-2">18 South Park, London</a></h4>
+                </div>
+                <div class="location-2"><a href="https://goo.gl/maps/P5986y3kP6TSD23v5" class="location-2"><h6>18 South Park, London</h6></a>
+                </div>
             </div>
             </div>
+             <!--FOOTER: BG-->
             <img src="../../assets/img/footer-puppy@2x.png" alt="footer-puppy" class="footer-puppy">
         </div>
         </div>
       </footer>
+
    <script src="./index2.js"></script> 
 </body>
 </html>

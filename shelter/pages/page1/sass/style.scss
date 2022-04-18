@@ -27,8 +27,6 @@ $font-h1-logo_title: 400 32px 'Georgia', serif;
 $font-h2-logo_subtitle: 400 13px 'Arial', sans-serif;
 
 $content-width: 1280px;
-// $content-width2: 100vw;
-
 $tablet-width: 768px;
 $mobile-width: 320px;
 
@@ -54,17 +52,6 @@ body {
 //     //padding-top: 120px; // для выравнивания фона между header и start-screen
 // }
 
-.start-screen-wrapper {
-    display: flex;
-    padding-top: 60px;
-}
-
-.start-screen-content{
-    padding-top: 163px;
-    padding-right: 42px;
-   
-}
-
 .wrapper {
     width: $content-width; // 1200px 
     margin: 0 auto;
@@ -72,12 +59,14 @@ body {
     padding-right: 40px;
 }
 
+/* HEADER 1280px*/
+
 .header {
    // background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
     //position: absolute; // убрала bg и добавила position: absolute; для выравнивания фона. 
     //добавила padding-left: 175px; в header и padding-top: 120px; в start-screen
     //padding: 60px 0 0 175px;
-    padding: 60px 0 0 0;
+    padding: 59px 0 0 0;
 }
 
 .header-wrapper {
@@ -156,6 +145,68 @@ color: $color-dark-s;
 }
 }
 
+/* BURGER MENU */
+
+.burger-menu {
+    width: 30px;
+    height: 22px;
+    // flex-direction: column;
+    // justify-content: space-between;
+    cursor: pointer;
+    //user-select: none;
+    position: relative;
+    z-index: 2;
+   // margin-top: 30px;
+    display: none;
+    margin-right: 53px;
+    // margin-left: 20px;
+}
+
+.burger-menu span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: $color-primary;
+    position: absolute;
+    //border: 2px solid $color-primary;
+    //position: absolute;
+	top: 50%;
+	left: 50%;
+    //background-color: #ffffff;
+    transform: translate(-50%, -50%);
+    //border-radius: 2px;
+    //-webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.burger-menu span:nth-of-type(2) {
+    top: calc(50% - 10px);
+}
+
+.burger-menu span:nth-of-type(3) {
+    top: calc(50% + 10px);
+}
+
+ /* SECTION START SCREEN 1280px */
+
+.start-screen-wrapper {
+    display: flex;
+    padding-top: 60px;
+}
+
+// .start-screen-content{
+//     padding-top: 163px;
+//     padding-right: 42px;
+// }
+
+.start-screen-content{
+    padding-top: 163px;
+    margin-right: 42px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+    width: 460px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+    height: 322px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+} // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+
+
 
 h2 {
     font-family: 'Georgia';
@@ -165,16 +216,10 @@ h2 {
     line-height: 130%;
     // or 57px
     color: $color-light-xl;
+    // letter-spacing: 0.06em; ни в коем случае не трогать!!! полетит верстка 768px!!!!!
 }
 
 .heading-start-screen {
-font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 160%;
-// or 24px 
-color: $color-dark-s;
 padding-right: 150px;
 }
 
@@ -186,7 +231,7 @@ font-size: 15px;
 line-height: 160%;
 // or 24px 
 color: $color-dark-s;
-padding-top: 42px;
+ padding-top: 42px; // УБРАЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
 }
 
 .button-primary {
@@ -225,6 +270,8 @@ transition: 1s;
 // // background-position: center 0;
 // }
 
+ /*  SECTION ABOUT 1280px */
+
 .about-wrapper {
     display: flex;
     flex-direction: row;
@@ -242,7 +289,6 @@ transition: 1s;
 }
 
 .content-pets {
-    width: 430px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,7 +335,7 @@ padding-top: 25px;
     padding-top: 25px;
     }
 
-    /* !SECTION OUR PETS */
+    /* !SECTION OUR PETS 1280px*/
 
     .ourpets-wrapper {
         display: flex;
@@ -324,7 +370,7 @@ padding-top: 25px;
         box-sizing: border-box;
         border-radius: 100px;
         position: relative;
-        top: 192px;
+        top: 189px;
         right: 52px;
         color: $color-light-l;
         cursor: pointer;
@@ -341,7 +387,7 @@ padding-top: 25px;
             box-sizing: border-box;
             border-radius: 100px;
             position: relative;
-            top: 192px;
+            top: 189px;
             left: 53px;
             color: $color-light-l;
             cursor: pointer;
@@ -459,29 +505,31 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
         }
         }
 
-        .help-wrapper {
-            background-color: $color-light-xl;
-        }
-        .heading-help {
-    display: flex;
-    text-align: center;
-    margin-right: 445px;
-    margin-left: 445px;
-   margin-top: 80px;
-   color: $color-dark-l;
-            }
 
-            .help-container {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                //max-width: 1026px;
-                margin-left: 87px;
-                margin-right: 87px;
-               // padding-right: 120px;
-            //    margin-top: 80px;
-               margin-bottom: 100px;
-            }
+         /*  SECTION HELP 1280px */
+
+.help-wrapper {
+   background-color: $color-light-xl;
+}
+
+.heading-help {
+display: flex;
+text-align: center;
+margin-right: 445px;
+margin-left: 445px;
+margin-top: 80px;
+color: $color-dark-l;
+}
+
+.help-container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+//max-width: 1026px;
+margin-left: 87px;
+margin-right: 87px;
+margin-bottom: 100px;
+}
 
  .help-icon {
     display: flex;
@@ -500,7 +548,7 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
     margin-left: 120px;
 }
 .icon-5 {
-    margin-left: 117px; //неправильные размеры в макете
+    margin-left: 117px; //другие размеры в макете
     // margin-left: 87px;
 }
 .icon-6 {
@@ -516,7 +564,7 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
     margin-top: 55px;
 }
 .icon-9 {
-    margin-left: 117px; //неправильные размеры в макете
+    margin-left: 117px; // другие размеры в макете
     margin-top: 55px;
     margin-right: 84px;
 }
@@ -535,8 +583,8 @@ color: $color-dark-l;
 }
 
 
+/* SECTION DONATION 1280px*/
 
-/* SECTION DONATION */
 .donation-wrapper {
     background-color: $color-light-l ;
 }
@@ -544,12 +592,20 @@ color: $color-dark-l;
     display: flex;
 }
 
+.donation-content {
+    margin-top: 80px;
+    width: 380px;
+    height: 282px;
+    margin-right: 182px;
+} // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+
+
 .donation-dog {
-    margin: 89px 30px 110px 141px;  //неправильные размеры в макете
+    margin: 89px 30px 110px 141px;  //Другие размеры в макете
 }
 
 .heading-donation {
-    margin-top: 80px;
+    // margin-top: 80px; УБРАЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
     color: $color-dark-l;
 }
 
@@ -589,7 +645,11 @@ transition: 1s;
 }
 }
 
-.donation-description  {
+.bank-account {
+    padding-left: 5px;
+}
+
+.donation-description {
     font-family: 'Arial';
     font-style: italic;
     font-weight: 400;
@@ -598,11 +658,40 @@ transition: 1s;
     // or 150% 
     color: $color-dark-m;       
 margin-top: 20px;   
-margin-right: 182px; 
+// margin-right: 182px;  УБРАЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
 }
 
 
-/*! FOOTER */
+
+ /* STYLES DONATION SECTION FOR MOZILLA 1280PX*/
+
+//  @-moz-document url-prefix()
+//  {
+//   //  .bank-account {
+//   //   padding-left: 5px;
+//   //  }
+
+// .donation-dog {
+//   width: 505px;
+// }
+
+// .button-donation {
+//   margin-right: 415px;
+// }
+
+//  }
+
+/*! FOOTER 1280px */
+
+h6 { 
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    // identical to box height, or 23px 
+    letter-spacing: 0.06em;
+    }
 
 .footer-wrapper {
     background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
@@ -620,6 +709,7 @@ margin-right: 182px;
     margin-right: 160px;
     //text-align: center;
     color: $color-light-xl;
+    width: 279px;
 }
 
 .title-contacts {
@@ -628,10 +718,12 @@ margin-right: 182px;
 
 .shelter-mail {
     display: flex;
+    //  padding-right: 40px;
+    padding-top: 40px;
 }
 .mail-icon {
-    padding-top: 40px;   
-    padding-right: 20px;
+    // padding-top: 40px;   
+    padding-right: 10px;
     color: $color-primary;
 }
 
@@ -639,8 +731,8 @@ margin-right: 182px;
 display: block;
 color: $color-primary;
 text-decoration: none;
-margin-top: 44px;
-padding-right: 26px;  
+padding-top: 1px;
+    padding-right: 20px;
 } 
 
 .shelter-phone {
@@ -658,7 +750,7 @@ padding-right: 26px;
     color: $color-primary;
     text-decoration: none;
     margin-top: 44px;
-    margin-right: 38px;
+    margin-right: 39px;
 }
 
 
@@ -675,34 +767,46 @@ padding-right: 26px;
 }
 
 .shelter-location-1 {
+    // display: flex;
+    // margin-top: 34px;
     display: flex;
-    margin-top: 34px;
+    margin-top: 32px;
+    //margin-right: 5px;
 }
 
 .location-1 {
-    display: block;
+   // display: block;
     color: $color-primary;
     text-decoration: none;
-    margin-left: 10px;
+    // margin-left: 10px;
+    //padding-right: 1px;
 }
 .location-1-icon {
     //margin-right: 20px;
-    margin-top: 5px;
+    // margin-top: 5px;
+    margin-top: 3px;
+    padding-right: 10px;
 }
 .shelter-location-2 {
+    // display: flex;
+    // margin-top: 35px;
+    // margin-right: 31px;
     display: flex;
-    margin-top: 35px;
+    margin-top: 19px;
     margin-right: 31px;
 }
 .location-2 {
-    display: block;
+    //display: block;
     color: $color-primary;
     text-decoration: none;
-    margin-left: 20px;
+   // margin-left: 20px;
+   margin-left: 6px;
 }
 .location-2-icon {
     //margin-right: 20px;
-    margin-top: -5px;
+    //margin-top: -5px;
+    margin-top: 7px;
+    margin-right: 7px;
 }
 .footer-puppy { 
      margin-top: 40px;

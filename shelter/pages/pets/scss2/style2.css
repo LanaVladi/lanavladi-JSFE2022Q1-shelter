@@ -26,6 +26,7 @@ body {
   padding-right: 40px;
 }
 
+/* HEADER 1280px */
 .header {
   background-color: #FFFFFF;
   position: -webkit-sticky;
@@ -37,7 +38,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 29px;
   margin-bottom: 30px;
 }
 
@@ -113,6 +114,37 @@ h3 {
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
+}
+
+/* BURGER MENU */
+.burger-menu {
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  display: none;
+  margin-right: 53px;
+}
+
+.burger-menu span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.8s ease-in-out;
+}
+
+.burger-menu span:nth-of-type(2) {
+  top: calc(50% - 10px);
+}
+
+.burger-menu span:nth-of-type(3) {
+  top: calc(50% + 10px);
 }
 
 /* !SECTION OUR PETS */
@@ -251,7 +283,7 @@ span {
 
 .navigation {
   display: flex;
-  margin-top: 45px;
+  margin-top: 46px;
   margin-left: 430px;
   margin-right: 430px;
 }
@@ -312,16 +344,8 @@ span {
   border-style: solid;
 }
 
-/*! FOOTER */
-.footer-wrapper {
-  background: url(./../../assets/img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%, #211F20);
-}
-
-.footer-container {
-  display: flex;
-}
-
-h4 {
+/*! FOOTER page 2 - 1280px */
+h6 {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -330,10 +354,19 @@ h4 {
   letter-spacing: 0.06em;
 }
 
+.footer-wrapper {
+  background: url(../../../assets/img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%, #211F20);
+}
+
+.footer-container {
+  display: flex;
+}
+
 .contacts {
   margin-top: 56px;
   margin-right: 160px;
   color: #FFFFFF;
+  width: 279px;
 }
 
 .title-contacts {
@@ -342,11 +375,11 @@ h4 {
 
 .shelter-mail {
   display: flex;
+  padding-top: 40px;
 }
 
 .mail-icon {
-  padding-top: 40px;
-  padding-right: 20px;
+  padding-right: 10px;
   color: #F1CDB3;
 }
 
@@ -354,8 +387,8 @@ h4 {
   display: block;
   color: #F1CDB3;
   text-decoration: none;
-  margin-top: 44px;
-  padding-right: 26px;
+  padding-top: 1px;
+  padding-right: 20px;
 }
 
 .shelter-phone {
@@ -373,7 +406,7 @@ h4 {
   color: #F1CDB3;
   text-decoration: none;
   margin-top: 44px;
-  margin-right: 38px;
+  margin-right: 39px;
 }
 
 .locations {
@@ -388,37 +421,368 @@ h4 {
 
 .shelter-location-1 {
   display: flex;
-  margin-top: 34px;
+  margin-top: 30px;
 }
 
 .location-1 {
-  display: block;
   color: #F1CDB3;
   text-decoration: none;
-  margin-left: 10px;
 }
 
 .location-1-icon {
-  margin-top: 5px;
+  margin-top: 3px;
+  padding-right: 10px;
 }
 
 .shelter-location-2 {
   display: flex;
-  margin-top: 35px;
+  margin-top: 19px;
   margin-right: 31px;
 }
 
 .location-2 {
-  display: block;
   color: #F1CDB3;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 6px;
 }
 
 .location-2-icon {
-  margin-top: -5px;
+  margin-top: 7px;
+  margin-right: 7px;
 }
 
 .footer-puppy {
   margin-top: 40px;
+}
+
+/* MEDIA QUERIES*/
+@media (max-width: 1279.9px) {
+  /* HEADER 768px - 1279.9px */
+  .header {
+    padding: 29px 0 0 0;
+  }
+
+  .wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .header-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .logo-container {
+    padding-right: 0px;
+  }
+
+  /* !SECTION OUR PETS */
+  .ourpets-wrapper {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  .heading-our-pets {
+    margin-right: 154px;
+    margin-left: 154px;
+    margin-top: 20px;
+  }
+
+  .cards-container {
+    margin-top: 30px;
+  }
+
+  .card-1 {
+    margin-left: 94px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .card-2 {
+    margin-right: 94px;
+    margin-top: 0px;
+  }
+
+  .card-3 {
+    margin-left: 94px;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+
+  .card-4 {
+    margin-top: 30px;
+    margin-right: 94px;
+  }
+
+  .card-5 {
+    margin-right: 0px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    margin-left: 94px;
+  }
+
+  .card-6 {
+    margin-right: 94px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  .card-7 {
+    display: none;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .card-8 {
+    display: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .navigation {
+    margin-top: 40px;
+    margin-left: 214px;
+    margin-right: 214px;
+    margin-bottom: 5px;
+  }
+
+  /* FOOTER 768px */
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .contacts {
+    margin-top: 30px;
+    margin-right: 60px;
+    margin-left: 64px;
+  }
+
+  .shelter-mail {
+    padding-top: 41px;
+  }
+
+  .shelter-phone {
+    display: flex;
+    padding-top: 38px;
+    align-items: center;
+  }
+
+  .phone-icon {
+    padding-top: 1px;
+    padding-right: 20px;
+  }
+
+  .phone {
+    margin-right: 39px;
+    margin-top: 0px;
+  }
+
+  .locations {
+    margin-top: 30px;
+    margin-right: 63px;
+    width: 302px;
+  }
+
+  .shelter-location-1 {
+    margin-top: 31px;
+    margin-right: 5px;
+  }
+
+  .location-1 {
+    padding-right: 1px;
+  }
+
+  .location-1-icon {
+    margin-top: 4px;
+    padding-right: 9px;
+  }
+
+  .shelter-location-2 {
+    display: flex;
+    margin-top: 2px;
+    margin-right: 32px;
+  }
+
+  .footer-puppy {
+    margin-top: 60px;
+  }
+}
+/* MEDIA QUERIES 320px - 767.9px */
+@media (max-width: 767.9px) {
+  /* HEADER 320px */
+  .header {
+    padding: 30px 0 0 0;
+    margin-bottom: 30px;
+  }
+
+  .wrapper {
+    max-width: 320px;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  /* !SECTION OUR PETS 320px */
+  .ourpets-wrapper {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  h3 {
+    font-size: 25px;
+    letter-spacing: 0.06em;
+  }
+
+  .heading-our-pets {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+
+  .cards-container {
+    margin-top: 41px;
+  }
+
+  .card-1 {
+    margin-left: 25px;
+    margin-top: 0px;
+  }
+
+  .card-2 {
+    margin-right: 0px;
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+
+  .card-3 {
+    margin-right: 0px;
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+
+  .card-4 {
+    display: none;
+  }
+
+  .card-5 {
+    display: none;
+  }
+
+  .card-6 {
+    display: none;
+  }
+
+  .card-7 {
+    display: none;
+  }
+
+  .card-8 {
+    display: none;
+  }
+
+  .navigation {
+    margin-top: 43px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+
+  /*! FOOTER page 2 - 320px */
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .contacts {
+    margin-top: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-right: 21px;
+    margin-left: 21px;
+  }
+
+  .shelter-mail {
+    padding-top: 41px;
+  }
+
+  .mail {
+    padding-right: 0px;
+  }
+
+  .shelter-phone {
+    display: flex;
+    padding-top: 38px;
+    align-items: center;
+  }
+
+  .phone-icon {
+    padding-top: 2px;
+    padding-right: 20px;
+  }
+
+  .phone {
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .locations {
+    margin-top: 36px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 300px;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .title-locations {
+    display: flex;
+    margin-right: 11px;
+    margin-left: 12px;
+    text-align: center;
+  }
+
+  .shelter-location-1 {
+    margin-top: 39px;
+  }
+
+  .location-1 {
+    margin-left: 0px;
+    padding-right: 0px;
+  }
+
+  .location-1-icon {
+    padding-right: 10px;
+    padding-left: 0px;
+  }
+
+  .shelter-location-2 {
+    margin-top: 26px;
+  }
+
+  .location-2 {
+    margin-left: 6px;
+  }
+
+  .location-2-icon {
+    margin-top: 7px;
+    margin-right: 6px;
+  }
+
+  .footer-puppy {
+    margin-top: 37px;
+    width: 260px;
+  }
 }/*# sourceMappingURL=style2.css.map */

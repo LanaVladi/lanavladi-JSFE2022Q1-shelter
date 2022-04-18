@@ -1,4 +1,9 @@
-@media (min-width: 768px) and (max-width: 1279.9px) {
+// @media (min-width: 768px) and (max-width: 1279.9px) { ломает верстку 320px
+  // @media (min-width: 1279.9px) and (max-width: 768px) { ломает верстку 320px
+  @media (max-width: 1279.9px) {
+  // @media (max-width: 768px) {
+    /* HEADER 768px */
+
   .header {
    padding: 30px 0 0 0;
    }
@@ -25,532 +30,699 @@
       padding-right: 0px;
   }
 
-  /* START SCREEN */
+  /* SECTION START SCREEN 768px */
 
   .start-screen-wrapper {
-      // padding-top: 60px;
-      display: flex;
-      flex-direction: column;
-  padding-left: 99px;
-  padding-right: 100px;
-  width: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 99px;
+    padding-right: 100px;
   }
   
+  // .start-screen-content{
+  //   display: flex;
+  //   flex-direction: column;
+  //     padding-top: 0px;
+  //     padding-left: 55px;
+  //     padding-right: 54px;
+  // }
+
   .start-screen-content{
     display: flex;
     flex-direction: column;
-      padding-top: 0px;
-      padding-left: 55px;
-      padding-right: 54px;
-      // margin-left: 154px;
-      // margin-right: 154px;
+    padding-top: 0px;
+    // padding-left: 155px; 
+    // padding-right: 154px;
+    margin-right: 154px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+    margin-left: 55px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
   }
+
+
+   // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
   
    .start-screen-puppy {
     width: 569px;
      height: 593px;
-    //  padding-left: 126px;
-    //  padding-top: 100px;
     margin-left: 70px; // от своего контейнера
     margin-top: 99px; // 100px  не идеально ровно. 
-   //margin-right: 30px // в принципе не нужен
    }
-  // .heading-start-screen {
-  //   padding-left: 55px;
-  //   padding-right: 150px;
-  // }
-  
-  // .subheading-start-screen {
-  //   padding-left: 55px;
-  //   padding-right: 54px;
-  // }
 
-  //   .button-primary {
-  //    margin-left: 126px; ============ возможно будут нужны, но без них центровка отличная
-  //    margin-right: 127px;
+   /*  SECTION ABOUT 768px */
+
+  .about-wrapper {
+    flex-direction: column-reverse;
+    margin-right: 166px;
+  }
+  
+  .about-pets {
+    margin-top: 80px;
+    margin-left: 234px;
+  }
+  
+  .content-pets {
+    margin-right: 169px;
+    width: 430px;
+  }
+
+  
+      /* SECTION OUR PETS 768px */
+  
+      .heading-our-pets {
+      margin-right: 0px;
+      margin-left: 0px;
+       }
+  
+      .slider-container {
+          .button-arrow-left {
+          right: 0px;
+          }
+
+          .button-arrow-right {
+              left: 0px;
+          }
+        }
+      
+      .card-1 {
+        margin-right: 40px;
+        margin-left: 12px;
+      }
+      
+     .card-2 {
+         margin-right: 12px;
+     }
+
+      .card-3 {
+       display: none; // 3-я карточка скрыта
+     }
+  
+      .button-get-to {
+       margin-top: 58px; 
+      }
+  
+
+          /* SECTION HELP 768px */
+       
+.heading-help {
+  margin-right: 161px;
+  margin-left: 161px;
+}
+  
+ .help-container {
+  margin-left: 69px;
+  margin-right: 69px;
+  }
+  
+   .help-icon {
+  width: 170px;
+  height: 113px;
+   }
+
+  .icon-1 {
+    margin-left: 0px;
+}
+  .icon-2 {
+      margin-left: 60px;
+  }
+  .icon-3 {
+    margin-left: 60px;
+  }
+  .icon-4 {
+      margin-left: 0px;
+      margin-top: 55px;
+  }
+  .icon-5 {
+    margin-left: 60px; 
+    margin-top: 55px;
+  }
+  .icon-6 {
+    margin-left: 60px;
+  }
+  .icon-7 {
+    margin-left: 0px;
+  }
+  .icon-8 {
+    margin-left: 60px;
+  }
+  .icon-9 {
+    margin-left: 60px; 
+    margin-right: 0px;
+  }
+ 
+  /* SECTION DONATION 768px */
+ 
+  .donation-container {
+      flex-direction: column-reverse;
+  }
+  
+  .donation-content {
+   margin-left: 194px;
+}
+
+  .donation-dog {
+    margin: 60px 132px 100px 131px; 
+  }
+  
+  .subheading-donation {
+      margin-top: 19px; // 20px было по макету 
+  }
+  
+  .button-donation {
+   margin-right: 225px; 
+  }
+
+  .credit-card {
+    margin-left: 3px;
+  }
+
+  //  .donation-description  {
+  // //  margin-right: 194px;  // УБРАЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
   // }
   
-//   .about-wrapper {
-//       display: flex;
-//       flex-direction: row;
-//       padding-top: 80px;
-//       padding-bottom: 100px;
-//       // margin: 80px 0px 100px 0px;
-//       background: $color-light-xl;
-//   }
   
-//   .about-pets {
-//       width: 300px;
-//       height: 408px;
-//       margin-left: 175px;
-//       margin-right: 120px;
-//   }
+   /* FOOTER 768px */
   
-//   .content-pets {
-//       width: 430px;
-//       display: flex;
-//       flex-direction: column;
-//       align-items: center;
-//       justify-content: center;
-//       text-align: start;
-//       //margin: 14px 175px 14px 120px;
-//       margin-right: 175px;
-//   }
+  .footer-container {
+    flex-wrap: wrap;
+  }
   
-//   h3 {
-//   font-family: 'Georgia';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 35px;
-//   line-height: 130%;
-//   // or 45px 
-//   letter-spacing: 0.06em;
-//   }
-  
-//   .heading-about-pets {
-//   padding-right: 60px;
-//   color: $color-dark-l;
-//   }
-  
-//   .subheading-pets1 {
-//   font-family: 'Arial';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 15px;
-//   line-height: 160%;
-//   // or 24px 
-//   color: $color-dark-xl;
-//   padding-top: 25px;
-//   }
-  
-//   .subheading-pets2 {
-//       font-family: 'Arial';
-//       font-style: normal;
-//       font-weight: 400;
-//       font-size: 15px;
-//       line-height: 160%;
-//       // or 24px 
-//       color: $color-dark-xl;
-//       padding-top: 25px;
-//       }
-  
-//       /* !SECTION OUR PETS */
-  
-//       .ourpets-wrapper {
-//           display: flex;
-//           flex-direction: column;
-//           padding-top: 80px;
-//           padding-bottom: 100px;
-//           background: $color-light-l;
-//       }
-  
-//       .heading-our-pets {
-//        display: flex;
-//       text-align: center;
-//       color: $color-dark-l;
-//       margin-right: 400px;
-//       margin-left: 400px;
-//       //Здесь можно поставить max-width: 400: margin: 0 auto;
-//       }
-  
-//       span {
-//           display: block;
-//       }
-  
-//       .slider-container {
-//           margin-top: 60px;
-//           // margin-bottom: 60px;
-//           display: flex;
-  
-//           .button-arrow-left {
-//           width: 52px;
-//           height: 52px;
-//           border: 2px solid $color-primary;
-//           box-sizing: border-box;
-//           border-radius: 100px;
-//           position: relative;
-//           top: 192px;
-//           right: 52px;
-//           color: $color-light-l;
-//           cursor: pointer;
-//           transition: 0.5s;
-//           &:hover {
-//               background-color: $color-primary-light;
-//               border-color: $color-primary-light;
-//           }
-//           }
-//           .button-arrow-right {
-//               width: 52px;
-//               height: 52px;
-//               border: 2px solid $color-primary;
-//               box-sizing: border-box;
-//               border-radius: 100px;
-//               position: relative;
-//               top: 192px;
-//               left: 53px;
-//               color: $color-light-l;
-//               cursor: pointer;
-//               transition: 0.5s;
-//               &:hover {
-//                   background-color: $color-primary-light;
-//                   border-color: $color-primary-light;
-//               }
-//               }
-//       }
-  
-//       .card-container {
-//           display: flex;
-//           flex-direction: column;
-//           align-items: center;
-//           justify-content: center;
-//           background-color: $color-light-s;
-//           border-radius: 9px;
-//           cursor: pointer;
-//           transition: 0.3s;
-//           &:hover {
-//            box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-//            background-color: $color-light-xl;
-//            .button-learn-more {
-//                     /* card-hover */
-//                     background-color: $color-primary-light;
-//                     border-color: $color-primary-light;
-//           }
-//           }
-//       }
-  
-//       .card-1 {
-//           margin-right: 90px;
-//       }
-      
-//      .card-2 {
-//          margin-right: 90px;
-//       }
-  
-//       .card {
-//           border-top-left-radius: 9px;
-//           border-top-right-radius: 9px;
-//       }
-     
-//          .card-jennifer {
-//          // margin-right: 90px;
-//           position: relative; //для позиционирования стрелок
-//       }
-  
-//   .pets-name {
-//   font-family: 'Georgia';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 20px;
-//   line-height: 23px;
-//   // identical to box height 
-//   align-items: center;
-//   text-align: center;
-//   letter-spacing: 0.06em;
-//   color: $color-dark-l;
-//   padding-top: 30px;
-//   padding-bottom: 30px;
-//       }
-  
-//   .button-learn-more {
-//       border: 2px solid $color-primary;
-//       box-sizing: border-box;
-//       border-radius: 100px;
-//       width: 187px;
-//       height: 52px;        
-//       background-color: $color-light-s;
-//       font-family: 'Georgia';        
-//       font-style: normal;
-//   font-weight: 400;
-//   font-size: 17px;
-//   line-height: 130%;
-//   // identical to box height, or 22px 
-//   letter-spacing: 0.06em;
-//   color: $color-dark-3xl;
-//   outline: none; // убирает рамку по умолчанию у кнопок
-//   cursor: pointer;
-//   transition: 1s;
-//   margin-bottom: 30px; // чтобы карточку удлинить снизу
-//       &:hover {
-//           background-color: $color-primary-light;
-//           border-color: $color-primary-light;
-//   }
-//       }
-  
-//       .button-get-to {
-//           font-family: 'Georgia';
-//           font-style: normal;
-//           font-weight: 400;
-//           font-size: 17px;
-//           line-height: 130%;
-//           // identical to box height, or 22px 
-//           letter-spacing: 0.06em;
-//           color: $color-dark-3xl;
-//           width: 261px;
-//           height: 52px;
-//           // left: calc(50% - 207px/2 - 126.5px);
-//            background: $color-primary;
-//           outline: none; // убирает рамку по умолчанию у кнопок
-//           border-radius: 100px;
-//           margin-top: 60px; 
-//           cursor: pointer;
-//           transition: 1s;
-//           border-style: none; // убирает рамку по умолчанию у кнопок
-//           border-color: $color-primary;
-//           &:hover {
-//               background-color: $color-primary-light;
-//               border-color: $color-primary-light;
-//               outline: none; 
-//               border-style: solid;
-//           }
-//           }
-  
-//           .help-wrapper {
-//               background-color: $color-light-xl;
-//           }
-//           .heading-help {
-//       display: flex;
-//       text-align: center;
-//       margin-right: 445px;
-//       margin-left: 445px;
-//      margin-top: 80px;
-//      color: $color-dark-l;
-//               }
-  
-//               .help-container {
-//                   display: flex;
-//                   flex-direction: row;
-//                   flex-wrap: wrap;
-//                   //max-width: 1026px;
-//                   margin-left: 87px;
-//                   margin-right: 87px;
-//                  // padding-right: 120px;
-//               //    margin-top: 80px;
-//                  margin-bottom: 100px;
-//               }
-  
-//    .help-icon {
-//       display: flex;
-//       flex-direction: column;
-//       flex-wrap: wrap;
-//      // max-width: 1026px;
-//       margin-top: 60px;
-//    }
-//   .icon-2 {
-//       margin-left: 120px;
-//   }
-//   .icon-3 {
-//       margin-left: 120px;
-//   }
-//   .icon-4 {
-//       margin-left: 120px;
-//   }
-//   .icon-5 {
-//       margin-left: 117px; //неправильные размеры в макете
-//       // margin-left: 87px;
-//   }
-//   .icon-6 {
-//       margin-left: 84px;
-//       margin-top: 55px;
-//   }
-//   .icon-7 {
-//       margin-left: 120px;
-//       margin-top: 55px;
-//   }
-//   .icon-8 {
-//       margin-left: 120px;
-//       margin-top: 55px;
-//   }
-//   .icon-9 {
-//       margin-left: 117px; //неправильные размеры в макете
-//       margin-top: 55px;
-//       margin-right: 84px;
-//   }
-//   h4 { 
-//   font-family: 'Georgia';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 20px;
-//   line-height: 115%;
-//   // identical to box height, or 23px 
-//   letter-spacing: 0.06em;
-//   }
-//   .icon-name {
-//   margin-top: 30px;
-//   color: $color-dark-l;   
-//   }
-  
-  
-  
-//   /* SECTION DONATION */
-//   .donation-wrapper {
-//       background-color: $color-light-l ;
-//   }
-//   .donation-container {
-//       display: flex;
-//   }
-  
-//   .donation-dog {
-//       margin: 89px 30px 110px 141px;  //неправильные размеры в макете
-//   }
-  
-//   .heading-donation {
-//       margin-top: 80px;
-//       color: $color-dark-l;
-//   }
-  
-//   h5 {
-//   font-family: 'Georgia';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 15px;
-//   line-height: 110%;
-//   // identical to box height, or 17px 
-//   letter-spacing: 0.06em;
-//   color: $color-dark-l;
-//   }
-  
-//   .subheading-donation {
-//       margin-top: 18px; // 20px было по макету 
-//   }
-  
-//   .button-donation {
-//   display: flex;
-//   width: 349px;
-//   height: 43px;
-//   background: $color-primary;
-//   border-radius: 9px;
-//   padding-top: 7px;
-//   padding-left: 10px;
-//   margin-top: 20px;
-//   margin-right: 213px; 
-//   border-style: none; 
-//   border-style: solid;
-//   border-color: $color-primary;
-//   cursor: pointer;
-//   transition: 1s;
-//   &:hover {
-//       background-color: $color-primary-light;
-//       border-color: $color-primary-light;
-//   }
-//   }
-  
-//   .donation-description  {
-//       font-family: 'Arial';
-//       font-style: italic;
-//       font-weight: 400;
-//       font-size: 12px;
-//       line-height: 18px;
-//       // or 150% 
-//       color: $color-dark-m;       
-//   margin-top: 20px;   
-//   margin-right: 182px; 
-//   }
-  
-  
-//   /*! FOOTER */
-  
-//   .footer-wrapper {
-//       background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
-//   }
-  
-//   .footer-container {
-//       display: flex;
-//      // margin-top: 40px;
-//   }
-  
-//   .contacts {
-//       //display: flex;
-//       //flex-direction: column;
-//       margin-top: 56px;
-//       margin-right: 160px;
-//       //text-align: center;
-//       color: $color-light-xl;
-//   }
-  
-//   .title-contacts {
-//       display: flex;
-//   }
-  
-//   .shelter-mail {
-//       display: flex;
-//   }
-//   .mail-icon {
-//       padding-top: 40px;   
-//       padding-right: 20px;
-//       color: $color-primary;
-//   }
-  
-//   .mail {
-//   display: block;
-//   color: $color-primary;
-//   text-decoration: none;
-//   margin-top: 44px;
-//   padding-right: 26px;  
-//   } 
-  
-//   .shelter-phone {
-//       display: flex;  
-//   }
-  
-//   .phone-icon {
-//       padding-top: 40px;   
-//       padding-right: 20px;
-//       color: $color-primary;
-//   }
-  
-//   .phone {
-//       display: block;
-//       color: $color-primary;
-//       text-decoration: none;
-//       margin-top: 44px;
-//       margin-right: 38px;
-//   }
-  
-  
-//   .locations {
-//      // display: flex;
-//       margin-top: 56px;
-//       margin-right: 160px; 
-//      // text-align: center;
-//       color: $color-light-xl;
-//   }
-  
-//   .title-locations {
-//       display: flex;
-//   }
-  
-//   .shelter-location-1 {
-//       display: flex;
-//       margin-top: 34px;
-//   }
-  
-//   .location-1 {
-//       display: block;
-//       color: $color-primary;
-//       text-decoration: none;
-//       margin-left: 10px;
-//   }
-//   .location-1-icon {
-//       //margin-right: 20px;
-//       margin-top: 5px;
-//   }
-//   .shelter-location-2 {
-//       display: flex;
-//       margin-top: 35px;
-//       margin-right: 31px;
-//   }
-//   .location-2 {
-//       display: block;
-//       color: $color-primary;
-//       text-decoration: none;
-//       margin-left: 20px;
-//   }
-//   .location-2-icon {
-//       //margin-right: 20px;
-//       margin-top: -5px;
-//   }
-//   .footer-puppy { 
-//        margin-top: 40px;
-//   }
-  
+  .contacts {
+      margin-top: 30px;
+      margin-right: 60px;
+      margin-left: 64px;
+  }
+
+  .shelter-mail {
+    padding-top: 41px;
+  }
+
+  .shelter-phone {
+    display: flex;
+    padding-top: 38px;
+    align-items: center;
+}
+
+.phone-icon {
+  padding-top: 1px;
+  padding-right: 20px;
  }
+
+ .phone {
+   margin-right: 39px;
+   margin-top: 0px;
+ }
+       
+  .locations {
+      margin-top: 30px;
+      margin-right: 63px; 
+      width: 302px;
+  }
+
+  .shelter-location-1 {
+   margin-top: 31px;
+   margin-right: 5px;
+
+
+}
+
+.location-1 {
+  // margin-left: 0px;
+ //margin-top: 7px;
+ //padding-right: 12px;
+ padding-right: 1px;
+
+}
+.location-1-icon {
+  // margin-left: -8px;
+  // margin-top: 7px;
+  // padding-right: 12px;
+  margin-top: 4px;
+    padding-right: 9px;
+}
+
+.shelter-location-2 {
+  display: flex;
+  margin-top: 2px;
+ // margin-right: 32px;
+}
+
+.location-2-icon {
+  // margin-left: -8px;
+  // margin-top: 7px;
+  // padding-right: 12px;
+  margin-top: 7px;
+    margin-right: 5px;
+}
+
+
+  .footer-puppy { 
+       margin-top: 60px;
+  }
+  
+  
+ /* STYLES DONATION SECTION FOR MOZILLA 768PX*/
+
+//  @-moz-document url-prefix()
+//  {
+//   //  .bank-account {
+//   //   padding-left: 5px;
+//   //  }
+
+// .donation-dog {
+//   width: 505px;
+// }
+
+// .button-donation {
+//   margin-right: 415px;
+// }
+
+//  }
+
+}
+
+// @media (min-width: 0px) and (max-width: 767.9px) {
+@media (max-width: 767.9px) {
+
+  /* HEADER 320px */
+
+.header {
+ padding: 30px 0 0 0;
+ }
+
+
+.wrapper {
+   max-width: $mobile-width; // 320px 
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.wrapper-for-bg {
+    height: 823px;
+    max-width: $mobile-width;
+ }
+
+//  .header-wrapper {
+//     //padding-left: 10px;
+//    // padding-right: 53px;
+// }
+ 
+// .logo-container {
+//     //padding-right: 43px;
+// }
+
+.nav-list {
+  display: none;
+   }
+
+   .burger-menu {
+     display: flex;
+   }
+
+/* START SCREEN 320px */
+
+.start-screen-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 130%;
+  /* or 32px */
+  }
+
+  .heading-start-screen {
+    padding-right: 0px;
+    // margin-right: 35px; // работающие отступы
+    // margin-left: 35px; // работающие отступы
+    letter-spacing: 0.1em;
+    width: calc(100% - 70px);
+    }
+    
+    .subheading-start-screen {
+     padding-top: 41px;
+    }
+
+// .start-screen-content{
+//   display: flex;
+//   flex-direction: column;
+//   text-align: center;
+//     padding-top: 0px;
+//     padding-left: 0px;
+//     padding-right: 0px;
+// }
+
+
+.start-screen-content{
+  display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 300px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+    height: 296px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+    margin-right: 0px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+    margin-left: 0px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+}
+
+.button-primary {
+  margin-top: 41px;
+}
+
+ .start-screen-puppy {
+  width: 260px;
+  height: 271.77px;
+  margin-left: 40px;
+  margin-top: 105px; 
+  margin-bottom: 0.23px;
+ }
+
+  /*  SECTION ABOUT 320px */
+
+.about-wrapper {
+  flex-direction: column-reverse;
+  margin-right: 0px;
+  padding-top: 41px;
+  padding-bottom: 42px;
+}
+
+.about-pets {
+  width: 260px;
+    height: 353.6px;
+    margin-top: 42px;
+    margin-left: 30px;
+}
+
+.content-pets {
+  margin-right: 0px;
+  width: 300px;
+}
+
+h3 {
+  font-size: 25px;
+ }
+
+ .heading-about-pets {
+  text-align: center;
+  padding-right: 0px; // Обнуляю
+    margin-right: 40px;
+    margin-left: 20px;
+  }
+  
+  .subheading-pets1 {
+    text-align: justify;
+    margin-left: 5px;
+    width: 270px;
+    letter-spacing: normal;
+  }
+  
+  .subheading-pets2 {
+    padding-top: 22px;
+    width: 270px;
+    letter-spacing: normal;
+    text-align: justify;
+    margin-left: 5px;
+  }
+
+
+     /* SECTION OUR PETS 320px */
+     .ourpets-wrapper {
+      padding-top: 42px;
+      padding-bottom: 42px;
+  }
+
+    .heading-our-pets {
+    margin-right: 0px;
+    margin-left: 0px;
+     }
+
+    .slider-container {
+      margin-top: 41px;
+    position: relative;
+      .button-arrow-left {
+        width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 454px;
+    right: 200px;
+        }
+        .button-arrow-right {
+          width: 52px;
+          height: 52px;
+          position: absolute;
+          top: 454px;
+          left: 200px;
+        }
+    }
+    
+    .card-1 {
+      margin-right: 25px;
+      margin-left: 25px;
+    }
+    
+   .card-2 {
+    display: none;
+    margin-right: 0px;
+   }
+
+    .card-3 {
+     display: none; // 3-я карточка скрыта
+   }
+
+    .button-get-to {
+     margin-top: 114px; 
+    }
+
+
+         /* SECTION HELP 320px */
+     
+.heading-help {
+  margin-right: 48px;
+  margin-left: 50px;
+  margin-top: 42px;
+}
+
+.help-container {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 42px;
+  margin-top: 42px;
+}
+
+ .help-icon {
+width: 130px;
+height: 87px;
+flex-wrap: nowrap;
+margin-top: 0px;
+ }
+
+ .icon {
+   width: 50px;
+   height: 50px;
+ }
+
+ h4 {
+   font-size: 15px;
+  letter-spacing: 0.06em;
+ }
+
+.icon-1 {
+  margin-left: 0px;
+}
+.icon-2 {
+    margin-left: 30px;
+}
+.icon-3 {
+  margin-top: 30px;
+  margin-left: 0px;
+}
+.icon-4 {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.icon-5 {
+  margin-left: 00px; 
+  margin-top: 30px;
+}
+.icon-6 {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.icon-7 {
+  margin-left: 0px;
+  margin-top: 30px;
+}
+.icon-8 {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.icon-9 {
+  margin-left: 0px; 
+  margin-top: 30px;
+}
+
+.icon-name {
+  margin-top: 20px;
+}
+
+ /* SECTION DONATION 320px */
+
+.donation-container {
+    flex-direction: column-reverse;
+}
+
+.donation-content {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  width: 300px; // // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+  height: 281px; // // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+  margin-top: 40px; // // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+}
+
+.donation-dog {
+  margin: 43px 30px 42px 30px; 
+}
+
+.heading-donation {
+  // margin-top: 40px; // // УБРАЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+    margin-left: 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+h5 {
+   line-height: 160%;
+  // identical to box height, or 24px 
+  letter-spacing: 0em;
+  }
+
+.subheading-donation {
+    margin-top: 20px; 
+    text-align: center;
+    margin-left: 13px;
+    margin-right: 14px;
+}
+
+.button-donation {
+ margin-right: 10px; 
+ width: 281px;
+ height: 43px;
+}
+
+.credit-card {
+  margin-left: 3px;
+}
+
+.bank-account {
+  padding-left: 0px;
+  margin-top: 4px;
+}
+
+ .donation-description  {
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: justify;
+}
+
+
+   /* FOOTER 320px */
+
+.footer-container {
+  flex-wrap: wrap;
+}
+
+.contacts {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-right: 21px;
+  margin-left: 21px;
+}
+.shelter-mail {
+  padding-top: 41px;
+}
+.mail {
+  padding-right: 0px;
+}
+.shelter-phone {
+  display: flex;
+  padding-top: 38px;
+  align-items: center;
+}
+.phone-icon {
+  padding-top: 2px;
+  padding-right: 20px;
+  /* padding-left: 19px; */
+}
+.phone {
+  margin-right: 0px;
+  margin-top: 0px;
+  /* padding-right: 0px; */
+}
+
+.locations {
+  // margin-top: 36px;
+  //   margin-right: 21px;
+  //   margin-left: 21px;
+  //   width: 300px;
+  //   flex-direction: column;
+  //   display: flex;
+  //   align-items: center;
+  //   text-align: center;
+  margin-top: 36px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 300px;
+    flex-direction: column;
+    display: flex;
+}
+.title-locations {
+  display: flex;
+    margin-right: 11px;
+    margin-left: 12px;
+    /* width: 237px; */
+    text-align: center;
+
+}
+.shelter-location-1 {
+ margin-top: 39px;
+}
+
+.location-1 {
+// margin-left: 0px;
+margin-left: 0px;
+padding-right: 0px;
+}
+.location-1-icon {
+// margin-left: -8px;
+padding-right: 10px;
+padding-left: 0px;
+}
+
+.shelter-location-2 {
+  // display: flex;
+  // margin-top: 35px;
+  // margin-right: 31px;
+  // display: flex;
+  margin-top: 26px;
+  // margin-right: 31px;
+}
+.location-2 {
+  margin-left: 7px;
+}
+.location-2-icon {
+  margin-top: 7px;
+    margin-right: 6px;
+}
+
+.footer-puppy { 
+  margin-top: 36px;
+  width: 260px;
+ }
+}

@@ -22,6 +22,7 @@ $color-dark-l: #545454;
 $color-dark-xl: #4C4C4C;
 $color-dark-2xl: #444444;
 $color-dark-3xl: #292929;
+$color-black: #000000;
 
 $font-h1-logo_title: 400 32px 'Georgia', serif;
 $font-h2-logo_subtitle: 400 13px 'Arial', sans-serif;
@@ -49,6 +50,8 @@ body {
   padding-right: 40px;
 }
 
+/* HEADER 1280px */
+
 .header {
   background-color: $color-light-xl;
   position: sticky;
@@ -59,7 +62,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 29px;
   margin-bottom: 30px;
 }
 
@@ -147,6 +150,47 @@ padding-top: 8px;
     letter-spacing: 0.06em;
   }
 
+  /* BURGER MENU */
+
+.burger-menu {
+  width: 30px;
+  height: 22px;
+  // flex-direction: column;
+  // justify-content: space-between;
+  cursor: pointer;
+  //user-select: none;
+  position: relative;
+  z-index: 2;
+ // margin-top: 30px;
+  display: none;
+  margin-right: 53px;
+  // margin-left: 20px;
+}
+
+.burger-menu span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: $color-black;
+  position: absolute;
+  //border: 2px solid $color-primary;
+  //position: absolute;
+top: 50%;
+left: 50%;
+  //background-color: #ffffff;
+  transform: translate(-50%, -50%);
+  //border-radius: 2px;
+  //-webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.burger-menu span:nth-of-type(2) {
+  top: calc(50% - 10px);
+}
+
+.burger-menu span:nth-of-type(3) {
+  top: calc(50% + 10px);
+}
 
      /* !SECTION OUR PETS */
 
@@ -282,7 +326,7 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
 
 .navigation {
   display: flex;
-  margin-top: 45px;
+  margin-top: 46px;
   margin-left: 430px;
   margin-right: 430px;
 }
@@ -356,17 +400,9 @@ border: 2px solid $color-dark-s;
 }
 }
 
-/*! FOOTER */
+/*! FOOTER page 2 - 1280px */
 
-.footer-wrapper {
-  background: url(./../../assets/img/noise_transparent@2x.png), $color-gradient;
-}
-
-.footer-container {
-  display: flex;
-}
-
-h4 { 
+h6 { 
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;
@@ -376,6 +412,15 @@ h4 {
   letter-spacing: 0.06em;
   }
 
+.footer-wrapper {
+  background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
+}
+
+.footer-container {
+  display: flex;
+ // margin-top: 40px;
+}
+
 .contacts {
   //display: flex;
   //flex-direction: column;
@@ -383,6 +428,7 @@ h4 {
   margin-right: 160px;
   //text-align: center;
   color: $color-light-xl;
+  width: 279px;
 }
 
 .title-contacts {
@@ -391,10 +437,12 @@ h4 {
 
 .shelter-mail {
   display: flex;
+  //  padding-right: 40px;
+  padding-top: 40px;
 }
 .mail-icon {
-  padding-top: 40px;   
-  padding-right: 20px;
+  // padding-top: 40px;   
+  padding-right: 10px;
   color: $color-primary;
 }
 
@@ -402,8 +450,8 @@ h4 {
 display: block;
 color: $color-primary;
 text-decoration: none;
-margin-top: 44px;
-padding-right: 26px;  
+padding-top: 1px;
+  padding-right: 20px;
 } 
 
 .shelter-phone {
@@ -421,8 +469,9 @@ padding-right: 26px;
   color: $color-primary;
   text-decoration: none;
   margin-top: 44px;
-  margin-right: 38px;
+  margin-right: 39px;
 }
+
 
 .locations {
  // display: flex;
@@ -437,35 +486,51 @@ padding-right: 26px;
 }
 
 .shelter-location-1 {
+  // display: flex;
+  // margin-top: 34px;
   display: flex;
-  margin-top: 34px;
+  margin-top: 30px;
+  //margin-right: 5px;
 }
 
 .location-1 {
-  display: block;
+ // display: block;
   color: $color-primary;
   text-decoration: none;
-  margin-left: 10px;
+  // margin-left: 10px;
+  //padding-right: 1px;
 }
 .location-1-icon {
   //margin-right: 20px;
-  margin-top: 5px;
+  // margin-top: 5px;
+  margin-top: 3px;
+  padding-right: 10px;
 }
 .shelter-location-2 {
+  // display: flex;
+  // margin-top: 35px;
+  // margin-right: 31px;
   display: flex;
-  margin-top: 35px;
+  margin-top: 19px;
   margin-right: 31px;
 }
 .location-2 {
-  display: block;
+  //display: block;
   color: $color-primary;
   text-decoration: none;
-  margin-left: 20px;
+ // margin-left: 20px;
+ margin-left: 6px;
 }
 .location-2-icon {
   //margin-right: 20px;
-  margin-top: -5px;
+  //margin-top: -5px;
+  margin-top: 7px;
+  margin-right: 7px;
 }
 .footer-puppy { 
    margin-top: 40px;
 }
+
+/* MEDIA QUERIES*/
+
+@import './media2/mdq2';
