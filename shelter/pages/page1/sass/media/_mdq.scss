@@ -71,7 +71,7 @@
 
   .about-wrapper {
     flex-direction: column-reverse;
-    margin-right: 166px;
+    // margin-right: 166px; // DELETE STYLE FOR NO GORIZONTAL SCROLL
   }
   
   .about-pets {
@@ -81,6 +81,7 @@
   
   .content-pets {
     margin-right: 169px;
+    margin-left: 169px; // ADD STYLE FOR NO GORIZONTAL SCROLL
     width: 430px;
   }
 
@@ -404,7 +405,7 @@ h2 {
 
 .about-wrapper {
   flex-direction: column-reverse;
-  margin-right: 0px;
+  // margin-right: 0px;
   padding-top: 41px;
   padding-bottom: 42px;
 }
@@ -419,6 +420,8 @@ h2 {
 .content-pets {
   margin-right: 0px;
   width: 300px;
+  margin-right: 20px; // ADD STYLE FOR NO GORIZONTAL SCROLL
+  margin-left: 20px; // ADD STYLE FOR NO GORIZONTAL SCROLL
 }
 
 h3 {

@@ -37,13 +37,14 @@ $mobile-width: 320px;
   }
   
 body {
-    display: flex;
+    // display: flex;
     flex-direction: column;
 }
 
 .wrapper-for-bg {
     background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
     height: 908px;
+//     background-size: 100%; 
 }
 
 
@@ -53,10 +54,11 @@ body {
 // }
 
 .wrapper {
-    width: $content-width; // 1200px 
+    max-width: $content-width; // 1200px 
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
+    // width: 100%; // ADD STYLE FOR NO GORIZONTAL SCROLL
 }
 
 /* HEADER 1280px*/

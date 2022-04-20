@@ -39,12 +39,12 @@ $mobile-width: 320px;
 }
 
 body {
-  display: flex;
+  // display: flex;
   flex-direction: column;
 }
 
 .wrapper {
-  width: $content-width; 
+  max-width: $content-width; 
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
