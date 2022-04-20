@@ -44,6 +44,7 @@ body {
 .wrapper-for-bg {
     background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
     height: 908px;
+    max-width: $content-width;
 //     background-size: 100%; 
 }
 
