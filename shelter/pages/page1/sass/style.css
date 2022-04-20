@@ -15,7 +15,6 @@
 }
 
 body {
-  display: flex;
   flex-direction: column;
 }
 
@@ -25,7 +24,7 @@ body {
 }
 
 .wrapper {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
@@ -739,7 +738,6 @@ h6 {
   /*  SECTION ABOUT 768px */
   .about-wrapper {
     flex-direction: column-reverse;
-    margin-right: 166px;
   }
 
   .about-pets {
@@ -749,6 +747,7 @@ h6 {
 
   .content-pets {
     margin-right: 169px;
+    margin-left: 169px;
     width: 430px;
   }
 
@@ -1007,7 +1006,6 @@ h6 {
   /*  SECTION ABOUT 320px */
   .about-wrapper {
     flex-direction: column-reverse;
-    margin-right: 0px;
     padding-top: 41px;
     padding-bottom: 42px;
   }
@@ -1022,6 +1020,8 @@ h6 {
   .content-pets {
     margin-right: 0px;
     width: 300px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
   h3 {
