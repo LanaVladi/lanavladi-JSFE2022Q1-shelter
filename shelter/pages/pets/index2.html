@@ -45,50 +45,79 @@
        <!--SECTION OUR PETS-->   
        <main class="main">
        <section class="ourpets" id="ourpets">
-        <div class="wrapper ourpets-wrapper">
+               <div class="wrapper ourpets-wrapper">
             <div class="heading-our-pets"><h3><span>Our friends who</span> are looking for a house</h3></div>
                 <div class="cards-container">
-                    <div class="card-container card-1">
-                    <img src="../../assets/img/pets/katrine.png" alt="katrine" class="card card-katrine">
-                    <p class="pets-name">Katrine</p>
-                    <button class="button-learn-more">Learn more</button>
+
+                      <!-- /* ============== MODAL WINDOW =============== */  -->
+         <div class="popup">
+            <div class="popup-wrapper">
+                <button class="button-close">
+                    <img src="../../assets/svg/Btn-close@2x.svg" alt="button-close" class="btn-close"></button>
+                    <div class="modal-window">
+                        <img src="" alt="" class="image" id="img">
+                    <div class="popup-content">
+                        <div id="name"><h3 class="popup-title"></h3></div>
+                        <div id="popup-subtitle"><h4 class="popup-subtitle"></h4></div>
+                        <div id="popup-description" class="popup-description">
+                         </div>
+                        <div class="popup-list-container">
+                        <ul class="popup-list">
+                            <li class="age"></li>
+                            <li class="inoculations"></li>
+                            <li class="diseases"></li>
+                            <li class="parasites"></li>
+                        </ul>
+                    </div>
+                    </div>
                 </div>
-                <div class="card-container card-2">
-                    <img src="../../assets/img/pets/jennifer.png" alt="jennifer" class="card card-jennifer">
-                    <p class="pets-name">Jennifer</p>
-                    <button class="button-learn-more">Learn more</button>
-                </div>
-                    <div class="card-container card-3">
-                    <img src="../../assets/img/pets/woody.png" alt="woody" class="card card-woody">
-                    <p class="pets-name">Woody</p>
-                    <button class="button-learn-more">Learn more</button>
-                </div>
-                <div class="card-container card-4">
-                    <img src="../../assets/img/pets/sophia.png" alt="sophia" class="card card-sophia">
-                    <p class="pets-name">Sophia</p>
-                    <button class="button-learn-more">Learn more</button>
-                </div>
-                <div class="card-container card-5">
-                    <img src="../../assets/img/pets/timmy.png" alt="timmy" class="card card-timmy">
-                    <p class="pets-name">Timmy</p>
-                    <button class="button-learn-more">Learn more</button>
-                </div>
-                <div class="card-container card-6">
-                    <img src="../../assets/img/pets/charly.png" alt="charly" class="card card-charly">
-                    <p class="pets-name">Charly</p>
-                    <button class="button-learn-more">Learn more</button>
-                </div>
-                <div class="card-container card-7">
-                    <img src="../../assets/img/pets/scarlett.png" alt="scarlett" class="card card-scarlett">
-                    <p class="pets-name">Scarlett</p>
-                    <button class="button-learn-more">Learn more</button>
-                </div>
-                <div class="card-container card-8">
-                    <img src="../../assets/img/pets/freddie.png" alt="freddie" class="card card-freddie">
-                    <p class="pets-name">Freddie</p>
-                    <button class="button-learn-more">Learn more</button>
-                </div>
+                <div class="overlay"></div>
             </div>
+            </div>
+            <!-- /* ============== MODAL WINDOW end =============== */  -->
+
+                    <div class="card-container card-1" data-name="Katrine">
+                        <img src="../../assets/img/pets/katrine.png" alt="katrine" class="card card-katrine">
+                        <p class="pets-name">Katrine</p>
+                        <button class="button-learn-more" data-name="katrine">Learn more</button>
+                    </div>
+                    <div class="card-container card-2" data-name="Jennifer">
+                        <img src="../../assets/img/pets/jennifer.png" alt="jennifer" class="card card-jennifer">
+                        <p class="pets-name">Jennifer</p>
+                        <button class="button-learn-more" data-name="jennifer">Learn more</button>
+                    </div>
+                        <div class="card-container card-3" data-name="Woody">
+                        <img src="../../assets/img/pets/woody.png" alt="woody" class="card card-woody">
+                        <p class="pets-name">Woody</p>
+                        <button class="button-learn-more" data-name="woody">Learn more</button>
+                    </div>
+                    <div class="card-container card-4" data-name="Sophia">
+                        <img src="../../assets/img/pets/sophia.png" alt="sophia" class="card card-sophia">
+                        <p class="pets-name">Sophia</p>
+                        <button class="button-learn-more" data-name="sophia">Learn more</button>
+                    </div>
+                    <div class="card-container card-5" data-name="Timmy">
+                        <img src="../../assets/img/pets/timmy.png" alt="timmy" class="card card-timmy">
+                        <p class="pets-name">Timmy</p>
+                        <button class="button-learn-more" data-name="timmy">Learn more</button>
+                    </div>
+                    <div class="card-container card-6" data-name="Charly">
+                        <img src="../../assets/img/pets/charly.png" alt="Charly" class="card card-charly">
+                        <p class="pets-name">Charly</p>
+                        <button class="button-learn-more" data-name="charly">Learn more</button>
+                    </div>
+                    <div class="card-container card-7" data-name="Scarlett">
+                        <img src="../../assets/img/pets/scarlett.png" alt="scarlett" class="card card-scarlett">
+                        <p class="pets-name">Scarlett</p>
+                        <button class="button-learn-more" data-name="scarlett">Learn more</button>
+                    </div>
+                    <div class="card-container card-8" data-name="Freddie">
+                        <img src="../../assets/img/pets/freddie.png" alt="freddie" class="card card-freddie">
+                        <p class="pets-name">Freddie</p>
+                        <button class="button-learn-more" data-name="freddie">Learn more</button>
+                    </div>
+            </div>
+
             <div class="navigation">
         <button class="button-arrow btn-arrow-left-2x inactive" disabled="disabled">
             <img src="../../assets/svg/Arrow-left-2x@2x1.svg" alt="Arrow-left-2x" class="arrow-left-2x"></button>
@@ -101,8 +130,7 @@
             <button class="button-arrow btn-arrow-right-2x">
                 <img src="../../assets/svg/Arrow-right-2x@2x.svg" alt="Arrow-right-2x" class="arrow-right-2x"></button>
             </div>
-                <!-- <form action="../pets/index2.html" target="_blank"> 
-                <button class="button-get-to">Get to know the rest</button></form> -->
+              
         </div>
      </section>
        </main>

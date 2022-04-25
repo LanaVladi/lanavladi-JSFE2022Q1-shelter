@@ -22,6 +22,8 @@ $color-dark-l: #545454;
 $color-dark-xl: #4C4C4C;
 $color-dark-2xl: #444444;
 $color-dark-3xl: #292929;
+$color-black: #000000;
+$color-btn-close: rgba(41, 41, 41, 0.0);
 
 $font-h1-logo_title: 400 32px 'Georgia', serif;
 $font-h2-logo_subtitle: 400 13px 'Arial', sans-serif;
@@ -39,7 +41,7 @@ $mobile-width: 320px;
 body {
     // display: flex;
     flex-direction: column;
-}
+  }
 
 .wrapper-for-bg {
     background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
@@ -161,9 +163,12 @@ color: $color-dark-s;
     z-index: 2;
    // margin-top: 30px;
     display: none;
+    // opacity: 1;
+    // visibility: visible;
     margin-right: 53px;
     // margin-left: 20px;
 }
+
 
 .burger-menu span {
     display: block;
@@ -340,6 +345,11 @@ padding-top: 25px;
 
     /* !SECTION OUR PETS 1280px*/
 
+    .ourpets {
+        position: relative;
+        z-index: 1; 
+    }
+
     .ourpets-wrapper {
         display: flex;
         flex-direction: column;
@@ -402,6 +412,62 @@ padding-top: 25px;
             }
     }
 
+
+    /* =========================  /* SLIDER */ /*================================= */
+    .carousel-wrapper {
+        display: flex;
+        flex-direction: row;
+        // margin: 0 90px;
+        width: 990px; // ширина 3х карточек(270*3)+ ширина между ними(90*2)=990px на 1280px
+        overflow: hidden; // скрываем остальные карточки
+    }
+
+    .carousel {
+        display: flex;
+        flex-direction: row;
+        width: 990px; // ширина 3х карточек(270*3)+ ширина между ними(90*2)=990px на 1280px
+        position: relative;
+        // left: -990px; карточки показывает коряво!!!!!!!!!!
+      }
+
+      .item {
+        display: flex;
+        flex-direction: row;
+        // width: 990px;
+        position: relative;
+        // left: -990px;
+      }
+
+    //    .card-container {
+    //     // display: flex;
+    //     // flex-direction: row;
+    //     position: relative;
+    //     left: -990px;
+    //     // margin-right: 90px;
+    //   }
+
+      @keyframes slider-move-left {
+          from {left: -990px;}
+          to {left: 0px;}
+      }
+
+      .slider-transition-left {
+          animation-name: slider-move-left;
+          animation-duration: 0.3s;
+      }
+
+      @keyframes slider-move-right {
+        from {left: -990px;}
+        to {left: -1980px;}
+    }
+      .slider-transition-right {
+        animation-name: slider-move-right;
+        animation-duration: 0.3s;
+      }
+    
+                   /* ========================= /* SLIDER END */ /*================================= */
+
+
     .card-container {
         display: flex;
         flex-direction: column;
@@ -422,6 +488,7 @@ padding-top: 25px;
         }
     }
 
+   
     .card-1 {
         margin-right: 90px;
     }
@@ -507,6 +574,163 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
             border-style: solid;
         }
         }
+
+        /* ============== MODAL WINDOW =============== */ 
+
+.popup {
+    // position: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    // width: 1280px;
+    // height: 877px;
+    // background-color:rgba(41, 41, 41, 0.6);
+    z-index: 100;
+    // top: 0;
+    // left: 0;
+    opacity: 0; //не подходит, оставляет пустое место
+    visibility: hidden;
+    //  display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
+    &:hover {
+        cursor: pointer; //на все окно распространяется, нужно на затемненную область
+    }
+    }
+    
+    .overlay {
+        position: fixed;
+        background-color:rgba(41, 41, 41, 0.6);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        // width:100%;
+        // height:100%;
+        z-index:1;
+        .button-close:hover {
+            background-color: $color-primary-light;
+        }
+    }
+    
+    
+    .popup.open {
+        // display: block;
+        opacity: 1; //не подходит, оставляет пустое место
+    visibility: visible;
+    }
+    
+    .popup-wrapper {
+    // min-height: 100%;
+    width: 952px;
+    height: 552px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    // position: relative;
+    // width: 952px;
+    // height: 552px;
+    z-index: 2;
+    
+    }
+    
+    .button-close {
+        width: 52px;
+        height: 52px;
+        border: 2px solid $color-primary;
+        // background-color: $color-light-xl;
+        background-color: $color-btn-close;
+         border-radius: 100px;
+         position: absolute;
+         top: -26px;
+        left: 915px;
+        z-index: 2;
+        &:hover {
+            background-color: $color-primary-light;
+            cursor: pointer;
+        }
+    }
+    
+    .modal-window {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    height: 500px;
+    // border-radius: 9px 0px 0px 9px;
+    background-color: $color-light-s;
+    border-radius: 9px;
+    z-index: 2;
+    &:hover {
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+        cursor: default;
+    }
+    }
+    
+    .image {
+    width: 500px;
+    height: 500px;
+    border-radius: 9px 0px 0px 9px;
+    
+    }
+    
+    .popup-content {
+        // display: flex;
+        // width: 351px;
+        // height: 362px;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: flex-start;
+        // padding-top: 50px;
+        color: $color-black;
+        padding: 20px 20px 88px 30px;
+    }
+    .popup-title {
+        padding-top: 50px;
+    }
+    
+    .popup-subtitle {
+        padding-top: 10px;
+    }
+    
+    .popup-description {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    /* or 17px */
+    color: $color-black;
+    letter-spacing: 0.06em;
+    padding-top: 40px;
+    }
+    
+    .popup-list-container {
+        font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 110%;
+    /* identical to box height, or 17px */
+    letter-spacing: 0.06em;
+    color: $color-black;
+    padding-top: 30px;
+    }
+    .popup-list  {
+        list-style-position: inside;
+        display: initial;
+    }
+    .popup-list li {
+        padding-top: 10px;
+        padding-left: 0px;
+        text-decoration: none;
+        color: $color-black;
+    }
 
 
          /*  SECTION HELP 1280px */

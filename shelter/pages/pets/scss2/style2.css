@@ -30,7 +30,9 @@ body {
   background-color: #FFFFFF;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 0px;
+  z-index: 10;
+  height: 91px;
 }
 
 .header-wrapper {
@@ -38,7 +40,6 @@ body {
   display: flex;
   align-items: center;
   margin-top: 29px;
-  margin-bottom: 30px;
 }
 
 .logo-container {
@@ -121,7 +122,7 @@ h3 {
   height: 22px;
   cursor: pointer;
   position: relative;
-  z-index: 2;
+  z-index: 20;
   display: none;
   margin-right: 53px;
 }
@@ -171,6 +172,7 @@ span {
   margin-top: 45px;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .card-container {
@@ -278,6 +280,139 @@ span {
 .button-learn-more:hover {
   background-color: #FDDCC4;
   border-color: #FDDCC4;
+}
+
+/* ============== MODAL WINDOW =============== */
+.popup {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 300;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.popup:hover {
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(41, 41, 41, 0.6);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+}
+.overlay .button-close:hover {
+  background-color: #FDDCC4;
+}
+
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-wrapper {
+  width: 952px;
+  height: 552px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 200;
+}
+
+.button-close {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  background-color: rgba(41, 41, 41, 0);
+  border-radius: 100px;
+  position: fixed;
+  top: 382px;
+  left: 1082px;
+  z-index: 200;
+}
+.button-close:hover {
+  background-color: #FDDCC4;
+  cursor: pointer;
+}
+
+.modal-window {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 35%;
+  left: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  height: 500px;
+  background-color: #FAFAFA;
+  border-radius: 9px;
+  z-index: 400;
+}
+.modal-window:hover {
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  cursor: default;
+}
+
+.image {
+  width: 500px;
+  height: 500px;
+  border-radius: 9px 0px 0px 9px;
+}
+
+.popup-content {
+  color: #000000;
+  padding: 20px 20px 88px 30px;
+}
+
+.popup-title {
+  padding-top: 50px;
+}
+
+.popup-subtitle {
+  padding-top: 10px;
+}
+
+.popup-description {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  /* or 17px */
+  color: #000000;
+  letter-spacing: 0.06em;
+  padding-top: 40px;
+}
+
+.popup-list-container {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 110%;
+  /* identical to box height, or 17px */
+  letter-spacing: 0.06em;
+  color: #000000;
+  padding-top: 30px;
+}
+
+.popup-list {
+  list-style-position: inside;
+  display: initial;
+}
+
+.popup-list li {
+  padding-top: 10px;
+  padding-left: 0px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .navigation {
@@ -459,6 +594,7 @@ h6 {
   /* HEADER 768px - 1279.9px */
   .header {
     padding: 29px 0 0 0;
+    height: 120px;
   }
 
   .wrapper {
@@ -540,6 +676,119 @@ h6 {
     display: none;
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  /* ============== MODAL WINDOW =============== */
+  .popup {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .popup:hover {
+    cursor: pointer;
+  }
+
+  .overlay {
+    position: fixed;
+    background-color: rgba(41, 41, 41, 0.6);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .popup.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .popup-wrapper {
+    width: 682px;
+    height: 402px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .button-close {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    position: fixed;
+    top: 381px;
+    left: 664px;
+    z-index: 2;
+  }
+  .button-close:hover {
+    background-color: #FDDCC4;
+    cursor: pointer;
+  }
+
+  .modal-window {
+    width: 630px;
+    height: 350px;
+    position: fixed;
+    top: 35%;
+    z-index: 2;
+  }
+  .modal-window:hover {
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    cursor: default;
+  }
+
+  .image {
+    width: 350px;
+    height: 350px;
+  }
+
+  .popup-content {
+    padding: 10px 9px 37px 10px;
+  }
+
+  .popup-title {
+    padding-top: 0px;
+  }
+
+  .popup-subtitle {
+    padding-top: 10px;
+  }
+
+  .popup-description {
+    font-size: 13px;
+    padding-top: 20px;
+  }
+
+  .popup-list-container {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 110%;
+    /* identical to box height, or 17px */
+    letter-spacing: 0.06em;
+    color: #000000;
+    padding-top: 0px;
+  }
+
+  .popup-list {
+    list-style-position: inside;
+    display: initial;
+  }
+
+  .popup-list li {
+    padding-top: 5px;
+    padding-left: 0px;
+    text-decoration: none;
+    color: #000000;
   }
 
   .navigation {
@@ -689,6 +938,143 @@ h6 {
 
   .card-8 {
     display: none;
+  }
+
+  /* ============== MODAL WINDOW =============== */
+  .popup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .popup:hover {
+    cursor: pointer;
+  }
+
+  .overlay {
+    position: fixed;
+    background-color: rgba(41, 41, 41, 0.6);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .popup.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .popup-wrapper {
+    width: 271px;
+    height: 393px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .button-close {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    position: fixed;
+    top: 378px;
+    left: 266px;
+    z-index: 2;
+  }
+  .button-close:hover {
+    background-color: #FDDCC4;
+    cursor: pointer;
+  }
+
+  .modal-window {
+    width: 240px;
+    height: 341px;
+    z-index: 2;
+  }
+  .modal-window:hover {
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    cursor: default;
+  }
+
+  .image {
+    display: none;
+    width: 0px;
+    height: 0px;
+  }
+
+  .popup-content {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .popup-title {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    /* or 45px */
+    letter-spacing: 0.06em;
+    padding-top: 0px;
+  }
+
+  .popup-subtitle {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    /* identical to box height, or 23px */
+    letter-spacing: 0.06em;
+    padding-top: 10px;
+  }
+
+  .popup-description {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 110%;
+    /* or 14px */
+    text-align: justify;
+    letter-spacing: 0.06em;
+    font-size: 13px;
+    padding-top: 0px;
+  }
+
+  .popup-list-container {
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 110%;
+    /* identical to box height, or 17px */
+    letter-spacing: 0.06em;
+    color: #000000;
+    padding-top: 0px;
+    text-align: initial;
+  }
+
+  .popup-list {
+    list-style-position: inside;
+    display: initial;
+  }
+
+  .popup-list li {
+    padding-top: 5px;
+    padding-left: 0px;
+    text-decoration: none;
+    color: #000000;
   }
 
   .navigation {
