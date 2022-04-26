@@ -8,7 +8,7 @@
     font-family: 'Georgia';
     src: url("../../../assets/fonts/georgia.ttf");
     font-weight: 400;
-}   
+}
 
 $color-gradient: radial-gradient((100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20);
 $color-light-s: #FAFAFA;
@@ -25,8 +25,10 @@ $color-dark-3xl: #292929;
 $color-black: #000000;
 $color-btn-close: rgba(41, 41, 41, 0.0);
 
-$font-h1-logo_title: 400 32px 'Georgia', serif;
-$font-h2-logo_subtitle: 400 13px 'Arial', sans-serif;
+$font-h1-logo_title: 400 32px 'Georgia',
+serif;
+$font-h2-logo_subtitle: 400 13px 'Arial',
+sans-serif;
 
 $content-width: 1280px;
 $tablet-width: 768px;
@@ -36,18 +38,18 @@ $mobile-width: 320px;
     box-sizing: border-box;
     margin: 0 auto;
     scroll-behavior: smooth;
-  }
-  
+}
+
 body {
     // display: flex;
     flex-direction: column;
-  }
+}
 
 .wrapper-for-bg {
     background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
     height: 908px;
     max-width: $content-width;
-//     background-size: 100%; 
+    // background-size: 100%; 
 }
 
 
@@ -67,7 +69,7 @@ body {
 /* HEADER 1280px*/
 
 .header {
-   // background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
+    // background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
     //position: absolute; // убрала bg и добавила position: absolute; для выравнивания фона. 
     //добавила padding-left: 175px; в header и padding-top: 120px; в start-screen
     //padding: 60px 0 0 175px;
@@ -84,7 +86,8 @@ body {
     display: flex;
     flex-direction: column;
     padding-right: 490px;
-     //padding-right: auto;
+    //padding-right: auto;
+    transition: all 0.5s ease-in;
 }
 
 h1 a {
@@ -101,53 +104,60 @@ h1 a {
 }
 
 .logo-subtitle {
-font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 15px;
-letter-spacing: 0.1em;
-color: $color-light-xl;
-padding-top: 8px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: $color-light-xl;
+    padding-top: 8px;
+}
+
+
+.nav-container {
+    display: flex;
 }
 
 .nav-list {
-display: flex;
- }
+    display: flex;
 
-.nav-link-about {
-font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 160%;
-// identical to box height, or 24px 
-color: $color-light-s;
-// text-decoration: underline;
-display: inline; //делает нижнее подчеркивание
-border-bottom: 3px solid $color-primary;
 }
 
-.nav-item  {
-font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 160%;
-list-style: none;
-text-decoration: none;
-padding-left: 35px;
-// identical to box height, or 24px
+.nav-link-about {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    // identical to box height, or 24px 
+    color: $color-light-s;
+    // text-decoration: underline;
+    display: inline; //делает нижнее подчеркивание
+    border-bottom: 3px solid $color-primary;
+}
+
+.nav-item {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 35px;
+    // identical to box height, or 24px
 }
 
 
 li a {
-list-style: none;
-text-decoration: none;
-color: $color-dark-s;
-&:hover {
-    color: $color-light-s;
-}
+    list-style: none;
+    text-decoration: none;
+    color: $color-dark-s;
+
+    &:hover {
+        color: $color-light-s;
+    }
 }
 
 /* BURGER MENU */
@@ -159,13 +169,16 @@ color: $color-dark-s;
     // justify-content: space-between;
     cursor: pointer;
     //user-select: none;
-    position: relative;
+    position: absolute;
     z-index: 2;
-   // margin-top: 30px;
+    top: 19px;
+    right: 0px;
+    // margin-top: 30px;
     display: none;
     // opacity: 1;
     // visibility: visible;
     margin-right: 53px;
+    transition: all 0.8s ease-in-out;
     // margin-left: 20px;
 }
 
@@ -178,8 +191,8 @@ color: $color-dark-s;
     position: absolute;
     //border: 2px solid $color-primary;
     //position: absolute;
-	top: 50%;
-	left: 50%;
+    top: 50%;
+    left: 50%;
     //background-color: #ffffff;
     transform: translate(-50%, -50%);
     //border-radius: 2px;
@@ -195,7 +208,7 @@ color: $color-dark-s;
     top: calc(50% + 10px);
 }
 
- /* SECTION START SCREEN 1280px */
+/* SECTION START SCREEN 1280px */
 
 .start-screen-wrapper {
     display: flex;
@@ -207,12 +220,14 @@ color: $color-dark-s;
 //     padding-right: 42px;
 // }
 
-.start-screen-content{
+.start-screen-content {
     padding-top: 163px;
     margin-right: 42px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
     width: 460px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
     height: 322px; // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
-} // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+}
+
+// ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
 
 
 
@@ -228,46 +243,47 @@ h2 {
 }
 
 .heading-start-screen {
-padding-right: 150px;
+    padding-right: 150px;
 }
 
 .subheading-start-screen {
-font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 160%;
-// or 24px 
-color: $color-dark-s;
- padding-top: 42px; // УБРАЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    // or 24px 
+    color: $color-dark-s;
+    padding-top: 42px; // УБРАЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
 }
 
 .button-primary {
-font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 17px;
-line-height: 130%;
-// identical to box height, or 22px 
-letter-spacing: 0.06em;
-color: $color-dark-3xl;
-width: 207px;
-height: 52px;
-// left: calc(50% - 207px/2 - 126.5px);
-background: $color-primary;
-border-color: $color-primary;
-outline: none; // убирает рамку по умолчанию у кнопок
-border-radius: 100px;
-margin-top: 42px;
-border-style: none; 
-border-style: solid;
-border-color: $color-primary;
-cursor: pointer;
-transition: 1s;
-&:hover {
-    background: $color-primary-light;
-    border-color: $color-primary-light;
-}
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    // identical to box height, or 22px 
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    width: 207px;
+    height: 52px;
+    // left: calc(50% - 207px/2 - 126.5px);
+    background: $color-primary;
+    border-color: $color-primary;
+    outline: none; // убирает рамку по умолчанию у кнопок
+    border-radius: 100px;
+    margin-top: 42px;
+    border-style: none;
+    border-style: solid;
+    border-color: $color-primary;
+    cursor: pointer;
+    transition: 1s;
+
+    &:hover {
+        background: $color-primary-light;
+        border-color: $color-primary-light;
+    }
 }
 
 // .start-screen-puppy {
@@ -278,8 +294,11 @@ transition: 1s;
 // // background-position: center 0;
 // }
 
- /*  SECTION ABOUT 1280px */
+/*  SECTION ABOUT 1280px */
 
+//  .age {
+//     font-style: bold;
+//  }
 .about-wrapper {
     display: flex;
     flex-direction: row;
@@ -307,29 +326,29 @@ transition: 1s;
 }
 
 h3 {
-font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 35px;
-line-height: 130%;
-// or 45px 
-letter-spacing: 0.06em;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    // or 45px 
+    letter-spacing: 0.06em;
 }
 
 .heading-about-pets {
-padding-right: 60px;
-color: $color-dark-l;
+    padding-right: 60px;
+    color: $color-dark-l;
 }
 
 .subheading-pets1 {
-font-family: 'Arial';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 160%;
-// or 24px 
-color: $color-dark-xl;
-padding-top: 25px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    // or 24px 
+    color: $color-dark-xl;
+    padding-top: 25px;
 }
 
 .subheading-pets2 {
@@ -341,42 +360,42 @@ padding-top: 25px;
     // or 24px 
     color: $color-dark-xl;
     padding-top: 25px;
-    }
+}
 
-    /* !SECTION OUR PETS 1280px*/
+/* !SECTION OUR PETS 1280px*/
 
-    .ourpets {
-        position: relative;
-        z-index: 1; 
-    }
+.ourpets {
+    position: relative;
+    z-index: 1;
+}
 
-    .ourpets-wrapper {
-        display: flex;
-        flex-direction: column;
-        padding-top: 80px;
-        padding-bottom: 100px;
-        background: $color-light-l;
-    }
+.ourpets-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background: $color-light-l;
+}
 
-    .heading-our-pets {
-     display: flex;
+.heading-our-pets {
+    display: flex;
     text-align: center;
     color: $color-dark-l;
     margin-right: 400px;
     margin-left: 400px;
     //Здесь можно поставить max-width: 400: margin: 0 auto;
-    }
+}
 
-    span {
-        display: block;
-    }
+span {
+    display: block;
+}
 
-    .slider-container {
-        margin-top: 60px;
-        // margin-bottom: 60px;
-        display: flex;
+.slider-container {
+    margin-top: 60px;
+    // margin-bottom: 60px;
+    display: flex;
 
-        .button-arrow-left {
+    .button-arrow-left {
         width: 52px;
         height: 52px;
         border: 2px solid $color-primary;
@@ -388,194 +407,214 @@ padding-top: 25px;
         color: $color-light-l;
         cursor: pointer;
         transition: 0.5s;
+
         &:hover {
             background-color: $color-primary-light;
             border-color: $color-primary-light;
         }
-        }
-        .button-arrow-right {
-            width: 52px;
-            height: 52px;
-            border: 2px solid $color-primary;
-            box-sizing: border-box;
-            border-radius: 100px;
-            position: relative;
-            top: 189px;
-            left: 53px;
-            color: $color-light-l;
-            cursor: pointer;
-            transition: 0.5s;
-            &:hover {
-                background-color: $color-primary-light;
-                border-color: $color-primary-light;
-            }
-            }
     }
 
-
-    /* =========================  /* SLIDER */ /*================================= */
-    .carousel-wrapper {
-        display: flex;
-        flex-direction: row;
-        // margin: 0 90px;
-        width: 990px; // ширина 3х карточек(270*3)+ ширина между ними(90*2)=990px на 1280px
-        overflow: hidden; // скрываем остальные карточки
-    }
-
-    .carousel {
-        display: flex;
-        flex-direction: row;
-        width: 990px; // ширина 3х карточек(270*3)+ ширина между ними(90*2)=990px на 1280px
+    .button-arrow-right {
+        width: 52px;
+        height: 52px;
+        border: 2px solid $color-primary;
+        box-sizing: border-box;
+        border-radius: 100px;
         position: relative;
-        // left: -990px; карточки показывает коряво!!!!!!!!!!
-      }
-
-      .item {
-        display: flex;
-        flex-direction: row;
-        // width: 990px;
-        position: relative;
-        // left: -990px;
-      }
-
-    //    .card-container {
-    //     // display: flex;
-    //     // flex-direction: row;
-    //     position: relative;
-    //     left: -990px;
-    //     // margin-right: 90px;
-    //   }
-
-      @keyframes slider-move-left {
-          from {left: -990px;}
-          to {left: 0px;}
-      }
-
-      .slider-transition-left {
-          animation-name: slider-move-left;
-          animation-duration: 0.3s;
-      }
-
-      @keyframes slider-move-right {
-        from {left: -990px;}
-        to {left: -1980px;}
-    }
-      .slider-transition-right {
-        animation-name: slider-move-right;
-        animation-duration: 0.3s;
-      }
-    
-                   /* ========================= /* SLIDER END */ /*================================= */
-
-
-    .card-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: $color-light-s;
-        border-radius: 9px;
+        top: 189px;
+        left: 53px;
+        color: $color-light-l;
         cursor: pointer;
-        transition: 0.3s;
+        transition: 0.5s;
+
         &:hover {
-         box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-         background-color: $color-light-xl;
-         .button-learn-more {
-                  /* card-hover */
-                  background-color: $color-primary-light;
-                  border-color: $color-primary-light;
-        }
+            background-color: $color-primary-light;
+            border-color: $color-primary-light;
         }
     }
+}
 
-   
-    .card-1 {
-        margin-right: 90px;
-    }
-    
-   .card-2 {
-       margin-right: 90px;
+
+/* =========================  /* SLIDER */
+/*================================= */
+.carousel-wrapper {
+    display: flex;
+    flex-direction: row;
+    // margin: 0 90px;
+    width: 990px; // ширина 3х карточек(270*3)+ ширина между ними(90*2)=990px на 1280px
+    overflow: hidden; // скрываем остальные карточки
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    width: 990px; // ширина 3х карточек(270*3)+ ширина между ними(90*2)=990px на 1280px
+    position: relative;
+    // left: -990px; карточки показывает коряво!!!!!!!!!!
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    // width: 990px;
+    position: relative;
+    // left: -990px;
+}
+
+//    .card-container {
+//     // display: flex;
+//     // flex-direction: row;
+//     position: relative;
+//     left: -990px;
+//     // margin-right: 90px;
+//   }
+
+@keyframes slider-move-left {
+    from {
+        left: -990px;
     }
 
-    .card {
-        border-top-left-radius: 9px;
-        border-top-right-radius: 9px;
+    to {
+        left: 0px;
     }
-   
-       .card-jennifer {
-       // margin-right: 90px;
-        position: relative; //для позиционирования стрелок
+}
+
+.slider-transition-left {
+    animation-name: slider-move-left;
+    animation-duration: 0.3s;
+}
+
+@keyframes slider-move-right {
+    from {
+        left: -990px;
     }
+
+    to {
+        left: -1980px;
+    }
+}
+
+.slider-transition-right {
+    animation-name: slider-move-right;
+    animation-duration: 0.3s;
+}
+
+/* ========================= /* SLIDER END */
+/*================================= */
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-light-s;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+        background-color: $color-light-xl;
+
+        .button-learn-more {
+            /* card-hover */
+            background-color: $color-primary-light;
+            border-color: $color-primary-light;
+        }
+    }
+}
+
+
+.card-1 {
+    margin-right: 90px;
+}
+
+.card-2 {
+    margin-right: 90px;
+}
+
+.card {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.card-jennifer {
+    // margin-right: 90px;
+    position: relative; //для позиционирования стрелок
+}
 
 .pets-name {
-font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 23px;
-// identical to box height 
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-color: $color-dark-l;
-padding-top: 30px;
-padding-bottom: 30px;
-    }
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    // identical to box height 
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 .button-learn-more {
     border: 2px solid $color-primary;
     box-sizing: border-box;
     border-radius: 100px;
     width: 187px;
-    height: 52px;        
+    height: 52px;
     background-color: $color-light-s;
-    font-family: 'Georgia';        
+    font-family: 'Georgia';
     font-style: normal;
-font-weight: 400;
-font-size: 17px;
-line-height: 130%;
-// identical to box height, or 22px 
-letter-spacing: 0.06em;
-color: $color-dark-3xl;
-outline: none; // убирает рамку по умолчанию у кнопок
-cursor: pointer;
-transition: 1s;
-margin-bottom: 30px; // чтобы карточку удлинить снизу
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    // identical to box height, or 22px 
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    outline: none; // убирает рамку по умолчанию у кнопок
+    cursor: pointer;
+    transition: 1s;
+    margin-bottom: 30px; // чтобы карточку удлинить снизу
+
     &:hover {
         background-color: $color-primary-light;
         border-color: $color-primary-light;
-}
     }
+}
 
-    .button-get-to {
-        font-family: 'Georgia';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 17px;
-        line-height: 130%;
-        // identical to box height, or 22px 
-        letter-spacing: 0.06em;
-        color: $color-dark-3xl;
-        width: 261px;
-        height: 52px;
-        // left: calc(50% - 207px/2 - 126.5px);
-         background: $color-primary;
-        outline: none; // убирает рамку по умолчанию у кнопок
-        border-radius: 100px;
-        margin-top: 60px; 
-        cursor: pointer;
-        transition: 1s;
-        border-style: none; // убирает рамку по умолчанию у кнопок
-        border-color: $color-primary;
-        &:hover {
-            background-color: $color-primary-light;
-            border-color: $color-primary-light;
-            outline: none; 
-            border-style: solid;
-        }
-        }
+.button-get-to {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    // identical to box height, or 22px 
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    width: 261px;
+    height: 52px;
+    // left: calc(50% - 207px/2 - 126.5px);
+    background: $color-primary;
+    outline: none; // убирает рамку по умолчанию у кнопок
+    border-radius: 100px;
+    margin-top: 60px;
+    cursor: pointer;
+    transition: 1s;
+    border-style: none; // убирает рамку по умолчанию у кнопок
+    border-color: $color-primary;
 
-        /* ============== MODAL WINDOW =============== */ 
+    &:hover {
+        background-color: $color-primary-light;
+        border-color: $color-primary-light;
+        outline: none;
+        border-style: solid;
+    }
+}
+
+/* ============== MODAL WINDOW =============== */
 
 .popup {
     // position: fixed;
@@ -597,6 +636,7 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
     // left: 0;
     opacity: 0; //не подходит, оставляет пустое место
     visibility: hidden;
+
     //  display: none;
     // overflow-y: auto;
     // overflow-x: hidden;
@@ -607,73 +647,76 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
     &:hover {
         cursor: pointer; //на все окно распространяется, нужно на затемненную область
     }
-    }
-    
- 
-    
-    
-    .popup.open {
-        // display: block;
-        opacity: 1; //не подходит, оставляет пустое место
+}
+
+
+
+
+.popup.open {
+    // display: block;
+    opacity: 1; //не подходит, оставляет пустое место
     visibility: visible;
-    }
-    
-    .popup-wrapper {
+}
+
+.popup-wrapper {
     // min-height: 100%;
     width: 952px;
     height: 552px;
     display: flex;
     align-items: center;
     position: relative;
-    
+
     // position: relative;
     // width: 952px;
     // height: 552px;
     z-index: 2;
-      & .button-close  {
-    left: 85%;
-    top: 26%;
-  }
+
+    & .button-close {
+        left: 85%;
+        top: 26%;
     }
-    
-   
+}
 
 
-    .button-close {
-        width: 52px;
-        height: 52px;
-        border: 2px solid $color-primary;
-        // background-color: $color-light-xl;
-        // background-color: $color-btn-close;
-        background: transparent;
-         border-radius: 100px;
-         position: absolute;
-        //  top: 25%;
-        // left: 84%;
-        z-index: 2;
-        &:hover {
-            background-color: $color-primary-light;
-            cursor: pointer;
-        }
-    }
 
-    .overlay {
-        position: fixed;
-        background-color:rgba(41, 41, 41, 0.6);
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        // width:100%;
-        // height:100%;
-        z-index:1;
-        &:hover .button-close  {  
-            background: $color-primary-light;
-            cursor: pointer;
-        }
+
+.button-close {
+    width: 52px;
+    height: 52px;
+    border: 2px solid $color-primary;
+    // background-color: $color-light-xl;
+    // background-color: $color-btn-close;
+    background: transparent;
+    border-radius: 100px;
+    position: absolute;
+    //  top: 25%;
+    // left: 84%;
+    z-index: 2;
+
+    &:hover {
+        background-color: $color-primary-light;
+        cursor: pointer;
     }
-    
-    .modal-window {
+}
+
+.overlay {
+    position: fixed;
+    background-color: rgba(41, 41, 41, 0.6);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    // width:100%;
+    // height:100%;
+    z-index: 1;
+
+    &:hover .button-close {
+        background: $color-primary-light;
+        cursor: pointer;
+    }
+}
+
+.modal-window {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -684,39 +727,41 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
     border-radius: 9px;
     z-index: 2;
     overflow: auto; //скролл авто в модальном окне
+
     &:hover {
         box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
         cursor: default;
     }
-    }
-    
-    .image {
+}
+
+.image {
     width: 500px;
     height: 500px;
     border-radius: 9px 0px 0px 9px;
-    
-    }
-    
-    .popup-content {
-        // display: flex;
-        // width: 351px;
-        // height: 362px;
-        // flex-direction: column;
-        // align-items: center;
-        // justify-content: flex-start;
-        // padding-top: 50px;
-        color: $color-black;
-        padding: 20px 20px 88px 30px;
-    }
-    .popup-title {
-        padding-top: 50px;
-    }
-    
-    .popup-subtitle {
-        padding-top: 10px;
-    }
-    
-    .popup-description {
+
+}
+
+.popup-content {
+    // display: flex;
+    // width: 351px;
+    // height: 362px;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: flex-start;
+    // padding-top: 50px;
+    color: $color-black;
+    padding: 20px 20px 88px 30px;
+}
+
+.popup-title {
+    padding-top: 50px;
+}
+
+.popup-subtitle {
+    padding-top: 10px;
+}
+
+.popup-description {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -726,10 +771,10 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
     color: $color-black;
     letter-spacing: 0.06em;
     padding-top: 40px;
-    }
-    
-    .popup-list-container {
-        font-family: 'Georgia';
+}
+
+.popup-list-container {
+    font-family: 'Georgia';
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -738,101 +783,114 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
     letter-spacing: 0.06em;
     color: $color-black;
     padding-top: 30px;
-    }
-    .popup-list  {
-        list-style-position: inside;
-        display: initial;
-    }
-    .popup-list li {
-        padding-top: 10px;
-        padding-left: 0px;
-        text-decoration: none;
-        color: $color-black;
-    }
+}
+
+.popup-list {
+    list-style-position: inside;
+    display: initial;
+}
+
+.popup-list li {
+    padding-top: 10px;
+    padding-left: 0px;
+    text-decoration: none;
+    color: $color-black;
+}
 
 
-         /*  SECTION HELP 1280px */
+/*  SECTION HELP 1280px */
 
 .help-wrapper {
-   background-color: $color-light-xl;
+    background-color: $color-light-xl;
 }
 
 .heading-help {
-display: flex;
-text-align: center;
-margin-right: 445px;
-margin-left: 445px;
-margin-top: 80px;
-color: $color-dark-l;
+    display: flex;
+    text-align: center;
+    margin-right: 445px;
+    margin-left: 445px;
+    margin-top: 80px;
+    color: $color-dark-l;
 }
 
 .help-container {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-//max-width: 1026px;
-margin-left: 87px;
-margin-right: 87px;
-margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //max-width: 1026px;
+    margin-left: 87px;
+    margin-right: 87px;
+    margin-bottom: 100px;
 }
 
- .help-icon {
+.help-icon {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-   // max-width: 1026px;
+    // max-width: 1026px;
     margin-top: 60px;
- }
+}
+
 .icon-2 {
     margin-left: 120px;
 }
+
 .icon-3 {
     margin-left: 120px;
 }
+
 .icon-4 {
     margin-left: 120px;
 }
+
 .icon-5 {
     margin-left: 117px; //другие размеры в макете
     // margin-left: 87px;
 }
+
 .icon-6 {
     margin-left: 84px;
     margin-top: 55px;
 }
+
 .icon-7 {
     margin-left: 120px;
     margin-top: 55px;
 }
+
 .icon-8 {
     margin-left: 120px;
     margin-top: 55px;
 }
+
 .icon-9 {
     margin-left: 117px; // другие размеры в макете
     margin-top: 55px;
     margin-right: 84px;
 }
-h4 { 
-font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 115%;
-// identical to box height, or 23px 
-letter-spacing: 0.06em;
+
+h4 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    // identical to box height, or 23px 
+    letter-spacing: 0.06em;
 }
+
 .icon-name {
-margin-top: 30px;
-color: $color-dark-l;   
+    margin-top: 30px;
+    color: $color-dark-l;
 }
 
 
 /* SECTION DONATION 1280px*/
 
 .donation-wrapper {
-    background-color: $color-light-l ;
+    background-color: $color-light-l;
 }
+
 .donation-container {
     display: flex;
 }
@@ -842,11 +900,13 @@ color: $color-dark-l;
     width: 380px;
     height: 282px;
     margin-right: 182px;
-} // ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+}
+
+// ДОБАВИЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
 
 
 .donation-dog {
-    margin: 89px 30px 110px 141px;  //Другие размеры в макете
+    margin: 89px 30px 110px 141px; //Другие размеры в макете
 }
 
 .heading-donation {
@@ -855,14 +915,14 @@ color: $color-dark-l;
 }
 
 h5 {
-font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 110%;
-// identical to box height, or 17px 
-letter-spacing: 0.06em;
-color: $color-dark-l;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    // identical to box height, or 17px 
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
 }
 
 .subheading-donation {
@@ -870,24 +930,25 @@ color: $color-dark-l;
 }
 
 .button-donation {
-display: flex;
-width: 349px;
-height: 43px;
-background: $color-primary;
-border-radius: 9px;
-padding-top: 7px;
-padding-left: 10px;
-margin-top: 20px;
-margin-right: 213px; 
-border-style: none; 
-border-style: solid;
-border-color: $color-primary;
-cursor: pointer;
-transition: 1s;
-&:hover {
-    background-color: $color-primary-light;
-    border-color: $color-primary-light;
-}
+    display: flex;
+    width: 349px;
+    height: 43px;
+    background: $color-primary;
+    border-radius: 9px;
+    padding-top: 7px;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-right: 213px;
+    border-style: none;
+    border-style: solid;
+    border-color: $color-primary;
+    cursor: pointer;
+    transition: 1s;
+
+    &:hover {
+        background-color: $color-primary-light;
+        border-color: $color-primary-light;
+    }
 }
 
 .bank-account {
@@ -901,14 +962,14 @@ transition: 1s;
     font-size: 12px;
     line-height: 18px;
     // or 150% 
-    color: $color-dark-m;       
-margin-top: 20px;   
-// margin-right: 182px;  УБРАЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
+    color: $color-dark-m;
+    margin-top: 20px;
+    // margin-right: 182px;  УБРАЛА ИЗ-ЗА МОЗИЛЛЫ!!!!!!!!!!!!!!!!!!!!!!!
 }
 
 
 
- /* STYLES DONATION SECTION FOR MOZILLA 1280PX*/
+/* STYLES DONATION SECTION FOR MOZILLA 1280PX*/
 
 //  @-moz-document url-prefix()
 //  {
@@ -928,7 +989,7 @@ margin-top: 20px;
 
 /*! FOOTER 1280px */
 
-h6 { 
+h6 {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -936,7 +997,7 @@ h6 {
     line-height: 115%;
     // identical to box height, or 23px 
     letter-spacing: 0.06em;
-    }
+}
 
 .footer-wrapper {
     background: url(../../../assets/img/noise_transparent@2x.png), $color-gradient;
@@ -944,7 +1005,7 @@ h6 {
 
 .footer-container {
     display: flex;
-   // margin-top: 40px;
+    // margin-top: 40px;
 }
 
 .contacts {
@@ -966,6 +1027,7 @@ h6 {
     //  padding-right: 40px;
     padding-top: 40px;
 }
+
 .mail-icon {
     // padding-top: 40px;   
     padding-right: 10px;
@@ -973,19 +1035,19 @@ h6 {
 }
 
 .mail {
-display: block;
-color: $color-primary;
-text-decoration: none;
-padding-top: 1px;
+    display: block;
+    color: $color-primary;
+    text-decoration: none;
+    padding-top: 1px;
     padding-right: 20px;
-} 
+}
 
 .shelter-phone {
-    display: flex;  
+    display: flex;
 }
 
 .phone-icon {
-    padding-top: 40px;   
+    padding-top: 40px;
     padding-right: 20px;
     color: $color-primary;
 }
@@ -1000,10 +1062,10 @@ padding-top: 1px;
 
 
 .locations {
-   // display: flex;
+    // display: flex;
     margin-top: 56px;
-    margin-right: 160px; 
-   // text-align: center;
+    margin-right: 160px;
+    // text-align: center;
     color: $color-light-xl;
 }
 
@@ -1020,18 +1082,20 @@ padding-top: 1px;
 }
 
 .location-1 {
-   // display: block;
+    // display: block;
     color: $color-primary;
     text-decoration: none;
     // margin-left: 10px;
     //padding-right: 1px;
 }
+
 .location-1-icon {
     //margin-right: 20px;
     // margin-top: 5px;
     margin-top: 3px;
     padding-right: 10px;
 }
+
 .shelter-location-2 {
     // display: flex;
     // margin-top: 35px;
@@ -1040,24 +1104,26 @@ padding-top: 1px;
     margin-top: 19px;
     margin-right: 31px;
 }
+
 .location-2 {
     //display: block;
     color: $color-primary;
     text-decoration: none;
-   // margin-left: 20px;
-   margin-left: 6px;
+    // margin-left: 20px;
+    margin-left: 6px;
 }
+
 .location-2-icon {
     //margin-right: 20px;
     //margin-top: -5px;
     margin-top: 7px;
     margin-right: 7px;
 }
-.footer-puppy { 
-     margin-top: 40px;
+
+.footer-puppy {
+    margin-top: 40px;
 }
 
 /* MEDIA QUERIES*/
 
 @import './media/mdq';
-

@@ -121,10 +121,12 @@ h3 {
   width: 30px;
   height: 22px;
   cursor: pointer;
-  position: relative;
+  position: absolute;
   z-index: 20;
   display: none;
-  margin-right: 53px;
+  top: 19px;
+  right: 53px;
+  transition: all 0.8s ease-in-out;
 }
 
 .burger-menu span {
@@ -871,7 +873,6 @@ h6 {
   /* HEADER 320px */
   .header {
     padding: 30px 0 0 0;
-    margin-bottom: 30px;
   }
 
   .wrapper {
@@ -881,14 +882,93 @@ h6 {
     padding-right: 0px;
   }
 
+  /* =========== BURGER MENU OPEN ============= */
+  .burger-menu.open {
+    display: block;
+    transform: rotate(90deg);
+    z-index: 500;
+    position: fixed;
+    top: 50px;
+    right: 53px;
+    transition: 0.5s all linear;
+    overflow: hidden;
+  }
+
+  .nav-container {
+    display: flex;
+    position: fixed;
+    height: 100%;
+    background: rgba(41, 41, 41, 0.6);
+    right: 0px;
+    z-index: 500;
+    top: 0;
+    transition: 0.5s all linear;
+    transform: translateX(100%);
+  }
+
+  .nav-container.open {
+    transform: translateX(0);
+    width: 320px;
+    background-color: #FFFFFF;
+    color: #CDCDCD;
+    position: fixed;
+    z-index: 400;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all linear;
+    overflow: hidden;
+  }
+
   .nav-list {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: absolute;
+    top: 250px;
+    left: -35px;
+    overflow: hidden;
+  }
+
+  .nav-link-active {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 51.2px;
+    color: #545454;
+    display: inline;
+    border-bottom: 3px solid #F1CDB3;
+  }
+
+  .nav-item {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 51.2px;
+    list-style: none;
+    text-decoration: none;
+    color: #545454;
+  }
+
+  .logo-container {
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    z-index: 600;
+    transition: all 0.5s ease-in;
+    right: 124px;
+    top: 0px;
   }
 
   .burger-menu {
     display: flex;
   }
 
+  /* ============== BURGER MENU FINISH ======== */
   /* !SECTION OUR PETS 320px */
   .ourpets-wrapper {
     padding-top: 42px;

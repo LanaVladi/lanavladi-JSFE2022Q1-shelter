@@ -165,11 +165,14 @@ padding-top: 8px;
   // justify-content: space-between;
   cursor: pointer;
   //user-select: none;
-  position: relative;
+  position: absolute;
   z-index: 20;
  // margin-top: 30px;
   display: none;
-  margin-right: 53px;
+  top: 19px;
+    right: 53px;
+  // margin-right: 53px;
+  transition: all 0.8s ease-in-out;
   // margin-left: 20px;
 }
 
