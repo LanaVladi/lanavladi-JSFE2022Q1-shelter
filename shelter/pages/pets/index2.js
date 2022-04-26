@@ -49,7 +49,7 @@ function closeMenu() {
      burgerBtn.classList.toggle('open');
      menuOpen.classList.toggle('open');
      logoReplace.classList.toggle('open');
-     document.body.style.overflow = 'auto';
+     document.body.style.overflow = 'visible';
     //  document.body.style.overflow = 'visible';
     //  document.getElementsByTagName('html')[0].style.overflow = "visible"; // возвращение вертик.скролла при закрытии popup
 }
