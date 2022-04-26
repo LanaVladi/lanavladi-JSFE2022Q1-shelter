@@ -46,6 +46,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-right: 490px;
+  transition: all 0.5s ease-in;
 }
 
 h1 a {
@@ -69,6 +70,10 @@ h1 a {
   letter-spacing: 0.1em;
   color: #FFFFFF;
   padding-top: 8px;
+}
+
+.nav-container {
+  display: flex;
 }
 
 .nav-list {
@@ -111,10 +116,13 @@ li a:hover {
   width: 30px;
   height: 22px;
   cursor: pointer;
-  position: relative;
+  position: absolute;
   z-index: 2;
+  top: 19px;
+  right: 0px;
   display: none;
   margin-right: 53px;
+  transition: all 0.8s ease-in-out;
 }
 
 .burger-menu span {
@@ -924,11 +932,6 @@ h6 {
     padding-right: 0px;
   }
 
-  /* BURGER MENU OPEN */
-  .burger-menu.open {
-    display: block;
-  }
-
   /* SECTION START SCREEN 768px */
   .start-screen-wrapper {
     display: flex;
@@ -1397,6 +1400,7 @@ h6 {
     padding-right: 0px;
     letter-spacing: 0.1em;
     width: calc(100% - 70px);
+    padding-top: 60px;
   }
 
   .subheading-start-screen {
@@ -1424,8 +1428,87 @@ h6 {
     width: 260px;
     height: 271.77px;
     margin-left: 40px;
-    margin-top: 105px;
+    margin-top: 165px;
     margin-bottom: 0.23px;
+  }
+
+  /* =========== BURGER MENU OPEN ============= */
+  .burger-menu.open {
+    display: block;
+    transform: rotate(90deg);
+    z-index: 500;
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    transition: 0.5s all linear;
+  }
+
+  .nav-container {
+    display: flex;
+    position: fixed;
+    height: 100%;
+    background: rgba(41, 41, 41, 0.6);
+    right: 0px;
+    z-index: 500;
+    top: 0;
+    transition: 0.5s all linear;
+    transform: translateX(100%);
+  }
+
+  .nav-container.open {
+    transform: translateX(0);
+    width: 320px;
+    background-color: #292929;
+    color: #CDCDCD;
+    position: fixed;
+    z-index: 400;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all linear;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: absolute;
+    top: 250px;
+    left: -35px;
+  }
+
+  .nav-link-about {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 51.2px;
+    color: #FAFAFA;
+    display: inline;
+    border-bottom: 3px solid #F1CDB3;
+  }
+
+  .nav-item {
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 51.2px;
+    list-style: none;
+    text-decoration: none;
+    color: #CDCDCD;
+  }
+
+  .logo-container {
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    z-index: 600;
+    transition: all 0.5s ease-in;
+    right: 124px;
+    top: 0px;
   }
 
   /*  SECTION ABOUT 320px */

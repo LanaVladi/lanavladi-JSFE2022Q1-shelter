@@ -24,29 +24,37 @@
 
 const burgerBtn = document.querySelector('.burger-menu');
 const menuOpen = document.querySelector('.nav-container');
+const logoReplace = document.querySelector('.logo-container');
 
 function toggleMenu() {
-  burgerBtn.classList.toggle('open');
+  burgerBtn.classList.add('open');
   menuOpen.classList.toggle('open');
+  logoReplace.classList.toggle('open');
+  document.getElementsByTagName('html')[0].style.overflow = "hidden"; // удаление вертик.скролла при открытии 
 }
   
-// function closeMenu() {
-//   burgerBtn.classList.toggle('open');
-//   menuOpen.classList.toggle('open');
-//   }
+function closeMenu() {
+  burgerBtn.classList.remove('open');
+  document.getElementsByTagName('html')[0].style.overflow = "auto"; // возвращение вертик.скролла при закрытии
+  menuOpen.classList.toggle('open');
+  logoReplace.classList.toggle('open');
+  document.getElementsByTagName('html')[0].style.overflow = "auto"; // возвращение вертик.скролла при закрытии
+  }
 
 
 
-//   function closeMenuLinks(event) {
-//     if (event.target.classList.contains('nav-list')) {
-//      // здесь код, удаляющий класс `'open'` у гамбургер-иконки и у меню
-//      burgerBtn.classList.remove('open');
-//      menuOpen.classList.remove('open');
-// }
-// }
+  function closeMenuLinks(event) {
+    if (event.target.classList.contains('nav-list')) {
+     // здесь код, удаляющий класс `'open'` у гамбургер-иконки и у меню
+     burgerBtn.classList.toggle('open');
+     menuOpen.classList.toggle('open');
+     logoReplace.classList.toggle('open');
+    //  document.getElementsByTagName('html')[0].style.overflow = "auto"; // возвращение вертик.скролла при закрытии popup
+}
+}
   burgerBtn.addEventListener('click', toggleMenu);
-  // menuOpen.addEventListener('click', closeMenu);
-
+  menuOpen.addEventListener('click', closeMenu);
+  logoReplace.addEventListener('click', closeMenu);
 
 /* ==================== JSON file ===============*/
 
@@ -152,16 +160,6 @@ const jsonPopup =
 //   }
 //   getQuotes();
 
-//   function populateHeader(jsonObj) {
-//     var myH1 = document.createElement('h1');
-//     myH1.textContent = jsonObj['squadName'];
-//     header.appendChild(myH1);
-  
-//     var myPara = document.createElement('p');
-//     myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
-//     header.appendChild(myPara);
-//   }
-
   /* =============== open & close MODAL WINDOW begin ====================== */
 
   const CARD_CONTAINER = document.querySelector('.card-container');
@@ -169,74 +167,7 @@ const jsonPopup =
   const BTN_LEARN_MORE = document.querySelector('.button-learn-more');
   const POPUP = document.querySelector('.popup');
   const BTN_CLOSE_POPUP = document.querySelector('.button-close');
-//   const dataElements = document.querySelectorAll("[data-name]");
-//   console.log(typeof jsonPopup); //object
-//   let jsonObj = JSON.parse(jsonPopup);
-//   console.log(jsonObj);
-//   console.log(jsonPopup);
-//   console.log(jsonPopup[0]['diseases'][0]);
 
-
-   /* ============ function fillPopup (jsonPopup) {
-    let popupTitle = document.querySelector('.popup-title');
-     // console.log(popupTitle);
-     for (let i = 0; i < jsonPopup.length; i++) {
-        let petName = jsonPopup[i].name;
-    //  let petName = jsonPopup[i].name;
-   popupTitle.textContent = `${petName}`;
-        console.log(popupTitle.textContent);
-  }
-}
-  cardContainer.addEventListener('click', fillPopup(jsonPopup)); //так работало */
-
-// function getInfoPopup (jsonPopup) {
-//     let petImage = document.querySelector('.image');
-//     let popupTitle = document.querySelector('.popup-title');
-//     let popupSubtitle = document.querySelector('.popup-subtitle');
-//     let popupDescription = document.querySelector('.popup-description');
-//     let petAge = document.querySelector('.age');
-//     let petInoculations = document.querySelector('.inoculations');
-//     let petDiseases = document.querySelector('.diseases');
-//     let petParasites = document.querySelector('.parasites');
-       // console.log(popupTitle);
-    //  for (let i = 2; i < jsonPopup.length; i++) {
-        //  if (CARD_CONTAINER.dataset.name === jsonPopup[i].name) {
-        //  console.log('jsonPopup[i].name :', jsonPopup[2].name);
-        //  console.log('CARD_CONTAINER :', CARD_CONTAINER);
-           
-        // let petImg = jsonPopup[i].img;
-        // let petName = jsonPopup[i].name;
-        // let petType = jsonPopup[i].type;
-        // let petBreed = jsonPopup[i].breed;
-        // let description = jsonPopup[i].description;
-        // let age = jsonPopup[i].age;
-        // let inoculations = jsonPopup[i].inoculations;
-        // let diseases = jsonPopup[i].diseases;
-        // let parasites = jsonPopup[i].parasites;
-
-  //   // if (petName === data-name
-  //  petImage.src = `${petImg}`;
-  //  popupTitle.textContent = `${petName}`;
-  //  popupSubtitle.textContent = `${petType} - ${petBreed}`;
-  //  popupDescription.textContent = `${description}`;
-  //  popupTitle.textContent = `${petName}`;
-  //  petAge.textContent = `Age: ${age}`;
-  //  petInoculations.textContent = `Inoculations: ${inoculations}`;
-  //  petDiseases.textContent = `Diseases: ${diseases}`;
-  //  petParasites.textContent = `Parasites: ${parasites}`;
-        // console.log(popupTitle.textContent);
-        // console.log(popupSubtitle.textContent);
-        // console.log(popupDescription.textContent);
-        // console.log(petAge.textContent);
-        // console.log(petInoculations.textContent);
-        // console.log(petDiseases.textContent);
-        // console.log(petParasites.textContent);
-  // }
-// }
-// }
-// cardContainer.addEventListener('click', getInfoPopup(jsonPopup));
-// CAROUSEL.addEventListener('click', getInfoPopup(jsonPopup));
-// console.log('CAROUSEL :', CAROUSEL);
 let petImage = document.querySelector('.image');
 let popupTitle = document.querySelector('.popup-title');
 let popupSubtitle = document.querySelector('.popup-subtitle');
@@ -264,7 +195,6 @@ CAROUSEL.addEventListener('click', function openModalWindow(event) {
         // console.log('petName :', petName);
         let petType = jsonObj.type;
         let petBreed = jsonObj.breed;
-        // console.log('petBreed :', petBreed);
         let description = jsonObj.description;
         let age = jsonObj.age;
         let inoculations = jsonObj.inoculations;
@@ -293,25 +223,6 @@ CAROUSEL.addEventListener('click', function openModalWindow(event) {
    }
  });
  });
-
-
-//   cardContainer.addEventListener('click',
-//        function getInfoPopup (event) {
-//     if(event.target.classList.contains('card-container')) {
-//                       const name = event.target.dataset.name;
-//                       dataElements.forEach((popupTitle) => popupTitle.textContent = jsonPopup[i][popupTitle.dataset.name])
-//         }
-//     });
-//   
-          
-// cardContainer.addEventListener('click',
-//         function closeModalWindow (event) {
-//                        if(event.target.classList.contains('card-container')) {
-//               const name = event.target.dataset.name;
-//               // здесь код функции, меняющей модальные окна по имени животного
-//                dataElements.forEach((popupTitle) => popupTitle.textContent = jsonPopup[i][popupTitle.dataset.name])
-//             }
-//               })
 
 /* =============== open & close MODAL WINDOW ====================== */
 
