@@ -20,14 +20,14 @@
 // 4. Done 12.04.2022 / deadline 12.04.2022 
 // 5. Score: 100/ 100
 
-// Burger menu
+/* =========== BURGER MENU ============= */ 
 
 const burgerBtn = document.querySelector('.burger-menu');
 const menuOpen = document.querySelector('.nav-container');
 const logoReplace = document.querySelector('.logo-container');
 
 function toggleMenu() {
-  burgerBtn.classList.add('open');
+  burgerBtn.classList.toggle('open');
   menuOpen.classList.toggle('open');
   logoReplace.classList.toggle('open');
   document.getElementsByTagName('html')[0].style.overflow = "hidden"; // удаление вертик.скролла при открытии 

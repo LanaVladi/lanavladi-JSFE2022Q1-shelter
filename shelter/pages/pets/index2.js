@@ -19,6 +19,45 @@ console.log(`
 // 4. Done 12.04.2022 / deadline 12.04.2022 
 // 5. Score: 100/ 100
 
+/* =========== BURGER MENU ============= */ 
+
+const burgerBtn = document.querySelector('.burger-menu');
+const menuOpen = document.querySelector('.nav-container');
+const logoReplace = document.querySelector('.logo-container');
+
+function toggleMenu() {
+  burgerBtn.classList.toggle('open');
+  menuOpen.classList.toggle('open');
+  logoReplace.classList.toggle('open');
+  document.body.style.overflow = 'hidden';
+  // document.getElementsByTagName('html')[0].style.overflow = "hidden"; // удаление вертик.скролла при открытии 
+}
+  
+function closeMenu() {
+   burgerBtn.classList.toggle('open');
+  // document.getElementsByTagName('html')[0].style.overflow = "auto"; // возвращение вертик.скролла при закрытии
+  menuOpen.classList.toggle('open');
+  logoReplace.classList.toggle('open');
+  document.body.style.overflow = 'visible';
+  // document.body.style.overflow = 'visible';
+  // document.getElementsByTagName('html')[0].style.overflow = "visible"; // возвращение вертик.скролла при закрытии
+  }
+
+  function closeMenuLinks(event) {
+    if (event.target.classList.contains('nav-list')) {
+     // здесь код, удаляющий класс `'open'` у гамбургер-иконки и у меню
+     burgerBtn.classList.toggle('open');
+     menuOpen.classList.toggle('open');
+     logoReplace.classList.toggle('open');
+     document.body.style.overflow = 'auto';
+    //  document.body.style.overflow = 'visible';
+    //  document.getElementsByTagName('html')[0].style.overflow = "visible"; // возвращение вертик.скролла при закрытии popup
+}
+}
+
+  burgerBtn.addEventListener('click', toggleMenu);
+  menuOpen.addEventListener('click', closeMenu);
+  logoReplace.addEventListener('click', closeMenu);
 
 /* ==================== JSON file ===============*/
 
