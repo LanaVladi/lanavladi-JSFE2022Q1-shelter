@@ -238,6 +238,10 @@
   // width: 952px;
   // height: 552px;
   z-index: 2;
+  & .button-close  {
+    left: 90%;
+    top: 32%;
+  }
   }
   
   .button-close {
@@ -788,6 +792,10 @@ h3 {
   // width: 952px;
   // height: 552px;
   z-index: 2;
+  & .button-close  {
+    left: 85%;
+    top: 32%;
+  }
   }
   
   .button-close {
@@ -796,8 +804,8 @@ h3 {
       border: 2px solid $color-primary;
       border-radius: 100px;
        position: absolute;
-       top: 32%;
-       left: 81%;
+      //  top: 32%;
+      //  left: 81%;
       z-index: 2;
       &:hover {
           background-color: $color-primary-light;

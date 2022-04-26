@@ -526,6 +526,10 @@ span {
   position: relative;
   z-index: 2;
 }
+.popup-wrapper .button-close {
+  left: 85%;
+  top: 26%;
+}
 
 .button-close {
   width: 52px;
@@ -534,8 +538,6 @@ span {
   background: transparent;
   border-radius: 100px;
   position: absolute;
-  top: 25%;
-  left: 84%;
   z-index: 2;
 }
 .button-close:hover {
@@ -1056,6 +1058,10 @@ h6 {
     position: relative;
     z-index: 2;
   }
+  .popup-wrapper .button-close {
+    left: 90%;
+    top: 32%;
+  }
 
   .button-close {
     width: 52px;
@@ -1550,6 +1556,10 @@ h6 {
     position: relative;
     z-index: 2;
   }
+  .popup-wrapper .button-close {
+    left: 85%;
+    top: 32%;
+  }
 
   .button-close {
     width: 52px;
@@ -1557,8 +1567,6 @@ h6 {
     border: 2px solid #F1CDB3;
     border-radius: 100px;
     position: absolute;
-    top: 32%;
-    left: 81%;
     z-index: 2;
   }
   .button-close:hover {

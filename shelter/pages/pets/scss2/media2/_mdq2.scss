@@ -140,6 +140,10 @@
   // width: 952px;
   // height: 552px;
   z-index: 2;
+  & .button-close  {
+    left: 85%;
+    top: 32%;
+  }
   }
   
   .button-close {
@@ -423,6 +427,10 @@ margin-right: 32px;
   // width: 952px;
   // height: 552px;
   z-index: 2;
+  & .button-close  {
+    left: 79%;
+    top: 32%;
+  }
   }
   
   .button-close {
@@ -431,8 +439,8 @@ margin-right: 32px;
       border: 2px solid $color-primary;
       border-radius: 100px;
       //  position: absolute;
-       top: 32%;
-       left: 81%;
+      //  top: 32%;
+      //  left: 81%;
       //  position: fixed;
       //  top: 378px;
       //  left: 266px;

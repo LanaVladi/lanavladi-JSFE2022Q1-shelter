@@ -630,7 +630,10 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
     // width: 952px;
     // height: 552px;
     z-index: 2;
-    
+      & .button-close  {
+    left: 85%;
+    top: 26%;
+  }
     }
     
    
@@ -645,8 +648,8 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
         background: transparent;
          border-radius: 100px;
          position: absolute;
-         top: 25%;
-        left: 84%;
+        //  top: 25%;
+        // left: 84%;
         z-index: 2;
         &:hover {
             background-color: $color-primary-light;
