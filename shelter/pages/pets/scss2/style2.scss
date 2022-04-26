@@ -334,44 +334,31 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
   /* ============== MODAL WINDOW =============== */ 
 
 .popup {
-  // // position: fixed;
+   position: fixed;
   // width: 100%;
   // height: 100%;
   // top: 0;
-  position: absolute;
+  // position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
   display: flex;
   align-items: center;
   // width: 1280px;
   // height: 877px;
   // background-color:rgba(41, 41, 41, 0.6);
   z-index: 300;
-  // top: 0;
-  // left: 0;
-  opacity: 0; //не подходит, оставляет пустое место
+   opacity: 0; //не подходит, оставляет пустое место
   visibility: hidden;
   //  display: none;
-  overflow-y: auto;
-  overflow-x: hidden;
+  // overflow-y: auto;
+  // overflow-x: hidden;
   &:hover {
       cursor: pointer; //на все окно распространяется, нужно на затемненную область
   }
   }
-  
-  .overlay {
-      position: fixed;
-      background-color:rgba(41, 41, 41, 0.6);
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      // width:100%;
-      // height:100%;
-      z-index:100;
-      .button-close:hover {
-          background-color: $color-primary-light;
-      }
-  }
-  
+    
     .popup.open {
       // display: block;
       opacity: 1; //не подходит, оставляет пустое место
@@ -379,34 +366,45 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
   }
   
   .popup-wrapper {
-  // min-height: 100%;
   width: 952px;
   height: 552px;
   display: flex;
   align-items: center;
   position: relative;
-  
-  // position: relative;
   // width: 952px;
   // height: 552px;
   z-index: 200;
-  
+    }
+
+  .overlay {
+    position: fixed;
+    background-color:rgba(41, 41, 41, 0.6);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    // width:100%;
+    // height:100%;
+    z-index:100;
+    &:hover .button-close  {  
+      background: $color-primary-light;
+      cursor: pointer;
   }
+}
   
   .button-close {
       width: 52px;
       height: 52px;
       border: 2px solid $color-primary;
       // background-color: $color-light-xl;
-      background-color: $color-btn-close;
+      background: transparent;
        border-radius: 100px;
-      //  position: absolute;
-      // top: -26px;
-      // left: 915px;
-      position: fixed;
-      top: 382px;
-    left: 1082px;
-     
+       position: absolute;
+      top: 25%;
+      left: 82%;
+      // position: fixed;
+    //   top: 382px;
+    // left: 1082px;
       z-index: 200;
       &:hover {
           background-color: $color-primary-light;
@@ -418,8 +416,6 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
   position: fixed;
   width: 100%;
   height: 100%;
-  top: 35%;
-  left: 15%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -429,6 +425,11 @@ margin-bottom: 30px; // чтобы карточку удлинить снизу
   background-color: $color-light-s;
   border-radius: 9px;
   z-index: 400;
+  overflow: auto; //скролл авто в модальном окне
+  // & .button-close  {
+  //   left: 98.5%;
+  //   top: -15%;
+  // }
   &:hover {
       box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
       cursor: default;
