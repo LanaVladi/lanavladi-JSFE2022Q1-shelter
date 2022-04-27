@@ -24,11 +24,13 @@ console.log(`
 const burgerBtn = document.querySelector('.burger-menu');
 const menuOpen = document.querySelector('.nav-container');
 const logoReplace = document.querySelector('.logo-container');
+const bodyBG = document.querySelector('.body-bg');
 
 function toggleMenu() {
   burgerBtn.classList.toggle('open');
   menuOpen.classList.toggle('open');
   logoReplace.classList.toggle('open');
+  bodyBG.classList.toggle('body-bg-active');
   document.body.style.overflow = 'hidden';
   // document.getElementsByTagName('html')[0].style.overflow = "hidden"; // удаление вертик.скролла при открытии 
 }
@@ -38,24 +40,41 @@ function closeMenu() {
   // document.getElementsByTagName('html')[0].style.overflow = "auto"; // возвращение вертик.скролла при закрытии
   menuOpen.classList.toggle('open');
   logoReplace.classList.toggle('open');
+  bodyBG.classList.toggle('body-bg-active');
   document.body.style.overflow = 'visible';
   // document.body.style.overflow = 'visible';
   // document.getElementsByTagName('html')[0].style.overflow = "visible"; // возвращение вертик.скролла при закрытии
   }
 
   function closeMenuLinks(event) {
-    if (event.target.classList.contains('nav-list')) {
+    if (event.target.classList.contains('nav-container')) {
      // здесь код, удаляющий класс `'open'` у гамбургер-иконки и у меню
      burgerBtn.classList.toggle('open');
      menuOpen.classList.toggle('open');
      logoReplace.classList.toggle('open');
+     bodyBG.classList.toggle('body-bg-active');
      document.body.style.overflow = 'visible';
     //  document.body.style.overflow = 'visible';
     //  document.getElementsByTagName('html')[0].style.overflow = "visible"; // возвращение вертик.скролла при закрытии popup
 }
 }
+burgerBtn.addEventListener('click', () => {
+  if (burgerBtn.classList.contains('open')) {
+    closeMenu()
+  } else {
+    toggleMenu();
+  }
+});
 
-  burgerBtn.addEventListener('click', toggleMenu);
+bodyBG.addEventListener('click', () => {
+  if (bodyBG.classList.contains('body-bg-active')) {
+    closeMenu()
+  } else {
+    toggleMenu();
+  }
+});
+
+  // burgerBtn.addEventListener('click', toggleMenu);
   menuOpen.addEventListener('click', closeMenu);
   logoReplace.addEventListener('click', closeMenu);
 

@@ -311,7 +311,19 @@ margin-right: 32px;
  }
 
  /* =========== BURGER MENU OPEN ============= */
-
+ .body-bg {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(41, 41, 41, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+display: none;
+ }
+ .body-bg-active {
+   display: block;
+}
  .burger-menu.open {
   display: block;
   transform: rotate(90deg);
@@ -322,7 +334,7 @@ margin-right: 32px;
   // right: 0px;
   right: 53px;
   transition: 0.5s all linear;
-  overflow: hidden;
+  // overflow: hidden;
   // opacity: 0;
   // visibility: hidden;
   // transition: all 0.8s ease-in-out;
@@ -353,7 +365,7 @@ margin-right: 32px;
   align-items: center;
   justify-content: center;
   transition: 0.5s all linear;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .nav-list {
@@ -365,7 +377,7 @@ margin-right: 32px;
   position: absolute;
   top: 250px;
   left: -35px;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .nav-link-active  {
