@@ -23,9 +23,11 @@ export interface IDataSources {
   url: string;
 }
 
+type Sources = Pick<IDataSources, 'category' | 'country' | 'description' | 'id' | 'language' | 'name' | 'url'>;
+
 export interface IDataDrawSources {
   status: string;
-  sources: Array<IDataSources>;
+  sources: Array<Sources>;
 }
 
 // news.ts & appView.ts
