@@ -1,15 +1,16 @@
 import AppLoader from './appLoader';
-import { Callback, IDataDrawSources, IDataDrawNews } from '../../types';
+import { Callback, IDataDrawSources, IDataDrawNews, Endpoint } from '../../types';
 
 class AppController extends AppLoader {
     getSources(callback: Callback<IDataDrawSources>): void {
         super.getResp(
             {
-                endpoint: 'sources',
+                endpoint: Endpoint.sources,
             },
             callback
         );
     }
+
     getNews(e: Event, callback: Callback<IDataDrawNews>): void {
         let target = e.target as HTMLElement;
         const newsContainer = e.currentTarget as HTMLElement;
@@ -21,7 +22,7 @@ class AppController extends AppLoader {
                     newsContainer.setAttribute('data-source', sourceId);
                     super.getResp(
                         {
-                            endpoint: 'everything',
+                            endpoint: Endpoint.everything,
                             options: {
                                 sources: sourceId,
                             },
