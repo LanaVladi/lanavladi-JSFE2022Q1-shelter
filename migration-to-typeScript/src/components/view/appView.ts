@@ -2,7 +2,6 @@ import News from './news/news';
 import Sources from './sources/sources';
 import { IDataDrawNews, IDataDrawSources } from "../../types";
 
-
 export class AppView {
     public news: News;
     public sources: Sources;
