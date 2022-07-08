@@ -1,22 +1,21 @@
 import { ILoader, Callback, Options, Endpoint } from '../../types';
 
 class Loader implements ILoader {
- readonly baseLink: string;
-  options: object;
+    readonly baseLink: string;
+    options: object;
     constructor(baseLink: string, options: object) {
         this.baseLink = baseLink;
         this.options = options;
     }
 
     getResp<T>(
-        { endpoint, options = {} }:  { endpoint: Endpoint, options?: Options } ,
+        { endpoint, options = {} }: { endpoint: Endpoint, options?: Options },
         callback: Callback<T> = () => {
             console.error('No callback for GET response');
         }
     ) {
         this.load('GET', endpoint, callback, options);
     }
-
 
     errorHandler<T extends Response>(res: T): T {
         if (!res.ok) {
