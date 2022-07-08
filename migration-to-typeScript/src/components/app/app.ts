@@ -11,13 +11,13 @@ class App {
     }
 
     start(): void {
-          (document
-            .querySelector('.sources') as HTMLElement)
+        (document
+            .querySelector('.sources') as HTMLDivElement)
             .addEventListener('click', (e: Event) => this.controller.getNews(e, (data: IDataDrawNews): void =>
-              this.view.drawNews(data)));
+                this.view.drawNews(data)));
 
         this.controller.getSources((data: IDataDrawSources): void =>
-         this.view.drawSources(data));
+            this.view.drawSources(data));
 
     }
 }
