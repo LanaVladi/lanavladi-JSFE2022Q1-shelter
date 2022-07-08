@@ -1,4 +1,4 @@
-import { ILoader, Callback, Options  } from '../../types';
+import { ILoader, Callback, Options, Endpoint } from '../../types';
 
 class Loader implements ILoader {
  readonly baseLink: string;
@@ -9,7 +9,7 @@ class Loader implements ILoader {
     }
 
     getResp<T>(
-        { endpoint, options = {} }:  { endpoint: string, options?: Options } ,
+        { endpoint, options = {} }:  { endpoint: Endpoint, options?: Options } ,
         callback: Callback<T> = () => {
             console.error('No callback for GET response');
         }
@@ -28,7 +28,7 @@ class Loader implements ILoader {
         return res;
     }
 
-   private makeUrl(options: Options, endpoint: string) {
+    private makeUrl(options: Options, endpoint: Endpoint) {
         const urlOptions: Options = { ...this.options, ...options };
         let url = `${this.baseLink}${endpoint}?`;
 
@@ -39,7 +39,7 @@ class Loader implements ILoader {
         return url.slice(0, -1);
     }
 
-    load<T>(method: string, endpoint: string, callback: Callback<T>, options: Options = {}) {
+    load<T>(method: string, endpoint: Endpoint, callback: Callback<T>, options: Options = {}) {
         fetch(this.makeUrl(options, endpoint), { method })
             .then(this.errorHandler)
             .then((res) => res.json())
