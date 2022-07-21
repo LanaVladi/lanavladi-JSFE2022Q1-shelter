@@ -21,9 +21,9 @@
                     <form class="search-box">
                         <button class="search-btn-close" type="reset"><img class="x-btn"
                                 src="./assets/svg/xmark-solid.svg" alt="search-btn-close"></button>
-                        <button class="search-btn"><img class="search-glass"
-                                src="./assets/svg/magnifying-glass-solid.svg" alt="search-btn"></button>
-                        <input class="input" type="text" placeholder="Search..." autofocus autocomplete="off">
+                        <!-- <button class="search-btn"><img class="search-glass"
+                                src="./assets/svg/magnifying-glass-solid.svg" alt="search-btn"></button> -->
+                        <input class="input" type="text" placeholder="Введите автора..." autofocus autocomplete="off">
                     </form>
 
                     <button class="cart-btn" type="button"><img class="cart-btn-img" src="./assets/img/cart.png"
@@ -58,7 +58,10 @@
             <div id="form" class="filters-container__filter-by-range">
                 <div class="filters-container__filter-by-range filter-by-price">
                     <h6 class="filter-title">Цена</h6>
-                    <div id="p-slider"></div>
+                    <div id="p-slider">
+                        <!-- <input type="number" class="p-slider__input" id="input-0">
+                        <input type="number" class="p-slider__input" id="input-1"> -->
+                    </div>
                 </div>
 
                 <div class="filters-container__filter-by-range filter-by-quantityInStock">
@@ -69,7 +72,7 @@
 
             <!-- Сброс значений всех фильтров -->
             <div class="reset">
-                <button id="reset-btn" class="reset-btn" type="reset">RESET</button>
+                <button id="reset-btn" class="reset-btn" type="reset">Сброс фильтров</button>
             </div>
 
         </div>
