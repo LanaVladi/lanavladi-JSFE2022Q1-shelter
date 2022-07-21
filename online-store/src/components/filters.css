@@ -1,0 +1,33 @@
+.filters-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    row-gap: 2rem;
+    /* max-width: 20vw; */
+    max-width: 100%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    /* height: 40rem; */
+    /* margin: 2rem 0 3rem; */
+}
+
+.filter-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-gray);
+    margin-block-start: 1.5rem;
+    margin-block-end: 1.5rem;
+}
+
+.filter-content {
+    font-size: 1.0rem;
+    color: var(--color-gray);
+}
+
+.filters-container__filter-by-range {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 20rem;
+}
