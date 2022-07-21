@@ -1,0 +1,178 @@
+export const booksList = [
+    {
+        "id": "0",
+        "bookName": "Муми-тролли на рыбалке",
+        "author": "Янссон Туве Марика",
+        "price": "918",
+        "publishingHouse": "АСТ",
+        "quantityInStock": "5",
+        "image": "./assets/img/Янссон-Туве-Марика-Муми-тролли-на-рыбалке.jpeg",
+        "publicationYear": "2021",
+        "isPopular": "Нет"
+    },
+    {
+        "id": "1",
+        "bookName": "Секреты муми-троллей",
+        "author": "Янссон Туве Марика",
+        "price": "449",
+        "publishingHouse": "РОСМЭН",
+        "quantityInStock": "3",
+        "image": "./assets/img/Янссон-Туве-Марика-Секреты-муми-троллей.jpeg",
+        "publicationYear": "2021",
+        "isPopular": "Да"
+    },
+    {
+        "id": "2",
+        "bookName": "Муми-тролли и Остров с маяком",
+        "author": "Янссон Туве Марика",
+        "price": "669",
+        "publishingHouse": 'АСТ',
+        "quantityInStock": "10",
+        "image": "./assets//img/Янссон-Туве-Марика-Муми-тролли-и-Остров-с-маяком.jpeg",
+        "publicationYear": "2021",
+        "isPopular": "Да"
+    },
+    {
+        "id": "3",
+        "bookName": "Муми-тролль и песнь океана",
+        "author": "Янссон Туве Марика",
+        "price": "409",
+        "publishingHouse": 'РОСМЭН',
+        "quantityInStock": "8",
+        "image": "./assets/img/Янссон-Туве-Марика-Муми-тролль-и-песнь-океана.jpeg",
+        "publicationYear": "2019",
+        "isPopular": "Да"
+    },
+    {
+        "id": "4",
+        "bookName": "Папа и море",
+        "author": "Янссон Туве Марика",
+        "price": "421",
+        "publishingHouse": 'Азбука',
+        "quantityInStock": "16",
+        "image": "./assets/img/Янссон-Туве-Марика-Папа-и-море.jpeg",
+        "publicationYear": "2021",
+        "isPopular": "Да"
+    },
+    {
+        "id": "5",
+        "bookName": "Зима Муми-тролля",
+        "author": "Янссон Туве Марика",
+        "price": "461",
+        "publishingHouse": 'Азбука',
+        "quantityInStock": "2",
+        "image": "./assets/img/Янссон-Туве-Марика-Зима-Муми-тролля.jpeg",
+        "publicationYear": "2021",
+        "isPopular": "Нет"
+    },
+    {
+        "id": "6",
+        "bookName": "Летняя книга",
+        "author": "Янссон Туве Марика",
+        "price": "240",
+        "publishingHouse": 'Азбука',
+        "quantityInStock": "4",
+        "image": "./assets/img/Янссон-Туве-Марика-Летняя-книга.jpeg",
+        "publicationYear": "2021",
+        "isPopular": "Нет"
+    },
+    {
+        "id": "7",
+        "bookName": "Зойкина квартира: Пьесы",
+        "author": "Михаил Булгаков",
+        "price": "199",
+        "publishingHouse": 'АСТ',
+        "quantityInStock": "1",
+        "image": "./assets/img/Булгаков-Зойкина-квартира-Пьесы.jpeg",
+        "publicationYear": "2021",
+        "isPopular": "Нет"
+    },
+    {
+        "id": "8",
+        "bookName": "Тайный дневник",
+        "author": "Михаил Булгаков",
+        "price": "519",
+        "publishingHouse": 'АСТ',
+        "quantityInStock": "6",
+        "image": "./assets/img/Булгаков-Тайный-дневник.jpeg",
+        "publicationYear": "2022",
+        "isPopular": "Да"
+    },
+    {
+        "id": "9",
+        "bookName": "Белая гвардия",
+        "author": "Михаил Булгаков",
+        "price": "199",
+        "publishingHouse": 'Азбука',
+        "quantityInStock": "10",
+        "image": "./assets/img/Булгаков-Белая-гвардия.jpeg",
+        "publicationYear": "2022",
+        "isPopular": "Нет"
+    },
+    {
+        "id": "10",
+        "bookName": "Мастер и Маргарита",
+        "author": "Михаил Булгаков",
+        "price": "825",
+        "publishingHouse": 'Эксмо',
+        "quantityInStock": "10",
+        "image": "./assets/img/Булгаков-Мастер-и-Маргарита.jpeg",
+        "publicationYear": "2021",
+        "isPopular": "Да"
+    },
+    {
+        "id": "11",
+        "bookName": "Морфий",
+        "author": "Михаил Булгаков",
+        "price": "206",
+        "publishingHouse": 'Эксмо',
+        "quantityInStock": "6",
+        "image": "./assets/img/Булгаков-Морфий.jpeg",
+        "publicationYear": "2021",
+        "isPopular": "Да"
+    },
+    {
+        "id": "12",
+        "bookName": "Собачье сердце",
+        "author": "Михаил Булгаков",
+        "price": "381",
+        "publishingHouse": 'Эксмо',
+        "quantityInStock": "7",
+        "image": "./assets/img/Булгаков-Собачье-сердце.jpeg",
+        "publicationYear": "2022",
+        "isPopular": "Да"
+    },
+    {
+        "id": "13",
+        "bookName": " Бег: Пьеса",
+        "author": "Михаил Булгаков",
+        "price": "132",
+        "publishingHouse": 'ИГ Лениздат',
+        "quantityInStock": "10",
+        "image": "./assets/img/Булгаков-Бег-Пьеса.jpeg",
+        "publicationYear": "2012",
+        "isPopular": "Нет"
+    },
+    {
+        "id": "14",
+        "bookName": "Свет невечерний",
+        "author": "Михаил Булгаков",
+        "price": "299",
+        "publishingHouse": 'Азбука',
+        "quantityInStock": "10",
+        "image": "./assets/img/Булгаков-Свет-невечерний.jpeg",
+        "publicationYear": "2021",
+        "isPopular": "Нет"
+    },
+    {
+        "id": "15",
+        "bookName": "Путешествие налегке",
+        "author": "Янссон Туве Марика",
+        "price": "229",
+        "publishingHouse": 'Азбука',
+        "quantityInStock": "9",
+        "image": "./assets/img/Янссон-Туве-Марика-Путешествие-налегке.jpeg",
+        "publicationYear": "2020",
+        "isPopular": "Нет"
+    },
+]
