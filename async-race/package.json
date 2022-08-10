@@ -2,7 +2,7 @@
   "name": "lanavladi-jsfe2022q1",
   "version": "1.0.0",
   "description": "Private repository for @lanavladi\r https://rolling-scopes-school.github.io/lanavladi-JSFE2022Q1/",
-  "main": "index.js",
+  "main": "webpack.base.config.ts",
   "scripts": {
     "start": "webpack serve --open --config ./webpack.config.js --env mode=dev",
     "build": "webpack --config ./webpack.config.js --env mode=prod",
