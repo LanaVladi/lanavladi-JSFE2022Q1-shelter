@@ -1,0 +1,723 @@
+// @media (max-width: 768px) {
+  @media (max-width: 1279.9px) {
+   
+    /* HEADER 768px - 1279.9px */
+  
+  .header {
+    padding: 29px 0 0 0;
+    height: 120px;
+    }
+   
+  
+   .wrapper {
+      max-width: $tablet-width; // 768px
+       margin: 0 auto;
+       padding-left: 0px;
+       padding-right: 0px;
+   }
+ 
+    .header-wrapper {
+       padding-left: 30px;
+       padding-right: 30px;
+       margin-bottom: 30px;
+   }
+    
+   .logo-container {
+       padding-right: 0px;
+   }
+
+
+     /* !SECTION OUR PETS */
+
+     .ourpets-wrapper {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+  
+    .heading-our-pets {
+    margin-right: 154px;
+    margin-left: 154px;
+    margin-top: 20px;
+    }
+  
+    .cards-container {
+        margin-top: 30px;
+    }
+    
+    .card-1 {
+      margin-left: 94px;
+      margin-right: 0px;
+      margin-top: 0px;
+    }
+    .card-2 {
+      margin-right: 94px;
+      margin-top: 0px;
+    }
+    .card-3 {
+      margin-left: 94px;
+      margin-right: 0px;
+      margin-top: 30px;
+    }
+    .card-4 {
+      margin-top: 30px;
+      margin-right: 94px;
+    }
+    .card-5 {
+      margin-right: 0px;
+      margin-top: 30px;
+      margin-bottom: 0px;
+      margin-left: 94px;
+    }
+    .card-6 {
+      margin-right: 94px;
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+    .card-7 {
+        display: none;
+      margin-right: 0px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .card-8 {
+        display: none;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    /* ============== MODAL WINDOW =============== */ 
+
+.popup {
+  // position: fixed;
+  width: 100%;
+  height: 100%;
+  // position: absolute;
+ 
+  display: flex;
+  align-items: center;
+  // width: 1280px;
+  // height: 877px;
+  // background-color:rgba(41, 41, 41, 0.6);
+  z-index: 100;
+  // top: 0;
+  // left: 0;
+  opacity: 0; //не подходит, оставляет пустое место
+  visibility: hidden;
+  //  display: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  &:hover {
+      cursor: pointer; //на все окно распространяется, нужно на затемненную область
+  }
+  }
+  
+  .overlay {
+      position: fixed;
+      background-color:rgba(41, 41, 41, 0.6);
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      // width:100%;
+      // height:100%;
+      z-index:1;
+  }
+  
+  .popup.open {
+      // display: block; //не подходит, оставляет пустое место
+      opacity: 1; 
+  visibility: visible;
+  }
+  
+  .popup-wrapper {
+  // min-height: 100%;
+  width: 682px;
+  height: 402px;
+  display: flex;
+  align-items: center;
+  position: relative;
+    // position: relative;
+  // width: 952px;
+  // height: 552px;
+  z-index: 2;
+  & .button-close  {
+    left: 85%;
+    top: 32%;
+  }
+  }
+  
+  .button-close {
+      width: 52px;
+      height: 52px;
+      border: 2px solid $color-primary;
+      border-radius: 100px;
+      position: absolute;
+       top: 31%;
+       left: 87%; 
+      //  position: fixed;
+    // top: 395px;
+    // left: 664px;
+      z-index: 2;
+      &:hover {
+          background-color: $color-primary-light;
+          cursor: pointer;
+      }
+  }
+  
+  .modal-window {
+  width: 630px;
+  height: 350px;
+  position: fixed;
+  z-index: 2;
+  &:hover {
+      box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+      cursor: default;
+  }
+  }
+  
+  .image {
+  width: 350px;
+  height: 350px;
+  }
+  
+  .popup-content {
+      padding: 10px 9px 37px 10px;
+  }
+  .popup-title {
+      padding-top: 0px;
+  }
+  
+  .popup-subtitle {
+      padding-top: 10px;
+  }
+  
+  .popup-description {
+  font-size: 13px;
+  padding-top: 20px;
+  }
+  
+  .popup-list-container {
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 110%;
+/* identical to box height, or 17px */
+letter-spacing: 0.06em;
+color: $color-black;
+      padding-top: 0px;
+  }
+  .popup-list  {
+      list-style-position: inside;
+      display: initial;
+  }
+  .popup-list li {
+      padding-top: 5px;
+      padding-left: 0px;
+      text-decoration: none;
+      // list-style: none;
+      color: $color-black;
+  }
+  
+  
+  .navigation {
+    margin-top: 40px;
+    margin-left: 214px;
+    margin-right: 214px;
+    margin-bottom: 5px;
+  }
+
+ 
+/* FOOTER 768px */
+  
+.footer-container {
+  flex-wrap: wrap;
+}
+
+.contacts {
+    margin-top: 30px;
+    margin-right: 60px;
+    margin-left: 64px;
+}
+
+.shelter-mail {
+  padding-top: 41px;
+}
+
+.shelter-phone {
+  display: flex;
+  padding-top: 38px;
+  align-items: center;
+}
+
+.phone-icon {
+padding-top: 1px;
+padding-right: 20px;
+}
+
+.phone {
+ margin-right: 39px;
+ margin-top: 0px;
+}
+     
+.locations {
+    margin-top: 30px;
+    margin-right: 63px; 
+    width: 302px;
+}
+
+.shelter-location-1 {
+ margin-top: 31px;
+ margin-right: 5px;
+}
+
+.location-1 {
+padding-right: 1px;
+
+}
+.location-1-icon {
+margin-top: 4px;
+    padding-right: 9px;
+}
+
+.shelter-location-2 {
+display: flex;
+margin-top: 2px;
+margin-right: 32px;
+}
+
+.footer-puppy { 
+     margin-top: 60px;
+}
+
+}
+
+/* MEDIA QUERIES 320px - 767.9px */
+
+@media (max-width: 767.9px) {
+
+  /* HEADER 320px */
+
+.header {
+  padding: 30px 0 0 0;
+  // margin-bottom: 30px;
+  }
+ 
+ .wrapper {
+    max-width: $mobile-width; // 320px 
+     margin: 0 auto;
+     padding-left: 0px;
+     padding-right: 0px;
+ }
+
+ /* =========== BURGER MENU OPEN ============= */
+ .body-bg {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(41, 41, 41, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+display: none;
+ }
+ .body-bg-active {
+   display: block;
+}
+ .burger-menu.open {
+  display: block;
+  transform: rotate(90deg);
+  z-index: 500;
+  // left: 220px;
+  position: fixed;
+  top: 50px;
+  // right: 0px;
+  right: 53px;
+  transition: 0.5s all linear;
+  // overflow: hidden;
+  // opacity: 0;
+  // visibility: hidden;
+  // transition: all 0.8s ease-in-out;
+}
+.nav-container {
+  display: flex;
+  position: fixed;
+  // width: 320px;
+  height: 100%;
+  // background-color: $color-dark-3xl;
+  background: rgba(41, 41, 41, 0.6);
+  right: 0px;
+  z-index: 500;
+  top: 0;
+  transition: 0.5s all linear;
+  transform: translateX(100%);
+}
+.nav-container.open {
+  transform: translateX(0);
+  width: 320px;
+  background-color: $color-light-xl;
+  color: $color-dark-s;
+  position: fixed;
+  z-index: 400;
+  height: 100%;
+  //  display: flex;
+  //  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s all linear;
+  // overflow: hidden;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: absolute;
+  top: 250px;
+  left: -35px;
+  // overflow: hidden;
+}
+
+.nav-link-active  {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 51.2px;
+  color: $color-dark-l;
+  // text-decoration: underline;
+  display: inline; //делает нижнее подчеркивание
+  border-bottom: 3px solid $color-primary;
+}
+
+.nav-item {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 51.2px;
+  list-style: none;
+  text-decoration: none;
+  color: $color-dark-l;
+}
+
+ .logo-container {
+  display: block;
+  flex-direction: column;
+  position: absolute;
+  z-index: 600;
+  transition: all 0.5s ease-in;
+  right: 124px;
+  top: 0px;
+}
+ 
+    .burger-menu {
+      display: flex;
+    }
+
+    /* ============== BURGER MENU FINISH ======== */
+
+      /* !SECTION OUR PETS 320px */
+
+      .ourpets-wrapper {
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+
+    h3 {
+      font-size: 25px;
+      letter-spacing: 0.06em;
+    }
+    .heading-our-pets {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+    }
+  
+    .cards-container {
+        margin-top: 41px;
+    }
+  
+    .card-1 {
+      margin-left: 25px;
+      margin-top: 0px;
+    }
+    .card-2 {
+      margin-right: 0px;
+      margin-left: 25px;
+      margin-top: 30px;
+    }
+    .card-3 {
+      margin-right: 0px;
+    margin-left: 25px;
+    margin-top: 30px;
+    }
+    .card-4 {
+      display: none;
+      // margin-top: 15px;
+    }
+    .card-5 {
+      display: none;
+      // margin-right: 40px;
+      // margin-top: 30px;
+      // margin-bottom: 15px;
+    }
+    .card-6 {
+      display: none;
+      // margin-right: 40px;
+      // margin-top: 30px;
+      // margin-bottom: 15px;
+    }
+    .card-7 {
+      display: none;
+      // margin-right: 40px;
+      // margin-top: 30px;
+      // margin-bottom: 15px;
+    }
+    .card-8 {
+      display: none;
+   }
+
+       /* ============== MODAL WINDOW =============== */ 
+
+.popup {
+   // width: 1280px;
+  // height: 877px;
+  // background-color:rgba(41, 41, 41, 0.6);
+  z-index: 100;
+  // top: 0;
+  // left: 0;
+  opacity: 0; //не подходит, оставляет пустое место
+  visibility: hidden;
+  //  display: none;
+  // overflow-y: auto;
+  // overflow-x: hidden;
+  &:hover {
+      cursor: pointer; //на все окно распространяется, нужно на затемненную область
+  }
+  }
+  
+  .overlay {
+      position: fixed;
+      background-color:rgba(41, 41, 41, 0.6);
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      // width:100%;
+      // height:100%;
+      z-index:1;
+  }
+  
+  .popup.open {
+      // display: block; //не подходит, оставляет пустое место
+      opacity: 1; 
+  visibility: visible;
+  }
+  
+  .popup-wrapper {
+  // min-height: 100%;
+  width: 271px;
+  height: 393px;
+  display: flex;
+  align-items: center;
+  position: relative;
+    // position: relative;
+  // width: 952px;
+  // height: 552px;
+  z-index: 2;
+  & .button-close  {
+    left: 79%;
+    top: 32%;
+  }
+  }
+  
+  .button-close {
+      width: 52px;
+      height: 52px;
+      border: 2px solid $color-primary;
+      border-radius: 100px;
+      //  position: absolute;
+      //  top: 32%;
+      //  left: 81%;
+      //  position: fixed;
+      //  top: 378px;
+      //  left: 266px;
+      z-index: 2;
+      &:hover {
+          background-color: $color-primary-light;
+          cursor: pointer;
+      }
+  }
+  
+  .modal-window {
+    width: 240px;
+    height: 341px;
+  z-index: 2;
+  &:hover {
+      box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+      cursor: default;
+  }
+  }
+  
+  .image {
+    display: none;
+  width: 0px;
+  height: 0px;
+  }
+  
+  .popup-content {
+    text-align: center;
+      padding: 10px 10px 10px 10px;
+  }
+  .popup-title {
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+/* or 45px */
+letter-spacing: 0.06em;
+      padding-top: 0px;
+  }
+  
+  .popup-subtitle {
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+/* identical to box height, or 23px */
+
+letter-spacing: 0.06em;
+      padding-top: 10px;
+  }
+  
+  .popup-description {
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 110%;
+/* or 14px */
+text-align: justify;
+letter-spacing: 0.06em;
+  font-size: 13px;
+  padding-top: 0px; // 20px по макету, но так не помещается содержимое
+  }
+  
+  .popup-list-container {
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 110%;
+/* identical to box height, or 17px */
+letter-spacing: 0.06em;
+color: $color-black;
+      padding-top: 0px;
+      text-align: initial;
+  }
+  .popup-list  {
+      list-style-position: inside;
+      display: initial;
+  }
+  .popup-list li {
+      padding-top: 5px;
+      padding-left: 0px;
+      text-decoration: none;
+      // list-style: none;
+      color: $color-black;
+  }
+      
+  .navigation {
+    margin-top: 43px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+ 
+
+  /*! FOOTER page 2 - 320px */
+
+
+  .footer-container {
+    flex-wrap: wrap;
+  }
+  
+  .contacts {
+    margin-top: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-right: 21px;
+    margin-left: 21px;
+  }
+  .shelter-mail {
+    padding-top: 41px; 
+  }
+  .mail {
+    padding-right: 0px;
+  }
+  .shelter-phone {
+    display: flex;
+    padding-top: 38px;
+    align-items: center;
+  }
+  .phone-icon {
+    padding-top: 2px;
+    padding-right: 20px;
+  }
+  .phone {
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  
+  .locations {
+      margin-top: 36px;
+      margin-right: 10px;
+      margin-left: 10px;
+      width: 300px;
+      flex-direction: column;
+      display: flex;
+  }
+  .title-locations {
+    display: flex;
+      margin-right: 11px;
+      margin-left: 12px;
+      // width: 237px; 
+      text-align: center;
+  }
+  .shelter-location-1 {
+   margin-top: 39px;
+  }
+  
+  .location-1 {
+  margin-left: 0px;
+  padding-right: 0px;
+  }
+  .location-1-icon {
+  padding-right: 10px;
+  padding-left: 0px;
+  }
+  
+  .shelter-location-2 {
+     margin-top: 26px;
+  }
+  .location-2 {
+    margin-left: 6px;
+  }
+  .location-2-icon {
+    margin-top: 7px;
+      margin-right: 6px;
+  }
+  
+  .footer-puppy { 
+    margin-top: 37px;
+    width: 260px;
+   }
+  
+}
